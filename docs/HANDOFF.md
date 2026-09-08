@@ -109,3 +109,11 @@ Photo stages use `ePhoto` in `engine.js` with live overlay FX. Do not remove the
 - `engine.js` is one minified-style file. Search for `eH={id:"cino"`, `eM={id:"sb"`, `eE=`, `eD=`, `function P(`, `function T(`, `controlCpu`, `bullForm`.
 - After changing atlas JSON, hard-refresh — frames are loaded once in `boot()`.
 - Preview: `sh /workspace/startup.sh` (binds `0.0.0.0:8080`).
+
+## Playable link (save this)
+
+**Play:** https://jonitavius-ui.github.io/mugen/
+
+**Source:** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff
+
+GitHub Pages build lives in https://github.com/jonitavius-ui/jonitavius-ui.github.io
