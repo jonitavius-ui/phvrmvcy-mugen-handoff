@@ -1,0 +1,1441 @@
+{
+  "id": "zilla",
+  "anims": {
+    "idle": [
+      {
+        "file": "/mugen/frames/zilla/idle_00.png",
+        "i": 0,
+        "ox": 29,
+        "oy": 106,
+        "w": 58,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_01.png",
+        "i": 1,
+        "ox": 30,
+        "oy": 102,
+        "w": 61,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_02.png",
+        "i": 2,
+        "ox": 30,
+        "oy": 106,
+        "w": 60,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 104,
+        "w": 69,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 102,
+        "w": 68,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_05.png",
+        "i": 5,
+        "ox": 34,
+        "oy": 103,
+        "w": 69,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_06.png",
+        "i": 6,
+        "ox": 39,
+        "oy": 103,
+        "w": 78,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_07.png",
+        "i": 7,
+        "ox": 39,
+        "oy": 105,
+        "w": 78,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_08.png",
+        "i": 8,
+        "ox": 35,
+        "oy": 104,
+        "w": 70,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/idle_09.png",
+        "i": 9,
+        "ox": 37,
+        "oy": 106,
+        "w": 73,
+        "h": 112
+      }
+    ],
+    "walk": [
+      {
+        "file": "/mugen/frames/zilla/walk_00.png",
+        "i": 0,
+        "ox": 36,
+        "oy": 106,
+        "w": 72,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_01.png",
+        "i": 1,
+        "ox": 33,
+        "oy": 102,
+        "w": 67,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_02.png",
+        "i": 2,
+        "ox": 34,
+        "oy": 102,
+        "w": 69,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_03.png",
+        "i": 3,
+        "ox": 32,
+        "oy": 102,
+        "w": 65,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_04.png",
+        "i": 4,
+        "ox": 46,
+        "oy": 101,
+        "w": 92,
+        "h": 106
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 106,
+        "w": 72,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_06.png",
+        "i": 6,
+        "ox": 33,
+        "oy": 102,
+        "w": 67,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/walk_07.png",
+        "i": 7,
+        "ox": 34,
+        "oy": 102,
+        "w": 69,
+        "h": 107
+      }
+    ],
+    "run": [
+      {
+        "file": "/mugen/frames/zilla/run_00.png",
+        "i": 0,
+        "ox": 27,
+        "oy": 80,
+        "w": 55,
+        "h": 86
+      },
+      {
+        "file": "/mugen/frames/zilla/run_01.png",
+        "i": 1,
+        "ox": 35,
+        "oy": 96,
+        "w": 71,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/run_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 96,
+        "w": 77,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/run_03.png",
+        "i": 3,
+        "ox": 36,
+        "oy": 96,
+        "w": 72,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/run_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 98,
+        "w": 69,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/zilla/run_05.png",
+        "i": 5,
+        "ox": 41,
+        "oy": 75,
+        "w": 83,
+        "h": 81
+      },
+      {
+        "file": "/mugen/frames/zilla/run_06.png",
+        "i": 6,
+        "ox": 55,
+        "oy": 102,
+        "w": 111,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/run_07.png",
+        "i": 7,
+        "ox": 86,
+        "oy": 96,
+        "w": 171,
+        "h": 102
+      }
+    ],
+    "dash": [
+      {
+        "file": "/mugen/frames/zilla/dash_00.png",
+        "i": 0,
+        "ox": 27,
+        "oy": 80,
+        "w": 55,
+        "h": 86
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_01.png",
+        "i": 1,
+        "ox": 35,
+        "oy": 96,
+        "w": 71,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 96,
+        "w": 77,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_03.png",
+        "i": 3,
+        "ox": 36,
+        "oy": 96,
+        "w": 72,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 98,
+        "w": 69,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_05.png",
+        "i": 5,
+        "ox": 41,
+        "oy": 75,
+        "w": 83,
+        "h": 81
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_06.png",
+        "i": 6,
+        "ox": 55,
+        "oy": 102,
+        "w": 111,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/dash_07.png",
+        "i": 7,
+        "ox": 86,
+        "oy": 96,
+        "w": 171,
+        "h": 102
+      }
+    ],
+    "backdash": [
+      {
+        "file": "/mugen/frames/zilla/backdash_00.png",
+        "i": 0,
+        "ox": 36,
+        "oy": 106,
+        "w": 72,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/backdash_01.png",
+        "i": 1,
+        "ox": 33,
+        "oy": 102,
+        "w": 67,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/backdash_02.png",
+        "i": 2,
+        "ox": 34,
+        "oy": 102,
+        "w": 69,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/zilla/backdash_03.png",
+        "i": 3,
+        "ox": 32,
+        "oy": 102,
+        "w": 65,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/backdash_04.png",
+        "i": 4,
+        "ox": 46,
+        "oy": 101,
+        "w": 92,
+        "h": 106
+      },
+      {
+        "file": "/mugen/frames/zilla/backdash_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 106,
+        "w": 72,
+        "h": 112
+      }
+    ],
+    "crouch": [
+      {
+        "file": "/mugen/frames/zilla/crouch_00.png",
+        "i": 0,
+        "ox": 42,
+        "oy": 79,
+        "w": 85,
+        "h": 85
+      },
+      {
+        "file": "/mugen/frames/zilla/crouch_01.png",
+        "i": 1,
+        "ox": 45,
+        "oy": 86,
+        "w": 91,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/zilla/crouch_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 92,
+        "w": 85,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/zilla/crouch_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 104,
+        "w": 69,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/crouch_04.png",
+        "i": 4,
+        "ox": 32,
+        "oy": 102,
+        "w": 65,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/zilla/crouch_05.png",
+        "i": 5,
+        "ox": 37,
+        "oy": 94,
+        "w": 74,
+        "h": 100
+      }
+    ],
+    "crouchWalk": [
+      {
+        "file": "/mugen/frames/zilla/crouchWalk_00.png",
+        "i": 0,
+        "ox": 37,
+        "oy": 91,
+        "w": 73,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/zilla/crouchWalk_01.png",
+        "i": 1,
+        "ox": 50,
+        "oy": 79,
+        "w": 100,
+        "h": 85
+      },
+      {
+        "file": "/mugen/frames/zilla/crouchWalk_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 91,
+        "w": 73,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/zilla/crouchWalk_03.png",
+        "i": 3,
+        "ox": 50,
+        "oy": 79,
+        "w": 100,
+        "h": 85
+      }
+    ],
+    "jumpStart": [
+      {
+        "file": "/mugen/frames/zilla/jumpStart_00.png",
+        "i": 0,
+        "ox": 37,
+        "oy": 91,
+        "w": 73,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpStart_01.png",
+        "i": 1,
+        "ox": 50,
+        "oy": 79,
+        "w": 100,
+        "h": 85
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpStart_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 91,
+        "w": 73,
+        "h": 97
+      }
+    ],
+    "jumpLoop": [
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_00.png",
+        "i": 0,
+        "ox": 19,
+        "oy": 104,
+        "w": 39,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_01.png",
+        "i": 1,
+        "ox": 38,
+        "oy": 108,
+        "w": 75,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 110,
+        "w": 79,
+        "h": 116
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_03.png",
+        "i": 3,
+        "ox": 40,
+        "oy": 111,
+        "w": 81,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_04.png",
+        "i": 4,
+        "ox": 21,
+        "oy": 109,
+        "w": 42,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_05.png",
+        "i": 5,
+        "ox": 40,
+        "oy": 110,
+        "w": 81,
+        "h": 116
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_06.png",
+        "i": 6,
+        "ox": 42,
+        "oy": 107,
+        "w": 86,
+        "h": 113
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLoop_07.png",
+        "i": 7,
+        "ox": 42,
+        "oy": 108,
+        "w": 86,
+        "h": 114
+      }
+    ],
+    "jumpLand": [
+      {
+        "file": "/mugen/frames/zilla/jumpLand_00.png",
+        "i": 0,
+        "ox": 44,
+        "oy": 108,
+        "w": 88,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLand_01.png",
+        "i": 1,
+        "ox": 43,
+        "oy": 120,
+        "w": 87,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLand_02.png",
+        "i": 2,
+        "ox": 48,
+        "oy": 115,
+        "w": 96,
+        "h": 120
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLand_03.png",
+        "i": 3,
+        "ox": 35,
+        "oy": 115,
+        "w": 71,
+        "h": 120
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLand_04.png",
+        "i": 4,
+        "ox": 31,
+        "oy": 107,
+        "w": 62,
+        "h": 113
+      },
+      {
+        "file": "/mugen/frames/zilla/jumpLand_05.png",
+        "i": 5,
+        "ox": 54,
+        "oy": 112,
+        "w": 108,
+        "h": 118
+      }
+    ],
+    "getUp": [
+      {
+        "file": "/mugen/frames/zilla/getUp_00.png",
+        "i": 0,
+        "ox": 37,
+        "oy": 106,
+        "w": 74,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/getUp_01.png",
+        "i": 1,
+        "ox": 31,
+        "oy": 102,
+        "w": 63,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/getUp_02.png",
+        "i": 2,
+        "ox": 34,
+        "oy": 105,
+        "w": 68,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/zilla/getUp_03.png",
+        "i": 3,
+        "ox": 33,
+        "oy": 114,
+        "w": 67,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/zilla/getUp_04.png",
+        "i": 4,
+        "ox": 35,
+        "oy": 111,
+        "w": 71,
+        "h": 117
+      }
+    ],
+    "block": [
+      {
+        "file": "/mugen/frames/zilla/block_00.png",
+        "i": 0,
+        "ox": 29,
+        "oy": 106,
+        "w": 58,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/block_01.png",
+        "i": 1,
+        "ox": 30,
+        "oy": 102,
+        "w": 61,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/block_02.png",
+        "i": 2,
+        "ox": 30,
+        "oy": 106,
+        "w": 60,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/block_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 104,
+        "w": 69,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/block_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 102,
+        "w": 68,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/block_05.png",
+        "i": 5,
+        "ox": 34,
+        "oy": 103,
+        "w": 69,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/zilla/block_06.png",
+        "i": 6,
+        "ox": 39,
+        "oy": 103,
+        "w": 78,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/zilla/block_07.png",
+        "i": 7,
+        "ox": 39,
+        "oy": 105,
+        "w": 78,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/zilla/block_08.png",
+        "i": 8,
+        "ox": 35,
+        "oy": 104,
+        "w": 70,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/block_09.png",
+        "i": 9,
+        "ox": 37,
+        "oy": 106,
+        "w": 73,
+        "h": 112
+      }
+    ],
+    "hit": [
+      {
+        "file": "/mugen/frames/zilla/hit_00.png",
+        "i": 0,
+        "ox": 29,
+        "oy": 106,
+        "w": 58,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_01.png",
+        "i": 1,
+        "ox": 30,
+        "oy": 102,
+        "w": 61,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_02.png",
+        "i": 2,
+        "ox": 30,
+        "oy": 106,
+        "w": 60,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 104,
+        "w": 69,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 102,
+        "w": 68,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_05.png",
+        "i": 5,
+        "ox": 34,
+        "oy": 103,
+        "w": 69,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_06.png",
+        "i": 6,
+        "ox": 39,
+        "oy": 103,
+        "w": 78,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_07.png",
+        "i": 7,
+        "ox": 39,
+        "oy": 105,
+        "w": 78,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_08.png",
+        "i": 8,
+        "ox": 35,
+        "oy": 104,
+        "w": 70,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/hit_09.png",
+        "i": 9,
+        "ox": 37,
+        "oy": 106,
+        "w": 73,
+        "h": 112
+      }
+    ],
+    "knockdown": [
+      {
+        "file": "/mugen/frames/zilla/knockdown_00.png",
+        "i": 0,
+        "ox": 42,
+        "oy": 79,
+        "w": 85,
+        "h": 85
+      },
+      {
+        "file": "/mugen/frames/zilla/knockdown_01.png",
+        "i": 1,
+        "ox": 45,
+        "oy": 86,
+        "w": 91,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/zilla/knockdown_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 92,
+        "w": 85,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/zilla/knockdown_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 104,
+        "w": 69,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/knockdown_04.png",
+        "i": 4,
+        "ox": 32,
+        "oy": 102,
+        "w": 65,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/zilla/knockdown_05.png",
+        "i": 5,
+        "ox": 37,
+        "oy": 94,
+        "w": 74,
+        "h": 100
+      }
+    ],
+    "lightJab": [
+      {
+        "file": "/mugen/frames/zilla/lightJab_00.png",
+        "i": 0,
+        "ox": 32,
+        "oy": 128,
+        "w": 65,
+        "h": 134
+      },
+      {
+        "file": "/mugen/frames/zilla/lightJab_01.png",
+        "i": 1,
+        "ox": 51,
+        "oy": 131,
+        "w": 102,
+        "h": 136
+      },
+      {
+        "file": "/mugen/frames/zilla/lightJab_02.png",
+        "i": 2,
+        "ox": 53,
+        "oy": 135,
+        "w": 105,
+        "h": 141
+      },
+      {
+        "file": "/mugen/frames/zilla/lightJab_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 139,
+        "w": 69,
+        "h": 145
+      },
+      {
+        "file": "/mugen/frames/zilla/lightJab_04.png",
+        "i": 4,
+        "ox": 50,
+        "oy": 148,
+        "w": 100,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/lightJab_05.png",
+        "i": 5,
+        "ox": 44,
+        "oy": 148,
+        "w": 89,
+        "h": 153
+      }
+    ],
+    "heavySwing": [
+      {
+        "file": "/mugen/frames/zilla/heavySwing_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 139,
+        "w": 107,
+        "h": 145
+      },
+      {
+        "file": "/mugen/frames/zilla/heavySwing_01.png",
+        "i": 1,
+        "ox": 54,
+        "oy": 133,
+        "w": 108,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/heavySwing_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 133,
+        "w": 112,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/heavySwing_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 148,
+        "w": 112,
+        "h": 153
+      }
+    ],
+    "kick": [
+      {
+        "file": "/mugen/frames/zilla/kick_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 133,
+        "w": 108,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_01.png",
+        "i": 1,
+        "ox": 55,
+        "oy": 133,
+        "w": 112,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 148,
+        "w": 112,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_03.png",
+        "i": 3,
+        "ox": 57,
+        "oy": 148,
+        "w": 115,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_04.png",
+        "i": 4,
+        "ox": 58,
+        "oy": 148,
+        "w": 118,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_05.png",
+        "i": 5,
+        "ox": 61,
+        "oy": 148,
+        "w": 122,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_06.png",
+        "i": 6,
+        "ox": 73,
+        "oy": 148,
+        "w": 148,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/kick_07.png",
+        "i": 7,
+        "ox": 44,
+        "oy": 132,
+        "w": 89,
+        "h": 137
+      }
+    ],
+    "airAttack": [
+      {
+        "file": "/mugen/frames/zilla/airAttack_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 133,
+        "w": 108,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_01.png",
+        "i": 1,
+        "ox": 55,
+        "oy": 133,
+        "w": 112,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 148,
+        "w": 112,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_03.png",
+        "i": 3,
+        "ox": 57,
+        "oy": 148,
+        "w": 115,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_04.png",
+        "i": 4,
+        "ox": 58,
+        "oy": 148,
+        "w": 118,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_05.png",
+        "i": 5,
+        "ox": 61,
+        "oy": 148,
+        "w": 122,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_06.png",
+        "i": 6,
+        "ox": 73,
+        "oy": 148,
+        "w": 148,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/airAttack_07.png",
+        "i": 7,
+        "ox": 44,
+        "oy": 132,
+        "w": 89,
+        "h": 137
+      }
+    ],
+    "leanSplash": [
+      {
+        "file": "/mugen/frames/zilla/leanSplash_00.png",
+        "i": 0,
+        "ox": 32,
+        "oy": 128,
+        "w": 65,
+        "h": 134
+      },
+      {
+        "file": "/mugen/frames/zilla/leanSplash_01.png",
+        "i": 1,
+        "ox": 51,
+        "oy": 131,
+        "w": 102,
+        "h": 136
+      },
+      {
+        "file": "/mugen/frames/zilla/leanSplash_02.png",
+        "i": 2,
+        "ox": 53,
+        "oy": 135,
+        "w": 105,
+        "h": 141
+      },
+      {
+        "file": "/mugen/frames/zilla/leanSplash_03.png",
+        "i": 3,
+        "ox": 34,
+        "oy": 139,
+        "w": 69,
+        "h": 145
+      },
+      {
+        "file": "/mugen/frames/zilla/leanSplash_04.png",
+        "i": 4,
+        "ox": 50,
+        "oy": 148,
+        "w": 100,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/leanSplash_05.png",
+        "i": 5,
+        "ox": 44,
+        "oy": 148,
+        "w": 89,
+        "h": 153
+      }
+    ],
+    "coinFlip": [
+      {
+        "file": "/mugen/frames/zilla/coinFlip_00.png",
+        "i": 0,
+        "ox": 19,
+        "oy": 104,
+        "w": 39,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/zilla/coinFlip_01.png",
+        "i": 1,
+        "ox": 38,
+        "oy": 108,
+        "w": 75,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/zilla/coinFlip_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 110,
+        "w": 79,
+        "h": 116
+      },
+      {
+        "file": "/mugen/frames/zilla/coinFlip_03.png",
+        "i": 3,
+        "ox": 21,
+        "oy": 109,
+        "w": 42,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/zilla/coinFlip_04.png",
+        "i": 4,
+        "ox": 35,
+        "oy": 115,
+        "w": 71,
+        "h": 120
+      },
+      {
+        "file": "/mugen/frames/zilla/coinFlip_05.png",
+        "i": 5,
+        "ox": 31,
+        "oy": 107,
+        "w": 62,
+        "h": 113
+      }
+    ],
+    "liquidityZone": [
+      {
+        "file": "/mugen/frames/zilla/liquidityZone_00.png",
+        "i": 0,
+        "ox": 40,
+        "oy": 111,
+        "w": 81,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/zilla/liquidityZone_01.png",
+        "i": 1,
+        "ox": 40,
+        "oy": 110,
+        "w": 81,
+        "h": 116
+      },
+      {
+        "file": "/mugen/frames/zilla/liquidityZone_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 107,
+        "w": 86,
+        "h": 113
+      },
+      {
+        "file": "/mugen/frames/zilla/liquidityZone_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 108,
+        "w": 86,
+        "h": 114
+      }
+    ],
+    "candleRush": [
+      {
+        "file": "/mugen/frames/zilla/candleRush_00.png",
+        "i": 0,
+        "ox": 27,
+        "oy": 80,
+        "w": 55,
+        "h": 86
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_01.png",
+        "i": 1,
+        "ox": 35,
+        "oy": 96,
+        "w": 71,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 96,
+        "w": 77,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_03.png",
+        "i": 3,
+        "ox": 36,
+        "oy": 96,
+        "w": 72,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 98,
+        "w": 69,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_05.png",
+        "i": 5,
+        "ox": 41,
+        "oy": 75,
+        "w": 83,
+        "h": 81
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_06.png",
+        "i": 6,
+        "ox": 55,
+        "oy": 102,
+        "w": 111,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/candleRush_07.png",
+        "i": 7,
+        "ox": 86,
+        "oy": 96,
+        "w": 171,
+        "h": 102
+      }
+    ],
+    "uppercut": [
+      {
+        "file": "/mugen/frames/zilla/uppercut_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 133,
+        "w": 108,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_01.png",
+        "i": 1,
+        "ox": 55,
+        "oy": 133,
+        "w": 112,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 148,
+        "w": 112,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_03.png",
+        "i": 3,
+        "ox": 57,
+        "oy": 148,
+        "w": 115,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_04.png",
+        "i": 4,
+        "ox": 58,
+        "oy": 148,
+        "w": 118,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_05.png",
+        "i": 5,
+        "ox": 61,
+        "oy": 148,
+        "w": 122,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_06.png",
+        "i": 6,
+        "ox": 73,
+        "oy": 148,
+        "w": 148,
+        "h": 153
+      },
+      {
+        "file": "/mugen/frames/zilla/uppercut_07.png",
+        "i": 7,
+        "ox": 44,
+        "oy": 132,
+        "w": 89,
+        "h": 137
+      }
+    ],
+    "chartBreaker": [
+      {
+        "file": "/mugen/frames/zilla/chartBreaker_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 139,
+        "w": 107,
+        "h": 145
+      },
+      {
+        "file": "/mugen/frames/zilla/chartBreaker_01.png",
+        "i": 1,
+        "ox": 54,
+        "oy": 133,
+        "w": 108,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/chartBreaker_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 133,
+        "w": 112,
+        "h": 138
+      },
+      {
+        "file": "/mugen/frames/zilla/chartBreaker_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 148,
+        "w": 112,
+        "h": 153
+      }
+    ],
+    "overdrive": [
+      {
+        "file": "/mugen/frames/zilla/overdrive_00.png",
+        "i": 0,
+        "ox": 40,
+        "oy": 111,
+        "w": 81,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/zilla/overdrive_01.png",
+        "i": 1,
+        "ox": 40,
+        "oy": 110,
+        "w": 81,
+        "h": 116
+      },
+      {
+        "file": "/mugen/frames/zilla/overdrive_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 107,
+        "w": 86,
+        "h": 113
+      },
+      {
+        "file": "/mugen/frames/zilla/overdrive_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 108,
+        "w": 86,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/zilla/overdrive_04.png",
+        "i": 4,
+        "ox": 40,
+        "oy": 111,
+        "w": 81,
+        "h": 117
+      }
+    ],
+    "supreme": [
+      {
+        "file": "/mugen/frames/zilla/supreme_00.png",
+        "i": 0,
+        "ox": 40,
+        "oy": 111,
+        "w": 81,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/zilla/supreme_01.png",
+        "i": 1,
+        "ox": 40,
+        "oy": 110,
+        "w": 81,
+        "h": 116
+      },
+      {
+        "file": "/mugen/frames/zilla/supreme_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 107,
+        "w": 86,
+        "h": 113
+      },
+      {
+        "file": "/mugen/frames/zilla/supreme_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 108,
+        "w": 86,
+        "h": 114
+      }
+    ],
+    "taunt": [
+      {
+        "file": "/mugen/frames/zilla/taunt_00.png",
+        "i": 0,
+        "ox": 29,
+        "oy": 106,
+        "w": 58,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/zilla/taunt_01.png",
+        "i": 1,
+        "ox": 30,
+        "oy": 102,
+        "w": 61,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/zilla/taunt_02.png",
+        "i": 2,
+        "ox": 30,
+        "oy": 106,
+        "w": 60,
+        "h": 112
+      }
+    ]
+  },
+  "canvas": {
+    "w": 72,
+    "h": 112,
+    "ox": 36,
+    "oy": 108
+  }
+}

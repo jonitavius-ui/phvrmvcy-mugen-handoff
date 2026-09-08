@@ -1,0 +1,1393 @@
+{
+  "id": "ikedawg",
+  "anims": {
+    "idle": [
+      {
+        "file": "/mugen/frames/ikedawg/idle_00.png",
+        "i": 0,
+        "ox": 32,
+        "oy": 105,
+        "w": 64,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_01.png",
+        "i": 1,
+        "ox": 27,
+        "oy": 105,
+        "w": 55,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_02.png",
+        "i": 2,
+        "ox": 28,
+        "oy": 104,
+        "w": 56,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_03.png",
+        "i": 3,
+        "ox": 27,
+        "oy": 104,
+        "w": 55,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_04.png",
+        "i": 4,
+        "ox": 26,
+        "oy": 104,
+        "w": 53,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_05.png",
+        "i": 5,
+        "ox": 27,
+        "oy": 102,
+        "w": 55,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_06.png",
+        "i": 6,
+        "ox": 31,
+        "oy": 102,
+        "w": 63,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_07.png",
+        "i": 7,
+        "ox": 29,
+        "oy": 103,
+        "w": 59,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_08.png",
+        "i": 8,
+        "ox": 31,
+        "oy": 102,
+        "w": 63,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/ikedawg/idle_09.png",
+        "i": 9,
+        "ox": 32,
+        "oy": 105,
+        "w": 65,
+        "h": 111
+      }
+    ],
+    "walk": [
+      {
+        "file": "/mugen/frames/ikedawg/walk_00.png",
+        "i": 0,
+        "ox": 32,
+        "oy": 105,
+        "w": 64,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_01.png",
+        "i": 1,
+        "ox": 31,
+        "oy": 105,
+        "w": 62,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_02.png",
+        "i": 2,
+        "ox": 31,
+        "oy": 105,
+        "w": 63,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_03.png",
+        "i": 3,
+        "ox": 31,
+        "oy": 105,
+        "w": 62,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_04.png",
+        "i": 4,
+        "ox": 38,
+        "oy": 108,
+        "w": 75,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_05.png",
+        "i": 5,
+        "ox": 37,
+        "oy": 108,
+        "w": 74,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_06.png",
+        "i": 6,
+        "ox": 39,
+        "oy": 108,
+        "w": 77,
+        "h": 114
+      },
+      {
+        "file": "/mugen/frames/ikedawg/walk_07.png",
+        "i": 7,
+        "ox": 41,
+        "oy": 105,
+        "w": 83,
+        "h": 111
+      }
+    ],
+    "run": [
+      {
+        "file": "/mugen/frames/ikedawg/run_00.png",
+        "i": 0,
+        "ox": 34,
+        "oy": 90,
+        "w": 68,
+        "h": 96
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_01.png",
+        "i": 1,
+        "ox": 36,
+        "oy": 89,
+        "w": 71,
+        "h": 95
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_02.png",
+        "i": 2,
+        "ox": 31,
+        "oy": 88,
+        "w": 63,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_03.png",
+        "i": 3,
+        "ox": 35,
+        "oy": 91,
+        "w": 70,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_04.png",
+        "i": 4,
+        "ox": 37,
+        "oy": 88,
+        "w": 73,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_05.png",
+        "i": 5,
+        "ox": 33,
+        "oy": 86,
+        "w": 67,
+        "h": 91
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_06.png",
+        "i": 6,
+        "ox": 38,
+        "oy": 85,
+        "w": 75,
+        "h": 90
+      },
+      {
+        "file": "/mugen/frames/ikedawg/run_07.png",
+        "i": 7,
+        "ox": 36,
+        "oy": 72,
+        "w": 72,
+        "h": 78
+      }
+    ],
+    "dash": [
+      {
+        "file": "/mugen/frames/ikedawg/dash_00.png",
+        "i": 0,
+        "ox": 34,
+        "oy": 90,
+        "w": 68,
+        "h": 96
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_01.png",
+        "i": 1,
+        "ox": 36,
+        "oy": 89,
+        "w": 71,
+        "h": 95
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_02.png",
+        "i": 2,
+        "ox": 31,
+        "oy": 88,
+        "w": 63,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_03.png",
+        "i": 3,
+        "ox": 35,
+        "oy": 91,
+        "w": 70,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_04.png",
+        "i": 4,
+        "ox": 37,
+        "oy": 88,
+        "w": 73,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_05.png",
+        "i": 5,
+        "ox": 33,
+        "oy": 86,
+        "w": 67,
+        "h": 91
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_06.png",
+        "i": 6,
+        "ox": 38,
+        "oy": 85,
+        "w": 75,
+        "h": 90
+      },
+      {
+        "file": "/mugen/frames/ikedawg/dash_07.png",
+        "i": 7,
+        "ox": 36,
+        "oy": 72,
+        "w": 72,
+        "h": 78
+      }
+    ],
+    "backdash": [
+      {
+        "file": "/mugen/frames/ikedawg/backdash_00.png",
+        "i": 0,
+        "ox": 37,
+        "oy": 100,
+        "w": 73,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/ikedawg/backdash_01.png",
+        "i": 1,
+        "ox": 37,
+        "oy": 100,
+        "w": 73,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/ikedawg/backdash_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 100,
+        "w": 73,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/ikedawg/backdash_03.png",
+        "i": 3,
+        "ox": 37,
+        "oy": 100,
+        "w": 73,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/ikedawg/backdash_04.png",
+        "i": 4,
+        "ox": 37,
+        "oy": 100,
+        "w": 73,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/ikedawg/backdash_05.png",
+        "i": 5,
+        "ox": 37,
+        "oy": 100,
+        "w": 73,
+        "h": 105
+      }
+    ],
+    "crouch": [
+      {
+        "file": "/mugen/frames/ikedawg/crouch_00.png",
+        "i": 0,
+        "ox": 36,
+        "oy": 77,
+        "w": 71,
+        "h": 83
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouch_01.png",
+        "i": 1,
+        "ox": 27,
+        "oy": 75,
+        "w": 55,
+        "h": 81
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouch_02.png",
+        "i": 2,
+        "ox": 24,
+        "oy": 79,
+        "w": 50,
+        "h": 85
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouch_03.png",
+        "i": 3,
+        "ox": 27,
+        "oy": 78,
+        "w": 55,
+        "h": 84
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouch_04.png",
+        "i": 4,
+        "ox": 28,
+        "oy": 80,
+        "w": 57,
+        "h": 86
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouch_05.png",
+        "i": 5,
+        "ox": 40,
+        "oy": 94,
+        "w": 82,
+        "h": 100
+      }
+    ],
+    "crouchWalk": [
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_00.png",
+        "i": 0,
+        "ox": 42,
+        "oy": 95,
+        "w": 86,
+        "h": 101
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_01.png",
+        "i": 1,
+        "ox": 43,
+        "oy": 95,
+        "w": 86,
+        "h": 101
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_02.png",
+        "i": 2,
+        "ox": 45,
+        "oy": 95,
+        "w": 90,
+        "h": 101
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_03.png",
+        "i": 3,
+        "ox": 41,
+        "oy": 94,
+        "w": 84,
+        "h": 100
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_04.png",
+        "i": 4,
+        "ox": 41,
+        "oy": 94,
+        "w": 84,
+        "h": 100
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 94,
+        "w": 72,
+        "h": 100
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_06.png",
+        "i": 6,
+        "ox": 36,
+        "oy": 94,
+        "w": 72,
+        "h": 100
+      },
+      {
+        "file": "/mugen/frames/ikedawg/crouchWalk_07.png",
+        "i": 7,
+        "ox": 39,
+        "oy": 94,
+        "w": 77,
+        "h": 100
+      }
+    ],
+    "jumpStart": [
+      {
+        "file": "/mugen/frames/ikedawg/jumpStart_00.png",
+        "i": 0,
+        "ox": 42,
+        "oy": 95,
+        "w": 86,
+        "h": 101
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpStart_01.png",
+        "i": 1,
+        "ox": 43,
+        "oy": 95,
+        "w": 86,
+        "h": 101
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpStart_02.png",
+        "i": 2,
+        "ox": 45,
+        "oy": 95,
+        "w": 90,
+        "h": 101
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpStart_03.png",
+        "i": 3,
+        "ox": 41,
+        "oy": 94,
+        "w": 84,
+        "h": 100
+      }
+    ],
+    "jumpLoop": [
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_00.png",
+        "i": 0,
+        "ox": 35,
+        "oy": 92,
+        "w": 71,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_01.png",
+        "i": 1,
+        "ox": 38,
+        "oy": 92,
+        "w": 75,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 91,
+        "w": 74,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_03.png",
+        "i": 3,
+        "ox": 39,
+        "oy": 92,
+        "w": 77,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_04.png",
+        "i": 4,
+        "ox": 36,
+        "oy": 88,
+        "w": 71,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_05.png",
+        "i": 5,
+        "ox": 39,
+        "oy": 84,
+        "w": 80,
+        "h": 89
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_06.png",
+        "i": 6,
+        "ox": 47,
+        "oy": 83,
+        "w": 94,
+        "h": 88
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLoop_07.png",
+        "i": 7,
+        "ox": 39,
+        "oy": 86,
+        "w": 79,
+        "h": 91
+      }
+    ],
+    "jumpLand": [
+      {
+        "file": "/mugen/frames/ikedawg/jumpLand_00.png",
+        "i": 0,
+        "ox": 40,
+        "oy": 86,
+        "w": 81,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLand_01.png",
+        "i": 1,
+        "ox": 39,
+        "oy": 86,
+        "w": 80,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLand_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 86,
+        "w": 85,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLand_03.png",
+        "i": 3,
+        "ox": 43,
+        "oy": 85,
+        "w": 87,
+        "h": 90
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLand_04.png",
+        "i": 4,
+        "ox": 32,
+        "oy": 86,
+        "w": 65,
+        "h": 91
+      },
+      {
+        "file": "/mugen/frames/ikedawg/jumpLand_05.png",
+        "i": 5,
+        "ox": 40,
+        "oy": 86,
+        "w": 82,
+        "h": 92
+      }
+    ],
+    "getUp": [
+      {
+        "file": "/mugen/frames/ikedawg/getUp_00.png",
+        "i": 0,
+        "ox": 34,
+        "oy": 87,
+        "w": 68,
+        "h": 93
+      },
+      {
+        "file": "/mugen/frames/ikedawg/getUp_01.png",
+        "i": 1,
+        "ox": 76,
+        "oy": 79,
+        "w": 153,
+        "h": 85
+      },
+      {
+        "file": "/mugen/frames/ikedawg/getUp_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 68,
+        "w": 73,
+        "h": 73
+      },
+      {
+        "file": "/mugen/frames/ikedawg/getUp_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 77,
+        "w": 85,
+        "h": 83
+      },
+      {
+        "file": "/mugen/frames/ikedawg/getUp_04.png",
+        "i": 4,
+        "ox": 33,
+        "oy": 67,
+        "w": 66,
+        "h": 72
+      },
+      {
+        "file": "/mugen/frames/ikedawg/getUp_05.png",
+        "i": 5,
+        "ox": 35,
+        "oy": 79,
+        "w": 71,
+        "h": 85
+      }
+    ],
+    "block": [
+      {
+        "file": "/mugen/frames/ikedawg/block_00.png",
+        "i": 0,
+        "ox": 33,
+        "oy": 112,
+        "w": 67,
+        "h": 118
+      },
+      {
+        "file": "/mugen/frames/ikedawg/block_01.png",
+        "i": 1,
+        "ox": 70,
+        "oy": 104,
+        "w": 140,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/ikedawg/block_02.png",
+        "i": 2,
+        "ox": 53,
+        "oy": 102,
+        "w": 106,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/ikedawg/block_03.png",
+        "i": 3,
+        "ox": 39,
+        "oy": 101,
+        "w": 79,
+        "h": 106
+      }
+    ],
+    "hit": [
+      {
+        "file": "/mugen/frames/ikedawg/hit_00.png",
+        "i": 0,
+        "ox": 38,
+        "oy": 97,
+        "w": 75,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/ikedawg/hit_01.png",
+        "i": 1,
+        "ox": 39,
+        "oy": 111,
+        "w": 80,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/ikedawg/hit_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 111,
+        "w": 86,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/ikedawg/hit_03.png",
+        "i": 3,
+        "ox": 35,
+        "oy": 94,
+        "w": 70,
+        "h": 100
+      }
+    ],
+    "knockdown": [
+      {
+        "file": "/mugen/frames/ikedawg/knockdown_00.png",
+        "i": 0,
+        "ox": 34,
+        "oy": 111,
+        "w": 68,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/ikedawg/knockdown_01.png",
+        "i": 1,
+        "ox": 27,
+        "oy": 111,
+        "w": 55,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/ikedawg/knockdown_02.png",
+        "i": 2,
+        "ox": 34,
+        "oy": 97,
+        "w": 68,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/ikedawg/knockdown_03.png",
+        "i": 3,
+        "ox": 27,
+        "oy": 90,
+        "w": 55,
+        "h": 96
+      },
+      {
+        "file": "/mugen/frames/ikedawg/knockdown_04.png",
+        "i": 4,
+        "ox": 27,
+        "oy": 104,
+        "w": 55,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/ikedawg/knockdown_05.png",
+        "i": 5,
+        "ox": 28,
+        "oy": 109,
+        "w": 56,
+        "h": 115
+      }
+    ],
+    "lightJab": [
+      {
+        "file": "/mugen/frames/ikedawg/lightJab_00.png",
+        "i": 0,
+        "ox": 44,
+        "oy": 118,
+        "w": 89,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/lightJab_01.png",
+        "i": 1,
+        "ox": 51,
+        "oy": 118,
+        "w": 102,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/lightJab_02.png",
+        "i": 2,
+        "ox": 50,
+        "oy": 118,
+        "w": 101,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/lightJab_03.png",
+        "i": 3,
+        "ox": 52,
+        "oy": 118,
+        "w": 103,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/lightJab_04.png",
+        "i": 4,
+        "ox": 50,
+        "oy": 118,
+        "w": 100,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/lightJab_05.png",
+        "i": 5,
+        "ox": 53,
+        "oy": 118,
+        "w": 105,
+        "h": 124
+      }
+    ],
+    "heavySwing": [
+      {
+        "file": "/mugen/frames/ikedawg/heavySwing_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 118,
+        "w": 107,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/heavySwing_01.png",
+        "i": 1,
+        "ox": 60,
+        "oy": 118,
+        "w": 120,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/heavySwing_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 118,
+        "w": 109,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/heavySwing_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      }
+    ],
+    "kick": [
+      {
+        "file": "/mugen/frames/ikedawg/kick_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 118,
+        "w": 107,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_01.png",
+        "i": 1,
+        "ox": 60,
+        "oy": 118,
+        "w": 120,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 118,
+        "w": 109,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_04.png",
+        "i": 4,
+        "ox": 57,
+        "oy": 118,
+        "w": 116,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_05.png",
+        "i": 5,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_06.png",
+        "i": 6,
+        "ox": 90,
+        "oy": 118,
+        "w": 181,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/kick_07.png",
+        "i": 7,
+        "ox": 55,
+        "oy": 105,
+        "w": 111,
+        "h": 111
+      }
+    ],
+    "airAttack": [
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 118,
+        "w": 107,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_01.png",
+        "i": 1,
+        "ox": 60,
+        "oy": 118,
+        "w": 120,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 118,
+        "w": 109,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_04.png",
+        "i": 4,
+        "ox": 57,
+        "oy": 118,
+        "w": 116,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_05.png",
+        "i": 5,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_06.png",
+        "i": 6,
+        "ox": 90,
+        "oy": 118,
+        "w": 181,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/airAttack_07.png",
+        "i": 7,
+        "ox": 55,
+        "oy": 105,
+        "w": 111,
+        "h": 111
+      }
+    ],
+    "leanSplash": [
+      {
+        "file": "/mugen/frames/ikedawg/leanSplash_00.png",
+        "i": 0,
+        "ox": 44,
+        "oy": 118,
+        "w": 89,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/leanSplash_01.png",
+        "i": 1,
+        "ox": 51,
+        "oy": 118,
+        "w": 102,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/leanSplash_02.png",
+        "i": 2,
+        "ox": 50,
+        "oy": 118,
+        "w": 101,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/leanSplash_03.png",
+        "i": 3,
+        "ox": 52,
+        "oy": 118,
+        "w": 103,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/leanSplash_04.png",
+        "i": 4,
+        "ox": 50,
+        "oy": 118,
+        "w": 100,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/leanSplash_05.png",
+        "i": 5,
+        "ox": 53,
+        "oy": 118,
+        "w": 105,
+        "h": 124
+      }
+    ],
+    "coinFlip": [
+      {
+        "file": "/mugen/frames/ikedawg/coinFlip_00.png",
+        "i": 0,
+        "ox": 35,
+        "oy": 92,
+        "w": 71,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/ikedawg/coinFlip_01.png",
+        "i": 1,
+        "ox": 38,
+        "oy": 92,
+        "w": 75,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/ikedawg/coinFlip_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 91,
+        "w": 74,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/ikedawg/coinFlip_03.png",
+        "i": 3,
+        "ox": 39,
+        "oy": 92,
+        "w": 77,
+        "h": 98
+      },
+      {
+        "file": "/mugen/frames/ikedawg/coinFlip_04.png",
+        "i": 4,
+        "ox": 36,
+        "oy": 88,
+        "w": 71,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/coinFlip_05.png",
+        "i": 5,
+        "ox": 39,
+        "oy": 86,
+        "w": 79,
+        "h": 91
+      }
+    ],
+    "liquidityZone": [
+      {
+        "file": "/mugen/frames/ikedawg/liquidityZone_00.png",
+        "i": 0,
+        "ox": 39,
+        "oy": 84,
+        "w": 80,
+        "h": 89
+      },
+      {
+        "file": "/mugen/frames/ikedawg/liquidityZone_01.png",
+        "i": 1,
+        "ox": 47,
+        "oy": 83,
+        "w": 94,
+        "h": 88
+      },
+      {
+        "file": "/mugen/frames/ikedawg/liquidityZone_02.png",
+        "i": 2,
+        "ox": 40,
+        "oy": 86,
+        "w": 81,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/liquidityZone_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 86,
+        "w": 85,
+        "h": 92
+      }
+    ],
+    "candleRush": [
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_00.png",
+        "i": 0,
+        "ox": 34,
+        "oy": 90,
+        "w": 68,
+        "h": 96
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_01.png",
+        "i": 1,
+        "ox": 36,
+        "oy": 89,
+        "w": 71,
+        "h": 95
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_02.png",
+        "i": 2,
+        "ox": 31,
+        "oy": 88,
+        "w": 63,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_03.png",
+        "i": 3,
+        "ox": 35,
+        "oy": 91,
+        "w": 70,
+        "h": 97
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_04.png",
+        "i": 4,
+        "ox": 37,
+        "oy": 88,
+        "w": 73,
+        "h": 94
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_05.png",
+        "i": 5,
+        "ox": 33,
+        "oy": 86,
+        "w": 67,
+        "h": 91
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_06.png",
+        "i": 6,
+        "ox": 38,
+        "oy": 85,
+        "w": 75,
+        "h": 90
+      },
+      {
+        "file": "/mugen/frames/ikedawg/candleRush_07.png",
+        "i": 7,
+        "ox": 36,
+        "oy": 72,
+        "w": 72,
+        "h": 78
+      }
+    ],
+    "uppercut": [
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 118,
+        "w": 107,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_01.png",
+        "i": 1,
+        "ox": 60,
+        "oy": 118,
+        "w": 120,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 118,
+        "w": 109,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_04.png",
+        "i": 4,
+        "ox": 57,
+        "oy": 118,
+        "w": 116,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_05.png",
+        "i": 5,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_06.png",
+        "i": 6,
+        "ox": 90,
+        "oy": 118,
+        "w": 181,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/uppercut_07.png",
+        "i": 7,
+        "ox": 55,
+        "oy": 105,
+        "w": 111,
+        "h": 111
+      }
+    ],
+    "chartBreaker": [
+      {
+        "file": "/mugen/frames/ikedawg/chartBreaker_00.png",
+        "i": 0,
+        "ox": 54,
+        "oy": 118,
+        "w": 107,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/chartBreaker_01.png",
+        "i": 1,
+        "ox": 60,
+        "oy": 118,
+        "w": 120,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/chartBreaker_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 118,
+        "w": 109,
+        "h": 124
+      },
+      {
+        "file": "/mugen/frames/ikedawg/chartBreaker_03.png",
+        "i": 3,
+        "ox": 55,
+        "oy": 118,
+        "w": 111,
+        "h": 124
+      }
+    ],
+    "overdrive": [
+      {
+        "file": "/mugen/frames/ikedawg/overdrive_00.png",
+        "i": 0,
+        "ox": 39,
+        "oy": 84,
+        "w": 80,
+        "h": 89
+      },
+      {
+        "file": "/mugen/frames/ikedawg/overdrive_01.png",
+        "i": 1,
+        "ox": 47,
+        "oy": 83,
+        "w": 94,
+        "h": 88
+      },
+      {
+        "file": "/mugen/frames/ikedawg/overdrive_02.png",
+        "i": 2,
+        "ox": 40,
+        "oy": 86,
+        "w": 81,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/overdrive_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 86,
+        "w": 85,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/overdrive_04.png",
+        "i": 4,
+        "ox": 39,
+        "oy": 84,
+        "w": 80,
+        "h": 89
+      }
+    ],
+    "supreme": [
+      {
+        "file": "/mugen/frames/ikedawg/supreme_00.png",
+        "i": 0,
+        "ox": 39,
+        "oy": 84,
+        "w": 80,
+        "h": 89
+      },
+      {
+        "file": "/mugen/frames/ikedawg/supreme_01.png",
+        "i": 1,
+        "ox": 47,
+        "oy": 83,
+        "w": 94,
+        "h": 88
+      },
+      {
+        "file": "/mugen/frames/ikedawg/supreme_02.png",
+        "i": 2,
+        "ox": 40,
+        "oy": 86,
+        "w": 81,
+        "h": 92
+      },
+      {
+        "file": "/mugen/frames/ikedawg/supreme_03.png",
+        "i": 3,
+        "ox": 42,
+        "oy": 86,
+        "w": 85,
+        "h": 92
+      }
+    ],
+    "taunt": [
+      {
+        "file": "/mugen/frames/ikedawg/taunt_00.png",
+        "i": 0,
+        "ox": 32,
+        "oy": 105,
+        "w": 64,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/taunt_01.png",
+        "i": 1,
+        "ox": 27,
+        "oy": 105,
+        "w": 55,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/ikedawg/taunt_02.png",
+        "i": 2,
+        "ox": 28,
+        "oy": 104,
+        "w": 56,
+        "h": 110
+      }
+    ]
+  },
+  "canvas": {
+    "w": 72,
+    "h": 112,
+    "ox": 36,
+    "oy": 108
+  }
+}

@@ -1,0 +1,1369 @@
+{
+  "id": "nani",
+  "anims": {
+    "idle": [
+      {
+        "file": "/mugen/frames/nani/idle_00.png",
+        "i": 0,
+        "ox": 28,
+        "oy": 104,
+        "w": 56,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/idle_01.png",
+        "i": 1,
+        "ox": 30,
+        "oy": 103,
+        "w": 61,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/nani/idle_02.png",
+        "i": 2,
+        "ox": 30,
+        "oy": 102,
+        "w": 61,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/nani/idle_03.png",
+        "i": 3,
+        "ox": 29,
+        "oy": 101,
+        "w": 59,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/idle_04.png",
+        "i": 4,
+        "ox": 34,
+        "oy": 104,
+        "w": 69,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/idle_05.png",
+        "i": 5,
+        "ox": 29,
+        "oy": 104,
+        "w": 58,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/idle_06.png",
+        "i": 6,
+        "ox": 36,
+        "oy": 109,
+        "w": 72,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/nani/idle_07.png",
+        "i": 7,
+        "ox": 35,
+        "oy": 109,
+        "w": 70,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/nani/idle_08.png",
+        "i": 8,
+        "ox": 33,
+        "oy": 105,
+        "w": 67,
+        "h": 111
+      },
+      {
+        "file": "/mugen/frames/nani/idle_09.png",
+        "i": 9,
+        "ox": 33,
+        "oy": 104,
+        "w": 67,
+        "h": 110
+      }
+    ],
+    "walk": [
+      {
+        "file": "/mugen/frames/nani/walk_00.png",
+        "i": 0,
+        "ox": 32,
+        "oy": 104,
+        "w": 65,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/walk_01.png",
+        "i": 1,
+        "ox": 41,
+        "oy": 104,
+        "w": 82,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/walk_02.png",
+        "i": 2,
+        "ox": 43,
+        "oy": 103,
+        "w": 88,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/nani/walk_03.png",
+        "i": 3,
+        "ox": 43,
+        "oy": 111,
+        "w": 87,
+        "h": 117
+      },
+      {
+        "file": "/mugen/frames/nani/walk_04.png",
+        "i": 4,
+        "ox": 43,
+        "oy": 106,
+        "w": 88,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/nani/walk_05.png",
+        "i": 5,
+        "ox": 47,
+        "oy": 104,
+        "w": 96,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/walk_06.png",
+        "i": 6,
+        "ox": 48,
+        "oy": 103,
+        "w": 97,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/nani/walk_07.png",
+        "i": 7,
+        "ox": 49,
+        "oy": 102,
+        "w": 98,
+        "h": 108
+      }
+    ],
+    "run": [
+      {
+        "file": "/mugen/frames/nani/run_00.png",
+        "i": 0,
+        "ox": 33,
+        "oy": 109,
+        "w": 67,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/nani/run_01.png",
+        "i": 1,
+        "ox": 34,
+        "oy": 97,
+        "w": 69,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/run_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 98,
+        "w": 74,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/run_03.png",
+        "i": 3,
+        "ox": 38,
+        "oy": 99,
+        "w": 75,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/nani/run_04.png",
+        "i": 4,
+        "ox": 38,
+        "oy": 98,
+        "w": 75,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/run_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 97,
+        "w": 72,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/run_06.png",
+        "i": 6,
+        "ox": 40,
+        "oy": 98,
+        "w": 80,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/run_07.png",
+        "i": 7,
+        "ox": 40,
+        "oy": 102,
+        "w": 79,
+        "h": 108
+      }
+    ],
+    "dash": [
+      {
+        "file": "/mugen/frames/nani/dash_00.png",
+        "i": 0,
+        "ox": 33,
+        "oy": 109,
+        "w": 67,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/nani/dash_01.png",
+        "i": 1,
+        "ox": 34,
+        "oy": 97,
+        "w": 69,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/dash_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 98,
+        "w": 74,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/dash_03.png",
+        "i": 3,
+        "ox": 38,
+        "oy": 99,
+        "w": 75,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/nani/dash_04.png",
+        "i": 4,
+        "ox": 38,
+        "oy": 98,
+        "w": 75,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/dash_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 97,
+        "w": 72,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/dash_06.png",
+        "i": 6,
+        "ox": 40,
+        "oy": 98,
+        "w": 80,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/dash_07.png",
+        "i": 7,
+        "ox": 40,
+        "oy": 102,
+        "w": 79,
+        "h": 108
+      }
+    ],
+    "backdash": [
+      {
+        "file": "/mugen/frames/nani/backdash_00.png",
+        "i": 0,
+        "ox": 51,
+        "oy": 101,
+        "w": 102,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/backdash_01.png",
+        "i": 1,
+        "ox": 46,
+        "oy": 100,
+        "w": 94,
+        "h": 106
+      },
+      {
+        "file": "/mugen/frames/nani/backdash_02.png",
+        "i": 2,
+        "ox": 51,
+        "oy": 101,
+        "w": 102,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/backdash_03.png",
+        "i": 3,
+        "ox": 46,
+        "oy": 100,
+        "w": 94,
+        "h": 106
+      },
+      {
+        "file": "/mugen/frames/nani/backdash_04.png",
+        "i": 4,
+        "ox": 51,
+        "oy": 101,
+        "w": 102,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/backdash_05.png",
+        "i": 5,
+        "ox": 46,
+        "oy": 100,
+        "w": 94,
+        "h": 106
+      }
+    ],
+    "crouch": [
+      {
+        "file": "/mugen/frames/nani/crouch_00.png",
+        "i": 0,
+        "ox": 38,
+        "oy": 97,
+        "w": 75,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/crouch_01.png",
+        "i": 1,
+        "ox": 33,
+        "oy": 96,
+        "w": 66,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/crouch_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 100,
+        "w": 74,
+        "h": 106
+      },
+      {
+        "file": "/mugen/frames/nani/crouch_03.png",
+        "i": 3,
+        "ox": 37,
+        "oy": 98,
+        "w": 74,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/crouch_04.png",
+        "i": 4,
+        "ox": 36,
+        "oy": 97,
+        "w": 71,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/crouch_05.png",
+        "i": 5,
+        "ox": 35,
+        "oy": 96,
+        "w": 69,
+        "h": 102
+      }
+    ],
+    "crouchWalk": [
+      {
+        "file": "/mugen/frames/nani/crouchWalk_00.png",
+        "i": 0,
+        "ox": 31,
+        "oy": 96,
+        "w": 63,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/crouchWalk_01.png",
+        "i": 1,
+        "ox": 37,
+        "oy": 96,
+        "w": 73,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/crouchWalk_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 96,
+        "w": 77,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/crouchWalk_03.png",
+        "i": 3,
+        "ox": 37,
+        "oy": 99,
+        "w": 73,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/nani/crouchWalk_04.png",
+        "i": 4,
+        "ox": 35,
+        "oy": 106,
+        "w": 70,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/nani/crouchWalk_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 106,
+        "w": 72,
+        "h": 112
+      },
+      {
+        "file": "/mugen/frames/nani/crouchWalk_06.png",
+        "i": 6,
+        "ox": 46,
+        "oy": 106,
+        "w": 94,
+        "h": 112
+      }
+    ],
+    "jumpStart": [
+      {
+        "file": "/mugen/frames/nani/jumpStart_00.png",
+        "i": 0,
+        "ox": 31,
+        "oy": 96,
+        "w": 63,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpStart_01.png",
+        "i": 1,
+        "ox": 37,
+        "oy": 96,
+        "w": 73,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpStart_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 96,
+        "w": 77,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpStart_03.png",
+        "i": 3,
+        "ox": 37,
+        "oy": 99,
+        "w": 73,
+        "h": 105
+      }
+    ],
+    "jumpLoop": [
+      {
+        "file": "/mugen/frames/nani/jumpLoop_00.png",
+        "i": 0,
+        "ox": 38,
+        "oy": 103,
+        "w": 75,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_01.png",
+        "i": 1,
+        "ox": 39,
+        "oy": 102,
+        "w": 77,
+        "h": 108
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 101,
+        "w": 73,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_03.png",
+        "i": 3,
+        "ox": 40,
+        "oy": 100,
+        "w": 80,
+        "h": 106
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_04.png",
+        "i": 4,
+        "ox": 41,
+        "oy": 96,
+        "w": 81,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_05.png",
+        "i": 5,
+        "ox": 40,
+        "oy": 96,
+        "w": 79,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_06.png",
+        "i": 6,
+        "ox": 41,
+        "oy": 96,
+        "w": 81,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLoop_07.png",
+        "i": 7,
+        "ox": 40,
+        "oy": 96,
+        "w": 80,
+        "h": 102
+      }
+    ],
+    "jumpLand": [
+      {
+        "file": "/mugen/frames/nani/jumpLand_00.png",
+        "i": 0,
+        "ox": 40,
+        "oy": 96,
+        "w": 80,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLand_01.png",
+        "i": 1,
+        "ox": 36,
+        "oy": 101,
+        "w": 72,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLand_02.png",
+        "i": 2,
+        "ox": 32,
+        "oy": 104,
+        "w": 65,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLand_03.png",
+        "i": 3,
+        "ox": 36,
+        "oy": 98,
+        "w": 71,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLand_04.png",
+        "i": 4,
+        "ox": 33,
+        "oy": 97,
+        "w": 66,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/jumpLand_05.png",
+        "i": 5,
+        "ox": 35,
+        "oy": 96,
+        "w": 70,
+        "h": 102
+      }
+    ],
+    "getUp": [
+      {
+        "file": "/mugen/frames/nani/getUp_00.png",
+        "i": 0,
+        "ox": 33,
+        "oy": 96,
+        "w": 66,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/getUp_01.png",
+        "i": 1,
+        "ox": 33,
+        "oy": 101,
+        "w": 67,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/getUp_02.png",
+        "i": 2,
+        "ox": 34,
+        "oy": 98,
+        "w": 68,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/getUp_03.png",
+        "i": 3,
+        "ox": 38,
+        "oy": 101,
+        "w": 76,
+        "h": 107
+      },
+      {
+        "file": "/mugen/frames/nani/getUp_04.png",
+        "i": 4,
+        "ox": 35,
+        "oy": 96,
+        "w": 69,
+        "h": 102
+      },
+      {
+        "file": "/mugen/frames/nani/getUp_05.png",
+        "i": 5,
+        "ox": 35,
+        "oy": 107,
+        "w": 69,
+        "h": 113
+      }
+    ],
+    "block": [
+      {
+        "file": "/mugen/frames/nani/block_00.png",
+        "i": 0,
+        "ox": 29,
+        "oy": 113,
+        "w": 58,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/nani/block_01.png",
+        "i": 1,
+        "ox": 35,
+        "oy": 113,
+        "w": 70,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/nani/block_02.png",
+        "i": 2,
+        "ox": 32,
+        "oy": 113,
+        "w": 64,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/nani/block_03.png",
+        "i": 3,
+        "ox": 36,
+        "oy": 113,
+        "w": 71,
+        "h": 119
+      }
+    ],
+    "hit": [
+      {
+        "file": "/mugen/frames/nani/hit_00.png",
+        "i": 0,
+        "ox": 35,
+        "oy": 113,
+        "w": 69,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/nani/hit_01.png",
+        "i": 1,
+        "ox": 34,
+        "oy": 113,
+        "w": 68,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/nani/hit_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 116,
+        "w": 74,
+        "h": 122
+      },
+      {
+        "file": "/mugen/frames/nani/hit_03.png",
+        "i": 3,
+        "ox": 41,
+        "oy": 113,
+        "w": 82,
+        "h": 119
+      }
+    ],
+    "knockdown": [
+      {
+        "file": "/mugen/frames/nani/knockdown_00.png",
+        "i": 0,
+        "ox": 36,
+        "oy": 113,
+        "w": 71,
+        "h": 119
+      },
+      {
+        "file": "/mugen/frames/nani/knockdown_01.png",
+        "i": 1,
+        "ox": 34,
+        "oy": 112,
+        "w": 68,
+        "h": 118
+      },
+      {
+        "file": "/mugen/frames/nani/knockdown_02.png",
+        "i": 2,
+        "ox": 34,
+        "oy": 116,
+        "w": 69,
+        "h": 122
+      },
+      {
+        "file": "/mugen/frames/nani/knockdown_03.png",
+        "i": 3,
+        "ox": 43,
+        "oy": 116,
+        "w": 88,
+        "h": 122
+      },
+      {
+        "file": "/mugen/frames/nani/knockdown_04.png",
+        "i": 4,
+        "ox": 33,
+        "oy": 115,
+        "w": 66,
+        "h": 121
+      },
+      {
+        "file": "/mugen/frames/nani/knockdown_05.png",
+        "i": 5,
+        "ox": 32,
+        "oy": 113,
+        "w": 65,
+        "h": 119
+      }
+    ],
+    "lightJab": [
+      {
+        "file": "/mugen/frames/nani/lightJab_00.png",
+        "i": 0,
+        "ox": 44,
+        "oy": 169,
+        "w": 89,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/lightJab_01.png",
+        "i": 1,
+        "ox": 48,
+        "oy": 169,
+        "w": 97,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/lightJab_02.png",
+        "i": 2,
+        "ox": 45,
+        "oy": 169,
+        "w": 90,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/lightJab_03.png",
+        "i": 3,
+        "ox": 41,
+        "oy": 169,
+        "w": 82,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/lightJab_04.png",
+        "i": 4,
+        "ox": 41,
+        "oy": 169,
+        "w": 82,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/lightJab_05.png",
+        "i": 5,
+        "ox": 40,
+        "oy": 169,
+        "w": 81,
+        "h": 175
+      }
+    ],
+    "heavySwing": [
+      {
+        "file": "/mugen/frames/nani/heavySwing_00.png",
+        "i": 0,
+        "ox": 44,
+        "oy": 169,
+        "w": 88,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/heavySwing_01.png",
+        "i": 1,
+        "ox": 48,
+        "oy": 169,
+        "w": 96,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/heavySwing_02.png",
+        "i": 2,
+        "ox": 52,
+        "oy": 169,
+        "w": 105,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/heavySwing_03.png",
+        "i": 3,
+        "ox": 53,
+        "oy": 169,
+        "w": 106,
+        "h": 175
+      }
+    ],
+    "kick": [
+      {
+        "file": "/mugen/frames/nani/kick_00.png",
+        "i": 0,
+        "ox": 57,
+        "oy": 169,
+        "w": 114,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/kick_01.png",
+        "i": 1,
+        "ox": 49,
+        "oy": 169,
+        "w": 98,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/kick_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 169,
+        "w": 110,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/kick_03.png",
+        "i": 3,
+        "ox": 58,
+        "oy": 169,
+        "w": 116,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/kick_04.png",
+        "i": 4,
+        "ox": 57,
+        "oy": 169,
+        "w": 114,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/kick_05.png",
+        "i": 5,
+        "ox": 58,
+        "oy": 142,
+        "w": 117,
+        "h": 148
+      },
+      {
+        "file": "/mugen/frames/nani/kick_06.png",
+        "i": 6,
+        "ox": 67,
+        "oy": 142,
+        "w": 135,
+        "h": 148
+      }
+    ],
+    "airAttack": [
+      {
+        "file": "/mugen/frames/nani/airAttack_00.png",
+        "i": 0,
+        "ox": 57,
+        "oy": 169,
+        "w": 114,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/airAttack_01.png",
+        "i": 1,
+        "ox": 49,
+        "oy": 169,
+        "w": 98,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/airAttack_02.png",
+        "i": 2,
+        "ox": 55,
+        "oy": 169,
+        "w": 110,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/airAttack_03.png",
+        "i": 3,
+        "ox": 58,
+        "oy": 169,
+        "w": 116,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/airAttack_04.png",
+        "i": 4,
+        "ox": 57,
+        "oy": 169,
+        "w": 114,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/airAttack_05.png",
+        "i": 5,
+        "ox": 58,
+        "oy": 142,
+        "w": 117,
+        "h": 148
+      },
+      {
+        "file": "/mugen/frames/nani/airAttack_06.png",
+        "i": 6,
+        "ox": 67,
+        "oy": 142,
+        "w": 135,
+        "h": 148
+      }
+    ],
+    "leanSplash": [
+      {
+        "file": "/mugen/frames/nani/leanSplash_00.png",
+        "i": 0,
+        "ox": 44,
+        "oy": 169,
+        "w": 89,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/leanSplash_01.png",
+        "i": 1,
+        "ox": 48,
+        "oy": 169,
+        "w": 97,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/leanSplash_02.png",
+        "i": 2,
+        "ox": 45,
+        "oy": 169,
+        "w": 90,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/leanSplash_03.png",
+        "i": 3,
+        "ox": 41,
+        "oy": 169,
+        "w": 82,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/leanSplash_04.png",
+        "i": 4,
+        "ox": 41,
+        "oy": 169,
+        "w": 82,
+        "h": 175
+      },
+      {
+        "file": "/mugen/frames/nani/leanSplash_05.png",
+        "i": 5,
+        "ox": 40,
+        "oy": 169,
+        "w": 81,
+        "h": 175
+      }
+    ],
+    "coinFlip": [
+      {
+        "file": "/mugen/frames/nani/coinFlip_00.png",
+        "i": 0,
+        "ox": 40,
+        "oy": 123,
+        "w": 79,
+        "h": 128
+      },
+      {
+        "file": "/mugen/frames/nani/coinFlip_01.png",
+        "i": 1,
+        "ox": 40,
+        "oy": 121,
+        "w": 79,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/nani/coinFlip_02.png",
+        "i": 2,
+        "ox": 39,
+        "oy": 123,
+        "w": 78,
+        "h": 128
+      },
+      {
+        "file": "/mugen/frames/nani/coinFlip_03.png",
+        "i": 3,
+        "ox": 40,
+        "oy": 121,
+        "w": 80,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/nani/coinFlip_04.png",
+        "i": 4,
+        "ox": 41,
+        "oy": 127,
+        "w": 81,
+        "h": 133
+      },
+      {
+        "file": "/mugen/frames/nani/coinFlip_05.png",
+        "i": 5,
+        "ox": 34,
+        "oy": 121,
+        "w": 68,
+        "h": 126
+      }
+    ],
+    "liquidityZone": [
+      {
+        "file": "/mugen/frames/nani/liquidityZone_00.png",
+        "i": 0,
+        "ox": 41,
+        "oy": 127,
+        "w": 84,
+        "h": 133
+      },
+      {
+        "file": "/mugen/frames/nani/liquidityZone_01.png",
+        "i": 1,
+        "ox": 46,
+        "oy": 121,
+        "w": 94,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/nani/liquidityZone_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 123,
+        "w": 86,
+        "h": 128
+      },
+      {
+        "file": "/mugen/frames/nani/liquidityZone_03.png",
+        "i": 3,
+        "ox": 45,
+        "oy": 121,
+        "w": 91,
+        "h": 126
+      }
+    ],
+    "candleRush": [
+      {
+        "file": "/mugen/frames/nani/candleRush_00.png",
+        "i": 0,
+        "ox": 33,
+        "oy": 109,
+        "w": 67,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_01.png",
+        "i": 1,
+        "ox": 34,
+        "oy": 97,
+        "w": 69,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_02.png",
+        "i": 2,
+        "ox": 37,
+        "oy": 98,
+        "w": 74,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_03.png",
+        "i": 3,
+        "ox": 38,
+        "oy": 99,
+        "w": 75,
+        "h": 105
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_04.png",
+        "i": 4,
+        "ox": 38,
+        "oy": 98,
+        "w": 75,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_05.png",
+        "i": 5,
+        "ox": 36,
+        "oy": 97,
+        "w": 72,
+        "h": 103
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_06.png",
+        "i": 6,
+        "ox": 40,
+        "oy": 98,
+        "w": 80,
+        "h": 104
+      },
+      {
+        "file": "/mugen/frames/nani/candleRush_07.png",
+        "i": 7,
+        "ox": 40,
+        "oy": 102,
+        "w": 79,
+        "h": 108
+      }
+    ],
+    "uppercut": [
+      {
+        "file": "/mugen/frames/nani/uppercut_00.png",
+        "i": 0,
+        "ox": 70,
+        "oy": 181,
+        "w": 141,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_01.png",
+        "i": 1,
+        "ox": 73,
+        "oy": 181,
+        "w": 148,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_02.png",
+        "i": 2,
+        "ox": 71,
+        "oy": 181,
+        "w": 144,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_03.png",
+        "i": 3,
+        "ox": 78,
+        "oy": 181,
+        "w": 157,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_04.png",
+        "i": 4,
+        "ox": 77,
+        "oy": 181,
+        "w": 155,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_05.png",
+        "i": 5,
+        "ox": 77,
+        "oy": 181,
+        "w": 154,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_06.png",
+        "i": 6,
+        "ox": 79,
+        "oy": 181,
+        "w": 159,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/uppercut_07.png",
+        "i": 7,
+        "ox": 55,
+        "oy": 148,
+        "w": 110,
+        "h": 153
+      }
+    ],
+    "chartBreaker": [
+      {
+        "file": "/mugen/frames/nani/chartBreaker_00.png",
+        "i": 0,
+        "ox": 56,
+        "oy": 181,
+        "w": 112,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/chartBreaker_01.png",
+        "i": 1,
+        "ox": 73,
+        "oy": 181,
+        "w": 148,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/chartBreaker_02.png",
+        "i": 2,
+        "ox": 69,
+        "oy": 181,
+        "w": 140,
+        "h": 187
+      },
+      {
+        "file": "/mugen/frames/nani/chartBreaker_03.png",
+        "i": 3,
+        "ox": 72,
+        "oy": 181,
+        "w": 145,
+        "h": 187
+      }
+    ],
+    "overdrive": [
+      {
+        "file": "/mugen/frames/nani/overdrive_00.png",
+        "i": 0,
+        "ox": 41,
+        "oy": 127,
+        "w": 84,
+        "h": 133
+      },
+      {
+        "file": "/mugen/frames/nani/overdrive_01.png",
+        "i": 1,
+        "ox": 46,
+        "oy": 121,
+        "w": 94,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/nani/overdrive_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 123,
+        "w": 86,
+        "h": 128
+      },
+      {
+        "file": "/mugen/frames/nani/overdrive_03.png",
+        "i": 3,
+        "ox": 45,
+        "oy": 121,
+        "w": 91,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/nani/overdrive_04.png",
+        "i": 4,
+        "ox": 41,
+        "oy": 127,
+        "w": 84,
+        "h": 133
+      }
+    ],
+    "supreme": [
+      {
+        "file": "/mugen/frames/nani/supreme_00.png",
+        "i": 0,
+        "ox": 41,
+        "oy": 127,
+        "w": 84,
+        "h": 133
+      },
+      {
+        "file": "/mugen/frames/nani/supreme_01.png",
+        "i": 1,
+        "ox": 46,
+        "oy": 121,
+        "w": 94,
+        "h": 126
+      },
+      {
+        "file": "/mugen/frames/nani/supreme_02.png",
+        "i": 2,
+        "ox": 42,
+        "oy": 123,
+        "w": 86,
+        "h": 128
+      },
+      {
+        "file": "/mugen/frames/nani/supreme_03.png",
+        "i": 3,
+        "ox": 45,
+        "oy": 121,
+        "w": 91,
+        "h": 126
+      }
+    ],
+    "taunt": [
+      {
+        "file": "/mugen/frames/nani/taunt_00.png",
+        "i": 0,
+        "ox": 28,
+        "oy": 104,
+        "w": 56,
+        "h": 110
+      },
+      {
+        "file": "/mugen/frames/nani/taunt_01.png",
+        "i": 1,
+        "ox": 30,
+        "oy": 103,
+        "w": 61,
+        "h": 109
+      },
+      {
+        "file": "/mugen/frames/nani/taunt_02.png",
+        "i": 2,
+        "ox": 30,
+        "oy": 102,
+        "w": 61,
+        "h": 108
+      }
+    ]
+  },
+  "canvas": {
+    "w": 72,
+    "h": 112,
+    "ox": 36,
+    "oy": 108
+  }
+}
