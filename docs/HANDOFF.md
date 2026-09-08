@@ -2,8 +2,13 @@
 
 **Tonight's ship:** Cino (unchanged) + original SB Cookin + current lobby + current player select + all current stages.
 
-Playable route: `/mugen`  
-Dev preview: `npm run dev` → port 8080 (see `/workspace/startup.sh`)
+Playable route: `/mugen`
+
+**Source repo (this exact build):** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff  
+Commit: `cf6cfac` — *Stable handoff: Cino + original SB Cookin, current lobby/select/stages.*
+
+Dev preview: `sh /workspace/startup.sh` → `npm run dev` on port 8080  
+Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
 
 ---
 
