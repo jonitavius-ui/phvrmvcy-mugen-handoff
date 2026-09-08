@@ -610,58 +610,58 @@
       {
         "file": "/mugen/frames/sb/candleRush_00.png",
         "i": 0,
-        "ox": 166,
-        "oy": 82,
-        "w": 193,
-        "h": 87
+        "ox": 206,
+        "oy": 122,
+        "w": 273,
+        "h": 167
       },
       {
         "file": "/mugen/frames/sb/candleRush_01.png",
         "i": 1,
-        "ox": 44,
-        "oy": 83,
-        "w": 93,
-        "h": 88
+        "ox": 84,
+        "oy": 123,
+        "w": 173,
+        "h": 168
       },
       {
         "file": "/mugen/frames/sb/candleRush_02.png",
         "i": 2,
-        "ox": 51,
-        "oy": 86,
-        "w": 91,
-        "h": 91
+        "ox": 91,
+        "oy": 126,
+        "w": 171,
+        "h": 171
       },
       {
         "file": "/mugen/frames/sb/candleRush_03.png",
         "i": 3,
-        "ox": 55,
-        "oy": 87,
-        "w": 111,
-        "h": 92
+        "ox": 95,
+        "oy": 127,
+        "w": 191,
+        "h": 172
       },
       {
         "file": "/mugen/frames/sb/candleRush_04.png",
         "i": 4,
-        "ox": 51,
-        "oy": 87,
-        "w": 112,
-        "h": 92
+        "ox": 91,
+        "oy": 127,
+        "w": 192,
+        "h": 172
       },
       {
         "file": "/mugen/frames/sb/candleRush_05.png",
         "i": 5,
-        "ox": 34,
-        "oy": 95,
-        "w": 86,
-        "h": 100
+        "ox": 74,
+        "oy": 135,
+        "w": 166,
+        "h": 180
       },
       {
         "file": "/mugen/frames/sb/candleRush_06.png",
         "i": 6,
-        "ox": 22,
-        "oy": 95,
-        "w": 102,
-        "h": 100
+        "ox": 62,
+        "oy": 135,
+        "w": 182,
+        "h": 180
       }
     ],
     "uppercut": [

@@ -812,248 +812,248 @@
       {
         "file": "/mugen/frames/cino/overdrive_00.png",
         "i": 0,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_01.png",
         "i": 1,
-        "ox": 75,
-        "oy": 136,
-        "w": 150,
-        "h": 165
+        "ox": 115,
+        "oy": 176,
+        "w": 230,
+        "h": 245
       },
       {
         "file": "/mugen/frames/cino/overdrive_02.png",
         "i": 2,
-        "ox": 70,
-        "oy": 139,
-        "w": 140,
-        "h": 168
+        "ox": 110,
+        "oy": 179,
+        "w": 220,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_03.png",
         "i": 3,
-        "ox": 75,
-        "oy": 127,
-        "w": 150,
-        "h": 156
+        "ox": 115,
+        "oy": 167,
+        "w": 230,
+        "h": 236
       },
       {
         "file": "/mugen/frames/cino/overdrive_04.png",
         "i": 4,
-        "ox": 74,
-        "oy": 133,
-        "w": 149,
-        "h": 162
+        "ox": 114,
+        "oy": 173,
+        "w": 229,
+        "h": 242
       },
       {
         "file": "/mugen/frames/cino/overdrive_05.png",
         "i": 5,
-        "ox": 75,
-        "oy": 134,
-        "w": 150,
-        "h": 163
+        "ox": 115,
+        "oy": 174,
+        "w": 230,
+        "h": 243
       },
       {
         "file": "/mugen/frames/cino/overdrive_06.png",
         "i": 6,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_07.png",
         "i": 7,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_08.png",
         "i": 8,
-        "ox": 75,
-        "oy": 137,
-        "w": 150,
-        "h": 166
+        "ox": 115,
+        "oy": 177,
+        "w": 230,
+        "h": 246
       },
       {
         "file": "/mugen/frames/cino/overdrive_09.png",
         "i": 9,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_10.png",
         "i": 10,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_11.png",
         "i": 11,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_12.png",
         "i": 12,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_13.png",
         "i": 13,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_14.png",
         "i": 14,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       }
     ],
     "bullIdle": [
       {
         "file": "/mugen/frames/cino/overdrive_08.png",
         "i": 0,
-        "ox": 75,
-        "oy": 137,
-        "w": 150,
-        "h": 166
+        "ox": 115,
+        "oy": 177,
+        "w": 230,
+        "h": 246
       },
       {
         "file": "/mugen/frames/cino/overdrive_09.png",
         "i": 1,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_10.png",
         "i": 2,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_11.png",
         "i": 3,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       }
     ],
     "bullWalk": [
       {
         "file": "/mugen/frames/cino/overdrive_03.png",
         "i": 0,
-        "ox": 75,
-        "oy": 127,
-        "w": 150,
-        "h": 156
+        "ox": 115,
+        "oy": 167,
+        "w": 230,
+        "h": 236
       },
       {
         "file": "/mugen/frames/cino/overdrive_04.png",
         "i": 1,
-        "ox": 74,
-        "oy": 133,
-        "w": 149,
-        "h": 162
+        "ox": 114,
+        "oy": 173,
+        "w": 229,
+        "h": 242
       },
       {
         "file": "/mugen/frames/cino/overdrive_05.png",
         "i": 2,
-        "ox": 75,
-        "oy": 134,
-        "w": 150,
-        "h": 163
+        "ox": 115,
+        "oy": 174,
+        "w": 230,
+        "h": 243
       },
       {
         "file": "/mugen/frames/cino/overdrive_06.png",
         "i": 3,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_07.png",
         "i": 4,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       }
     ],
     "bullAttack": [
       {
         "file": "/mugen/frames/cino/overdrive_09.png",
         "i": 0,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_10.png",
         "i": 1,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_11.png",
         "i": 2,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_12.png",
         "i": 3,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_13.png",
         "i": 4,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       },
       {
         "file": "/mugen/frames/cino/overdrive_14.png",
         "i": 5,
-        "ox": 75,
-        "oy": 139,
-        "w": 150,
-        "h": 168
+        "ox": 115,
+        "oy": 179,
+        "w": 230,
+        "h": 248
       }
     ]
   }
