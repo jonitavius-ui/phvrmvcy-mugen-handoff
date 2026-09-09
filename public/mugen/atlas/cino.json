@@ -1349,74 +1349,74 @@
       {
         "file": "/mugen/frames/cino/bullForm_00.png?v=six2",
         "i": 0,
-        "ox": 56,
-        "oy": 87,
-        "w": 112,
-        "h": 110
+        "ox": 66,
+        "oy": 102,
+        "w": 132,
+        "h": 130
       },
       {
         "file": "/mugen/frames/cino/bullForm_01.png?v=six2",
         "i": 1,
-        "ox": 64,
-        "oy": 78,
-        "w": 123,
-        "h": 101
+        "ox": 75,
+        "oy": 92,
+        "w": 145,
+        "h": 119
       },
       {
         "file": "/mugen/frames/cino/bullForm_02.png?v=six2",
         "i": 2,
-        "ox": 101,
-        "oy": 92,
-        "w": 192,
-        "h": 115
+        "ox": 119,
+        "oy": 108,
+        "w": 227,
+        "h": 135
       },
       {
         "file": "/mugen/frames/cino/bullForm_03.png?v=six2",
         "i": 3,
-        "ox": 103,
-        "oy": 95,
-        "w": 200,
-        "h": 118
+        "ox": 121,
+        "oy": 113,
+        "w": 235,
+        "h": 140
       },
       {
         "file": "/mugen/frames/cino/bullForm_04.png?v=six2",
         "i": 4,
-        "ox": 64,
-        "oy": 97,
-        "w": 139,
-        "h": 120
+        "ox": 75,
+        "oy": 115,
+        "w": 164,
+        "h": 142
       },
       {
         "file": "/mugen/frames/cino/bullForm_05.png?v=six2",
         "i": 5,
-        "ox": 65,
-        "oy": 104,
-        "w": 141,
-        "h": 127
+        "ox": 77,
+        "oy": 123,
+        "w": 166,
+        "h": 150
       },
       {
         "file": "/mugen/frames/cino/bullForm_06.png?v=six2",
         "i": 6,
-        "ox": 69,
-        "oy": 104,
-        "w": 148,
-        "h": 127
+        "ox": 82,
+        "oy": 122,
+        "w": 174,
+        "h": 149
       },
       {
         "file": "/mugen/frames/cino/bullForm_07.png?v=six2",
         "i": 7,
-        "ox": 57,
-        "oy": 107,
-        "w": 111,
-        "h": 130
+        "ox": 67,
+        "oy": 127,
+        "w": 131,
+        "h": 154
       },
       {
         "file": "/mugen/frames/cino/bullForm_08.png?v=six2",
         "i": 8,
-        "ox": 47,
-        "oy": 107,
-        "w": 95,
-        "h": 130
+        "ox": 56,
+        "oy": 127,
+        "w": 113,
+        "h": 154
       }
     ],
     "bullIdle": [
@@ -2221,9 +2221,11 @@
   "version": "six2",
   "scale": {
     "CINO_BASE_HEIGHT": 212,
+    "CINO_BASE_SCALE": 1,
     "CINO_SPRITE_ZOOM": 2,
     "CINO_ATLAS_BODY_HEIGHT": 106.0,
     "CINO_BULL_SCALE": 1.18,
+    "CINO_FX_SCALE": 1.75,
     "nativeBodyPx": 221.0,
     "extractScale": 0.4796380090497738
   }

@@ -71,9 +71,12 @@ OUT = ROOT / "public/mugen/frames/cino"
 ATLAS = ROOT / "public/mugen/atlas/cino.json"
 SCALE_META = ROOT / "public/mugen/atlas/cino-scale.json"
 QC = Path("/tmp/cino_v2_qc")
-# Roster 100%: Human idle feet → crown (NOT hair tip) on the 960×540 canvas.
-# Engine drawFighter paints atlas frames at 2×, so atlas body = 212 / 2.
+# Roster law: Human Cino = BASE SCALE / 100% for the whole game.
+# Measure BODY only on idle: feet → crown of head. Never PNG box, padding,
+# hair tip, or FX frames. One character scale for ALL Human gameplay anims
+# (no per-frame resize). CHARACTER SCALE ≠ EFFECT SCALE. Preserve aspect.
 CINO_BASE_HEIGHT = 212
+CINO_BASE_SCALE = 1  # roster 100%; future fighters normalize against this
 CINO_SPRITE_ZOOM = 2
 CINO_ATLAS_BODY_HEIGHT = CINO_BASE_HEIGHT / CINO_SPRITE_ZOOM  # 106
 CINO_HAIR_TO_CROWN = 249 / 212  # specialist: opaque-with-hair ≈249 vs body 212
@@ -587,9 +590,11 @@ def main():
         "version": CACHE_V,
         "scale": {
             "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+            "CINO_BASE_SCALE": CINO_BASE_SCALE,
             "CINO_SPRITE_ZOOM": CINO_SPRITE_ZOOM,
             "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
             "CINO_BULL_SCALE": CINO_BULL_SCALE,
+            "CINO_FX_SCALE": CINO_FX_SCALE,
             "nativeBodyPx": idle_body,
             "extractScale": scale,
         },
@@ -623,9 +628,9 @@ def main():
         "pillStorm",
         "shadowClones",
         "overdrive",
-        "bullForm",
     }
     BULL_ANIMS = {
+        "bullForm",
         "bullIdle",
         "bullWalk",
         "bullRun",
@@ -673,7 +678,8 @@ def main():
         json.dumps(
             {
                 "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
-                "meaning": "Human Cino idle feet/ground → crown of head (NOT hair tip). Roster BASE SCALE 100%.",
+                "CINO_BASE_SCALE": CINO_BASE_SCALE,
+                "meaning": "Human Cino idle feet/ground → crown of head (NOT hair tip). Roster BASE SCALE 100%. Future fighters normalize idle body height against this.",
                 "CINO_SPRITE_ZOOM": CINO_SPRITE_ZOOM,
                 "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
                 "CINO_BULL_SCALE": CINO_BULL_SCALE,

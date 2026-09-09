@@ -1,6 +1,7 @@
 {
   "CINO_BASE_HEIGHT": 212,
-  "meaning": "Human Cino idle feet/ground \u2192 crown of head (NOT hair tip). Roster BASE SCALE 100%.",
+  "CINO_BASE_SCALE": 1,
+  "meaning": "Human Cino idle feet/ground \u2192 crown of head (NOT hair tip). Roster BASE SCALE 100%. Future fighters normalize idle body height against this.",
   "CINO_SPRITE_ZOOM": 2,
   "CINO_ATLAS_BODY_HEIGHT": 106.0,
   "CINO_BULL_SCALE": 1.18,
