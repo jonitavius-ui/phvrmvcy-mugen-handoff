@@ -70,7 +70,8 @@ Production build: `npm run build` (Nitro Vercel preset).
 | Touch helpers | `src/game/touch.ts` |
 | Route | `src/routes/mugen.tsx` (also `/cino` in `src/routes/cino.tsx`) |
 | **Cino frames** | `public/mugen/frames/cino/` |
-| **Cino atlas** | `public/mugen/atlas/cino.json` |
+| **Cino atlas** | `public/mugen/atlas/cino.json` (`sheet1` clip table + per-frame `s1`/`clip`/`ms`) |
+| **Sheet1 ANIM MAP** | `mugen-extract/cino-v2/sheet1/anim_map.json` · public copies `public/mugen/atlas/cino-anim-map.json` + `cino-anim-map-compact.json` |
 | **Sheet1 inventory (recreated)** | `mugen-extract/cino-v2/sheet1/inventory.json` · `mugen-facing/cino-v2/inventories/01-human-basic-movement.json` |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
 | **Cino source sheets** | `public/mugen/assets/cino-sheet1-movement.jpg` · `cino-sheet2-combat.jpg` · `cino-sheet3-bull-a.jpg` · `cino-sheet3-bull-b.jpg` (legacy `cino-v2-*.jpg` kept) |
