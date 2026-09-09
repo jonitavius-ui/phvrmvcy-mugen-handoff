@@ -1,6 +1,6 @@
 # PHVRMVCY MUGEN — Stable Handoff Build
 
-**Tonight's ship:** Cino (unchanged) + original SB Cookin + current lobby + current player select + all current stages.
+**Tonight's ship:** Cino six-sheet replacement (Human + permanent Bull) + original SB Cookin + current lobby + current player select + all current stages.
 
 Playable route: `/mugen`
 
@@ -14,7 +14,7 @@ Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
 
 ## Do not break
 
-- Cino sprites, bull form (`DOWN + C`), attacks, FX
+- Cino six-sheet sprites, bull form (`DOWN + C` permanent), attacks, FX (do not revert to the old Cino set)
 - Lobby / title screen UI and background
 - Player select **screen** (layout/chrome) — roster is just shorter
 - HUD, combat engine, controls
@@ -34,7 +34,7 @@ Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
 | **Cino frames** | `public/mugen/frames/cino/` |
 | **Cino atlas** | `public/mugen/atlas/cino.json` |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
-| **Cino source sheet** | `public/mugen/assets/cino-sheet.png` |
+| **Cino source sheets** | `public/mugen/assets/cino-sheet1-movement.jpg` · `cino-sheet2-combat.jpg` · `cino-sheet3-bull-a.jpg` · `cino-sheet3-bull-b.jpg` (legacy `cino-v2-*.jpg` kept) |
 | **SB frames (ORIGINAL working set)** | `public/mugen/frames/sb/` |
 | **SB atlas** | `public/mugen/atlas/sb.json` |
 | **SB portrait** | `public/mugen/portraits/sb.png` |
