@@ -1,0 +1,974 @@
+{
+  "id": "cino",
+  "note": "Separate-layer VFX. Do not composite onto body sheets. Human body scale stays 212px (2x atlas).",
+  "palette": {
+    "green": "#39ff14",
+    "purple": "#b44cff",
+    "lean": "#c44cff",
+    "cyan": "#3ee8ff",
+    "white": "#f4f4f4"
+  },
+  "blend": "lighter",
+  "anims": {
+    "hitsparkLight": [
+      {
+        "file": "/mugen/vfx/cino/hitsparkLight_00.png",
+        "ox": 64,
+        "oy": 64,
+        "w": 128,
+        "h": 128,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkLight_01.png",
+        "ox": 64,
+        "oy": 64,
+        "w": 128,
+        "h": 128,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkLight_02.png",
+        "ox": 64,
+        "oy": 64,
+        "w": 128,
+        "h": 128,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkLight_03.png",
+        "ox": 64,
+        "oy": 64,
+        "w": 128,
+        "h": 128,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkLight_04.png",
+        "ox": 64,
+        "oy": 64,
+        "w": 128,
+        "h": 128,
+        "dur": 2
+      }
+    ],
+    "hitsparkMedium": [
+      {
+        "file": "/mugen/vfx/cino/hitsparkMedium_00.png",
+        "ox": 96,
+        "oy": 96,
+        "w": 192,
+        "h": 192,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkMedium_01.png",
+        "ox": 96,
+        "oy": 96,
+        "w": 192,
+        "h": 192,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkMedium_02.png",
+        "ox": 96,
+        "oy": 96,
+        "w": 192,
+        "h": 192,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkMedium_03.png",
+        "ox": 96,
+        "oy": 96,
+        "w": 192,
+        "h": 192,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkMedium_04.png",
+        "ox": 96,
+        "oy": 96,
+        "w": 192,
+        "h": 192,
+        "dur": 2
+      }
+    ],
+    "hitsparkHeavy": [
+      {
+        "file": "/mugen/vfx/cino/hitsparkHeavy_00.png",
+        "ox": 128,
+        "oy": 128,
+        "w": 256,
+        "h": 256,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkHeavy_01.png",
+        "ox": 128,
+        "oy": 128,
+        "w": 256,
+        "h": 256,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkHeavy_02.png",
+        "ox": 128,
+        "oy": 128,
+        "w": 256,
+        "h": 256,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkHeavy_03.png",
+        "ox": 128,
+        "oy": 128,
+        "w": 256,
+        "h": 256,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkHeavy_04.png",
+        "ox": 128,
+        "oy": 128,
+        "w": 256,
+        "h": 256,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkHeavy_05.png",
+        "ox": 128,
+        "oy": 128,
+        "w": 256,
+        "h": 256,
+        "dur": 2
+      }
+    ],
+    "hitsparkSpecial": [
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_00.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_01.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_02.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_03.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_04.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_05.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/hitsparkSpecial_06.png",
+        "ox": 160,
+        "oy": 160,
+        "w": 320,
+        "h": 320,
+        "dur": 2
+      }
+    ],
+    "plasma": [
+      {
+        "file": "/mugen/vfx/cino/plasma_00.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_01.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_02.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_03.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_04.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_05.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_06.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/plasma_07.png",
+        "ox": 88,
+        "oy": 88,
+        "w": 176,
+        "h": 176,
+        "dur": 3
+      }
+    ],
+    "candleTrail": [
+      {
+        "file": "/mugen/vfx/cino/candleTrail_00.png",
+        "ox": 48,
+        "oy": 232,
+        "w": 96,
+        "h": 240,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/candleTrail_01.png",
+        "ox": 48,
+        "oy": 232,
+        "w": 96,
+        "h": 240,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/candleTrail_02.png",
+        "ox": 48,
+        "oy": 232,
+        "w": 96,
+        "h": 240,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/candleTrail_03.png",
+        "ox": 48,
+        "oy": 232,
+        "w": 96,
+        "h": 240,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/candleTrail_04.png",
+        "ox": 48,
+        "oy": 232,
+        "w": 96,
+        "h": 240,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/candleTrail_05.png",
+        "ox": 48,
+        "oy": 232,
+        "w": 96,
+        "h": 240,
+        "dur": 3
+      }
+    ],
+    "speedStreak": [
+      {
+        "file": "/mugen/vfx/cino/speedStreak_00.png",
+        "ox": 24,
+        "oy": 40,
+        "w": 300,
+        "h": 80,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/speedStreak_01.png",
+        "ox": 24,
+        "oy": 40,
+        "w": 300,
+        "h": 80,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/speedStreak_02.png",
+        "ox": 24,
+        "oy": 40,
+        "w": 300,
+        "h": 80,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/speedStreak_03.png",
+        "ox": 24,
+        "oy": 40,
+        "w": 300,
+        "h": 80,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/speedStreak_04.png",
+        "ox": 24,
+        "oy": 40,
+        "w": 300,
+        "h": 80,
+        "dur": 2
+      }
+    ],
+    "lightning": [
+      {
+        "file": "/mugen/vfx/cino/lightning_00.png",
+        "ox": 150,
+        "oy": 150,
+        "w": 300,
+        "h": 300,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/lightning_01.png",
+        "ox": 150,
+        "oy": 150,
+        "w": 300,
+        "h": 300,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/lightning_02.png",
+        "ox": 150,
+        "oy": 150,
+        "w": 300,
+        "h": 300,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/lightning_03.png",
+        "ox": 150,
+        "oy": 150,
+        "w": 300,
+        "h": 300,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/lightning_04.png",
+        "ox": 150,
+        "oy": 150,
+        "w": 300,
+        "h": 300,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/lightning_05.png",
+        "ox": 150,
+        "oy": 150,
+        "w": 300,
+        "h": 300,
+        "dur": 2
+      }
+    ],
+    "leanSplash": [
+      {
+        "file": "/mugen/vfx/cino/leanSplash_00.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_01.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_02.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_03.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_04.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_05.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_06.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/leanSplash_07.png",
+        "ox": 120,
+        "oy": 120,
+        "w": 240,
+        "h": 240,
+        "dur": 2
+      }
+    ],
+    "chargeAura": [
+      {
+        "file": "/mugen/vfx/cino/chargeAura_00.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_01.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_02.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_03.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_04.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_05.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_06.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/chargeAura_07.png",
+        "ox": 150,
+        "oy": 364,
+        "w": 300,
+        "h": 380,
+        "dur": 3
+      }
+    ],
+    "dashTrail": [
+      {
+        "file": "/mugen/vfx/cino/dashTrail_00.png",
+        "ox": 28,
+        "oy": 55,
+        "w": 220,
+        "h": 110,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/dashTrail_01.png",
+        "ox": 28,
+        "oy": 55,
+        "w": 220,
+        "h": 110,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/dashTrail_02.png",
+        "ox": 28,
+        "oy": 55,
+        "w": 220,
+        "h": 110,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/dashTrail_03.png",
+        "ox": 28,
+        "oy": 55,
+        "w": 220,
+        "h": 110,
+        "dur": 2
+      },
+      {
+        "file": "/mugen/vfx/cino/dashTrail_04.png",
+        "ox": 28,
+        "oy": 55,
+        "w": 220,
+        "h": 110,
+        "dur": 2
+      }
+    ],
+    "shockwave": [
+      {
+        "file": "/mugen/vfx/cino/shockwave_00.png",
+        "ox": 280,
+        "oy": 152,
+        "w": 560,
+        "h": 180,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/shockwave_01.png",
+        "ox": 280,
+        "oy": 152,
+        "w": 560,
+        "h": 180,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/shockwave_02.png",
+        "ox": 280,
+        "oy": 152,
+        "w": 560,
+        "h": 180,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/shockwave_03.png",
+        "ox": 280,
+        "oy": 152,
+        "w": 560,
+        "h": 180,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/shockwave_04.png",
+        "ox": 280,
+        "oy": 152,
+        "w": 560,
+        "h": 180,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/shockwave_05.png",
+        "ox": 280,
+        "oy": 152,
+        "w": 560,
+        "h": 180,
+        "dur": 3
+      }
+    ],
+    "transformBurst": [
+      {
+        "file": "/mugen/vfx/cino/transformBurst_00.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_01.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_02.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_03.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_04.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_05.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_06.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_07.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_08.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/transformBurst_09.png",
+        "ox": 280,
+        "oy": 320,
+        "w": 560,
+        "h": 560,
+        "dur": 3
+      }
+    ],
+    "superBurst": [
+      {
+        "file": "/mugen/vfx/cino/superBurst_00.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_01.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_02.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_03.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_04.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_05.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_06.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_07.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_08.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_09.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_10.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superBurst_11.png",
+        "ox": 400,
+        "oy": 400,
+        "w": 800,
+        "h": 800,
+        "dur": 3
+      }
+    ],
+    "superRing": [
+      {
+        "file": "/mugen/vfx/cino/superRing_00.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_01.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_02.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_03.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_04.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_05.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_06.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      },
+      {
+        "file": "/mugen/vfx/cino/superRing_07.png",
+        "ox": 360,
+        "oy": 360,
+        "w": 720,
+        "h": 720,
+        "dur": 3
+      }
+    ],
+    "cutinFrame": [
+      {
+        "file": "/mugen/vfx/cino/cutinFrame_00.png",
+        "ox": 0,
+        "oy": 0,
+        "w": 460,
+        "h": 250,
+        "dur": 48
+      }
+    ]
+  },
+  "hooks": {
+    "onHit": {
+      "light": "hitsparkLight",
+      "heavy": "hitsparkHeavy",
+      "kick": "hitsparkMedium",
+      "special": "hitsparkSpecial",
+      "super": "hitsparkSpecial"
+    },
+    "onStart": {
+      "bullForm": [
+        "transformBurst",
+        "chargeAura",
+        "lightning",
+        "shockwave"
+      ],
+      "overdrive": [
+        "superBurst",
+        "superRing",
+        "chargeAura",
+        "cutin"
+      ],
+      "candleRush": [
+        "candleTrail",
+        "speedStreak"
+      ],
+      "leanSplash": [
+        "leanSplash"
+      ],
+      "chartBreaker": [
+        "shockwave",
+        "lightning"
+      ],
+      "uppercut": [
+        "lightning",
+        "plasma"
+      ],
+      "launcher": [
+        "lightning"
+      ],
+      "standHeavy": [
+        "plasma"
+      ]
+    },
+    "onActive": {
+      "bullForm": {
+        "every": 4,
+        "kinds": [
+          "lightning"
+        ],
+        "untilMoveEnd": true
+      },
+      "overdrive": {
+        "every": 3,
+        "kinds": [
+          "plasma",
+          "lightning"
+        ]
+      },
+      "candleRush": {
+        "every": 2,
+        "kinds": [
+          "candleTrail",
+          "speedStreak"
+        ]
+      },
+      "leanSplash": {
+        "every": 6,
+        "kinds": [
+          "leanSplash"
+        ]
+      }
+    },
+    "onDash": [
+      "dashTrail",
+      "speedStreak"
+    ],
+    "onCharge": [
+      "chargeAura"
+    ]
+  }
+}
