@@ -2,9 +2,9 @@
 
 CINO_BASE_HEIGHT = 212 (idle feet → crown, NOT hair tip). One character scale for all Human gameplay anims.
 
-Source on this VM: `public/mugen/assets/cino-sheet1-movement.jpg` (image 1 human movement). Specialist PNG `01-human-basic-movement.png` was not present as a named file; 1536×1024 attachments were other roster sheets.
+Source on this VM: `public/mugen/assets/cino-sheet1-movement.jpg` (image 1 human movement). Specialist PNG `01-human-basic-movement.png` (1536×1024 RGBA) was not present as a named file; 1536×1024 attachments were other roster sheets. Equivalent slicing: occupancy + valley cuts, per-frame alpha bounds, largest connected component (no neighbor-shoe bleed), padding, feet origin.
 
-Gameplay frames: `public/mugen/frames/cino/` (idle/walk/run/crouch/jump*). Aliases: `mugen-extract/cino-v2/sheet1/frames/s1_*.png`.
+Gameplay frames: `public/mugen/frames/cino/` (idle/walk/run/crouch/jump*). Aliases: `mugen-extract/cino-v2/sheet1/frames/s1_*.png` (37). JPEG copy: `mugen-facing/cino-v2/01-human-basic-movement.jpg`.
 
 | Clip | Frames | Loop | ms | Engine |
 |---|---|---|---|---|

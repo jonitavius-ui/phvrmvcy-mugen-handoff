@@ -1,30 +1,20 @@
 {
   "CINO_BASE_HEIGHT": 212,
-  "CINO_OPAQUE_WITH_HAIR": 249,
-  "opaqueWithHairIsDiagnosticOnly": true,
   "CINO_BASE_SCALE": 1,
   "locked": true,
   "authority": "Scale Align",
-  "meaning": "Human Cino idle feet/ground → head crown (NOT hair tip). Roster BASE SCALE 100% for all future side-by-sides.",
-  "measure": "character body only on neutral standing/idle",
-  "neverMeasureFrom": [
-    "full PNG dimensions",
-    "transparent padding",
-    "hair tip / opaque-with-hair",
-    "special-effect frames",
-    "drink-pose idle"
-  ],
-  "method": "median idle feet→crown; prefer 212",
   "referenceFrame": "s1_001_IDLE.png",
   "excludeFrame": "s1_010_IDLE",
   "excludeReason": "drink pose height outlier (221); do not use for scale lock",
   "sheet1Inventory": "37/37 qa_pass",
+  "CINO_OPAQUE_WITH_HAIR": 249,
+  "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json",
+  "meaning": "Human Cino idle feet/ground \u2192 head crown (NOT hair tip). Roster BASE SCALE 100% for all future side-by-sides.",
   "oneScaleAcrossHumanAnims": true,
   "preserveAspect": true,
   "neverStretch": true,
   "vfxScaleIndependent": true,
   "bullPlayableSizedNotGiant": true,
-  "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json",
   "inRepoCopy": "/mugen/atlas/human-cino-base-scale.json",
-  "note": "Specialist extract dir was not on this VM. Constant recreated from Scale Align spec. Engine paints atlas at 2× so atlas body = 106 → 212 on canvas."
+  "note": "Specialist extract dir may be absent. Constant is Scale Align 212. Engine paints atlas at 2\u00d7 so atlas body = 106 \u2192 212 on canvas."
 }

@@ -1,7 +1,5 @@
 {
   "CINO_BASE_HEIGHT": 212,
-  "CINO_OPAQUE_WITH_HAIR": 249,
-  "opaqueWithHairIsDiagnosticOnly": true,
   "CINO_BASE_SCALE": 1,
   "meaning": "Human Cino idle feet/ground \u2192 crown of head (NOT hair tip). Roster BASE SCALE 100%. Future fighters normalize idle body height against this.",
   "CINO_SPRITE_ZOOM": 2,
@@ -27,11 +25,12 @@
     "excludeFrame": "s1_010_IDLE",
     "excludeReason": "drink pose height outlier (221); do not use for scale lock",
     "sheet1Inventory": "37/37 qa_pass",
+    "CINO_OPAQUE_WITH_HAIR": 249,
     "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json"
   },
-  "nativeJpegLockBodyPx": 221.0,
-  "nativeOpaqueWithHairPx": 245.0,
-  "extractScale": 0.4796380090497738,
+  "nativeJpegLockBodyPx": 219.0,
+  "nativeOpaqueWithHairPx": 243.0,
+  "extractScale": 0.4840182648401826,
   "clips": {
     "IDLE": {
       "frames": "idle_00\u201310",
@@ -74,5 +73,5 @@
       "ms": 55
     }
   },
-  "note": "Engine drawFighter uses 2\u00d7 zoom; atlas body height is CINO_BASE_HEIGHT/2 so on-canvas feet\u2192crown = 212."
+  "note": "Engine drawFighter uses 2\u00d7 zoom; atlas body height is CINO_BASE_HEIGHT/2 so on-canvas feet\u2192crown = 212. nativeJpegLockBodyPx is this VM's JPEG idle 0\u20134 median \u2014 not the s1_010 drink-pose 221."
 }

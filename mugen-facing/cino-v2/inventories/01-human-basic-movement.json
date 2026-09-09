@@ -4,8 +4,8 @@
   "CINO_BASE_HEIGHT": 212,
   "CINO_OPAQUE_WITH_HAIR": 249,
   "opaqueWithHairIsDiagnosticOnly": true,
-  "framesMissingOnThisVm": true,
-  "note": "Specialist facing inventory was not on this VM. Recreated from Scale Align spec. Gameplay uses public/mugen/frames/cino movement clips.",
+  "framesMissingOnThisVm": false,
+  "note": "Sheet1 sliced from public/mugen/assets/cino-sheet1-movement.jpg (image 1). Aliases in mugen-extract/cino-v2/sheet1/frames/. Gameplay uses public/mugen/frames/cino movement clips at CINO_BASE_HEIGHT=212.",
   "clips": {
     "IDLE": { "s1": "s1_001–011", "count": 11, "loop": true, "ms": 100 },
     "WALK": { "s1": "s1_012–020", "count": 9, "loop": true, "ms": 80 },

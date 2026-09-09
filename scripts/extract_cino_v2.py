@@ -112,9 +112,94 @@ GOLD_CRITERIA = {
     "bullPlayableSizedNotGiant": True,
     "futureFightersSideBySideAgainstHumanIdle": True,
 }
-CACHE_V = "six2"
+CACHE_V = "six3"
 CANVAS_MAX = 12
 CANVAS_CHROMA = 8
+SHEET1_DIR = ROOT / "mugen-extract/cino-v2/sheet1"
+# JPEG master is 1500×1000. Specialist atlas was 1536×1024 RGBA; rects here
+# are occupancy + valley cuts on the JPEG (equivalent slicing: full-alpha
+# bounds + padding, nothing cropped). Prefer these over fuzzy n_spans.
+# IDLE 11 / WALK 9 / RUN 8 (overlapping windows) / BOT 9 (crouch+jump+land).
+SHEET1_SPANS = [
+    # row0 IDLE y 38–286
+    {
+        "y0": 38,
+        "y1": 286,
+        "pad": 36,
+        "xs": [
+            (50, 176),
+            (188, 316),
+            (323, 448),
+            (456, 579),
+            (583, 705),
+            (719, 841),
+            (847, 970),
+            (976, 1096),
+            (1100, 1224),
+            (1224, 1345),
+            (1346, 1470),
+        ],
+    },
+    # row1 WALK y 322–545 — valley cuts, 2px gaps so neighbor shoes stay out
+    {
+        "y0": 322,
+        "y1": 545,
+        "pad": 36,
+        "xs": [
+            (28, 196),
+            (200, 357),
+            (361, 524),
+            (528, 691),
+            (695, 852),
+            (856, 1009),
+            (1013, 1161),
+            (1165, 1317),
+            (1321, 1474),
+        ],
+    },
+    # row2 RUN y 574–770 — specialist ~243px windows scaled 1536→1500, overlapping
+    {
+        "y0": 574,
+        "y1": 770,
+        "pad": 36,
+        "xs": [
+            (22, 260),
+            (198, 435),
+            (374, 611),
+            (549, 786),
+            (725, 962),
+            (900, 1137),
+            (1075, 1312),
+            (1251, 1488),
+        ],
+    },
+    # row3 CROUCH 2 + JUMP 4 + LAND 3
+    {
+        "y0": 778,
+        "y1": 998,
+        "pad": 40,
+        "xs": [
+            (50, 194),
+            (226, 350),
+            (386, 510),
+            (540, 664),
+            (688, 824),
+            (860, 990),
+            (992, 1134),
+            (1164, 1294),
+            (1312, 1460),
+        ],
+    },
+]
+SHEET1_CLIP_FILES = [
+    ("idle", 11, "IDLE"),
+    ("walk", 9, "WALK"),
+    ("run", 8, "RUN"),
+    ("crouch", 2, "CROUCH"),
+    ("jumpStart", 1, "JUMP_START"),
+    ("jumpLoop", 3, "JUMP_AIR"),
+    ("jumpLand", 3, "JUMP_LAND"),
+]
 
 
 def chromatic_seed(rgb: np.ndarray) -> np.ndarray:
@@ -286,9 +371,53 @@ def _merge_to_n(spans: list[tuple[int, int]], n: int) -> list[tuple[int, int]]:
     return spans
 
 
+def largest_cc(mask: np.ndarray, prefer_center: bool = True) -> np.ndarray:
+    """Keep the primary character blob; drop neighboring-frame shoes/hair."""
+    h, w = mask.shape
+    vis = np.zeros_like(mask, dtype=bool)
+    best = None
+    best_score = -1.0
+    cx0, cx1 = int(w * 0.18), int(w * 0.82)
+    for y in range(h):
+        row = mask[y]
+        for x in range(w):
+            if not row[x] or vis[y, x]:
+                continue
+            q: deque[tuple[int, int]] = deque([(y, x)])
+            vis[y, x] = True
+            cells: list[tuple[int, int]] = []
+            while q:
+                cy, cx = q.popleft()
+                cells.append((cy, cx))
+                for dy, dx in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+                    ny, nx = cy + dy, cx + dx
+                    if 0 <= ny < h and 0 <= nx < w and mask[ny, nx] and not vis[ny, nx]:
+                        vis[ny, nx] = True
+                        q.append((ny, nx))
+            area = float(len(cells))
+            if area < 40:
+                continue
+            xs = [c[1] for c in cells]
+            mean_x = sum(xs) / area
+            in_center = sum(1 for xx in xs if cx0 <= xx < cx1) / area
+            score = area * (1.35 if (prefer_center and in_center > 0.45) else 1.0)
+            # Prefer the blob sitting in this cell, not a limb peeking from the side.
+            score -= abs(mean_x - w / 2) * 0.35
+            if score > best_score:
+                best_score = score
+                best = cells
+    if not best:
+        return mask
+    out = np.zeros_like(mask)
+    for y, x in best:
+        out[y, x] = True
+    return out
+
+
 def finalize_cell_mask(seed_cell: np.ndarray) -> np.ndarray:
     grown = close_mask(dilate(seed_cell, 2), 3)
-    return fill_holes(grown) | seed_cell
+    grown = fill_holes(grown) | seed_cell
+    return largest_cc(grown)
 
 
 def crop_cell(rgba, seed, y0, y1, x0, x1, pad=40):
@@ -388,6 +517,50 @@ def scale_canvas(canvas, scale, ox, oy):
     return np.array(im), int(round(ox * scale)), int(round(oy * scale))
 
 
+def pack_cell(rgba, seed, y0, y1, x0, x1, pad):
+    got = crop_cell(rgba, seed, y0, y1, x0, x1, pad=pad)
+    if got is None:
+        return None
+    canvas, box = got
+    bh, bw = canvas.shape[0] - 2 * pad, canvas.shape[1] - 2 * pad
+    if bh < 88 or bw < 18:
+        return None
+    ox, oy = body_foot(canvas)
+    return {
+        "canvas": canvas,
+        "ox": ox,
+        "oy": oy,
+        "box": box,
+        "h": canvas.shape[0],
+        "w": canvas.shape[1],
+        "pad": pad,
+    }
+
+
+def extract_sheet1():
+    """Slice Human movement from JPEG using locked 37-frame rects."""
+    path = SHEETS["move"]
+    rgb = np.array(Image.open(path).convert("RGB"))
+    bg = border_canvas(rgb)
+    seed = chromatic_seed(rgb) | (~bg & (rgb.max(axis=2) > 18))
+    rgba = np.dstack([rgb, np.where(~bg, 255, 0).astype(np.uint8)])
+    cells = []
+    expects = [11, 9, 8, 9]
+    for ri, spec in enumerate(SHEET1_SPANS):
+        y0, y1, pad = spec["y0"], spec["y1"], spec["pad"]
+        row_cells = []
+        for x0, x1 in spec["xs"]:
+            packed = pack_cell(rgba, seed, y0, y1, x0, x1, pad)
+            if packed:
+                row_cells.append(packed)
+        cells.append(row_cells)
+        print(
+            f"  move  row{ri} n={len(row_cells)} expect={expects[ri]} "
+            f"H={[c['h']-2*c['pad'] for c in row_cells]}"
+        )
+    return cells
+
+
 def extract_sheet(key: str, min_col_sep=70):
     path = SHEETS[key]
     rgb = np.array(Image.open(path).convert("RGB"))
@@ -401,30 +574,102 @@ def extract_sheet(key: str, min_col_sep=70):
         spans = n_spans(xocc, expect, min_sep=min_col_sep)
         row_cells = []
         for x0, x1 in spans:
-            bleed = 18
-            got = crop_cell(rgba, seed, y0, y1, x0 - bleed, x1 + bleed, pad=pad)
-            if got is None:
-                continue
-            canvas, box = got
-            bh, bw = canvas.shape[0] - 2 * pad, canvas.shape[1] - 2 * pad
-            # Drop sliced limbs / occupancy fragments (the old run_00 foot was 72px).
-            if bh < 88 or bw < 18:
-                continue
-            ox, oy = body_foot(canvas)
-            row_cells.append(
-                {
-                    "canvas": canvas,
-                    "ox": ox,
-                    "oy": oy,
-                    "box": box,
-                    "h": canvas.shape[0],
-                    "w": canvas.shape[1],
-                    "pad": pad,
-                }
-            )
+            packed = pack_cell(rgba, seed, y0, y1, x0 - 8, x1 + 8, pad)
+            if packed:
+                row_cells.append(packed)
         cells.append(row_cells)
         print(f"  {key:5s} row{ri} n={len(row_cells)} expect={expect} H={[c['h']-2*c['pad'] for c in row_cells]}")
     return cells
+
+
+def write_sheet1_aliases(atlas, extract_scale):
+    """s1_001–037 aliases + anim_map for the specialist box contract."""
+    frames_dir = SHEET1_DIR / "frames"
+    if frames_dir.exists():
+        for p in frames_dir.glob("s1_*.png"):
+            p.unlink()
+    frames_dir.mkdir(parents=True, exist_ok=True)
+    n = 1
+    clips = {}
+    compact = {"CINO_BASE_HEIGHT": CINO_BASE_HEIGHT, "clips": {}}
+    atlas_s1 = {
+        "id": "cino-sheet1",
+        "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+        "anims": {},
+    }
+    engine_ms = {
+        "idle": 100,
+        "walk": 80,
+        "run": 60,
+        "crouch": 50,
+        "jumpStart": 50,
+        "jumpLoop": 70,
+        "jumpLand": 55,
+    }
+    engine_loop = {
+        "idle": True,
+        "walk": True,
+        "run": True,
+        "crouch": False,
+        "jumpStart": False,
+        "jumpLoop": True,
+        "jumpLand": False,
+    }
+    for anim, count, clip in SHEET1_CLIP_FILES:
+        entries = (atlas.get("anims") or {}).get(anim) or []
+        ids = []
+        s1_frames = []
+        for i in range(min(count, len(entries))):
+            src = ROOT / "public" / entries[i]["file"].split("?")[0].lstrip("/")
+            sid = f"s1_{n:03d}"
+            name = f"{sid}_{clip}.png"
+            if src.exists():
+                shutil.copy(src, frames_dir / name)
+            ids.append(sid)
+            s1_frames.append(
+                {
+                    "id": sid,
+                    "file": f"frames/{name}",
+                    "clip": clip,
+                    "engineAnim": anim,
+                    "i": i,
+                    "ox": entries[i]["ox"],
+                    "oy": entries[i]["oy"],
+                    "w": entries[i]["w"],
+                    "h": entries[i]["h"],
+                    "gameplay": entries[i]["file"].split("?")[0],
+                }
+            )
+            n += 1
+        clips[clip] = {
+            "engineAnim": anim,
+            "count": len(ids),
+            "loop": engine_loop[anim],
+            "holdLast": clip == "CROUCH",
+            "ms": engine_ms[anim],
+            "ids": ids,
+            "frames": s1_frames,
+        }
+        compact["clips"][clip] = {
+            "engineAnim": anim,
+            "count": len(ids),
+            "loop": engine_loop[anim],
+            "holdLast": clip == "CROUCH",
+            "ms": engine_ms[anim],
+            "ids": ids,
+        }
+        atlas_s1["anims"][anim] = s1_frames
+    anim_map = {
+        "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+        "source": "public/mugen/assets/cino-sheet1-movement.jpg",
+        "scaleLock": SCALE_ALIGN_LOCK,
+        "extractScale": extract_scale,
+        "clips": clips,
+    }
+    (SHEET1_DIR / "anim_map.json").write_text(json.dumps(anim_map, indent=2))
+    (SHEET1_DIR / "anim_map_compact.json").write_text(json.dumps(compact, indent=2))
+    (SHEET1_DIR / "atlas.json").write_text(json.dumps(atlas_s1, indent=2))
+    print("sheet1 aliases", n - 1, "→", frames_dir)
 
 
 def save_png(arr, dest: Path):
@@ -475,7 +720,7 @@ def take(row, n=None):
 def main():
     QC.mkdir(parents=True, exist_ok=True)
     print("extracting Cino v2 six-sheet mapping from JPEG masters...")
-    move = extract_sheet("move", min_col_sep=95)
+    move = extract_sheet1()
     atk = extract_sheet("atk", min_col_sep=72)
     b1 = extract_sheet("bull1", min_col_sep=78)
     b2 = extract_sheet("bull2", min_col_sep=78)
@@ -760,7 +1005,7 @@ def main():
         med = float(np.median(ratios))
         for i, fr in enumerate(run_frames):
             ratio = fr["ox"] / max(1, fr["w"])
-            if ratio > 0.82:
+            if ratio > 0.72 or ratio < 0.28:
                 fr["ox"] = int(round(med * fr["w"]))
                 print(f"  adjusted run_{i:02d} origin_x → {fr['ox']} (was {ratio:.2f}, median {med:.2f})")
         ATLAS.write_text(json.dumps(atlas, indent=2))
@@ -823,6 +1068,10 @@ def main():
     }
     for k, name in named.items():
         shutil.copy(SHEETS[k], dest / name)
+    facing = ROOT / "mugen-facing/cino-v2"
+    facing.mkdir(parents=True, exist_ok=True)
+    shutil.copy(SHEETS["move"], facing / "01-human-basic-movement.jpg")
+    write_sheet1_aliases(atlas, scale)
     print("frames", len(list(OUT.glob("*.png"))))
 
 
