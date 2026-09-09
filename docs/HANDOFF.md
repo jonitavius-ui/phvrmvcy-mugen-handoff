@@ -43,7 +43,7 @@ Engine hook: `eH.scale` in `src/game/engine.js`. Extract: `scripts/extract_cino_
 - [x] Named engine constants for later side-by-side tests against Human Cino idle height
 - [x] SB / lobby / stages / controls unchanged; Sheet1 movement + ↓+C permanent Bull still in
 
-Sheet1 movement clips: IDLE 11 @100ms · WALK 9 @80ms · RUN 8 @60ms · CROUCH 2 hold-last · JUMP_START 1 · JUMP_AIR 3 · JUMP_LAND 3. Anim map: `mugen-extract/cino-v2/sheet1/anim_map.json` (s1_001–037 aliases of gameplay frames).
+Sheet1 movement clips: IDLE 11 @100ms · WALK 9 @80ms · RUN 8 @60ms · CROUCH 2 hold-last · JUMP_START 1 · JUMP_AIR 3 · JUMP_LAND 3 — **per-clip uniform canvas + shared feet origin** (atlas version `uniform1`; Bull idle unchanged). Anim map: `mugen-extract/cino-v2/sheet1/anim_map.json` (s1_001–037 aliases of gameplay frames).
 
 Dev preview: `sh /workspace/startup.sh` → `npm run dev` on port 8080  
 Production build: `npm run build` (Nitro Vercel preset).
