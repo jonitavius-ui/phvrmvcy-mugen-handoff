@@ -1,5 +1,7 @@
 {
   "CINO_BASE_HEIGHT": 212,
+  "CINO_OPAQUE_WITH_HAIR": 249,
+  "opaqueWithHairIsDiagnosticOnly": true,
   "CINO_BASE_SCALE": 1,
   "locked": true,
   "authority": "Scale Align",

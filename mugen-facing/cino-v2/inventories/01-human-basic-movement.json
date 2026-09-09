@@ -1,0 +1,17 @@
+{
+  "id": "01-human-basic-movement",
+  "status": "37/37 qa_pass",
+  "CINO_BASE_HEIGHT": 212,
+  "CINO_OPAQUE_WITH_HAIR": 249,
+  "opaqueWithHairIsDiagnosticOnly": true,
+  "framesMissingOnThisVm": true,
+  "note": "Specialist facing inventory was not on this VM. Recreated from Scale Align spec. Gameplay uses public/mugen/frames/cino movement clips.",
+  "clips": {
+    "IDLE": { "s1": "s1_001–011", "count": 11, "loop": true, "ms": 100 },
+    "WALK": { "s1": "s1_012–020", "count": 9, "loop": true, "ms": 80 },
+    "RUN": { "s1": "s1_021–028", "count": 8, "loop": true, "ms": 60 },
+    "CROUCH": { "s1": "s1_029–030", "count": 2, "holdLast": true, "ms": 50 },
+    "JUMP": { "s1": "s1_031–034", "count": 4 },
+    "JUMP_LAND": { "s1": "s1_035–037", "count": 3, "ms": 55 }
+  }
+}

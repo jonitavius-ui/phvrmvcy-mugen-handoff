@@ -1,6 +1,8 @@
 export const TICK = 1 / 60;
 /** Scale Align LOCKED. Idle feet/ground → head crown (NOT hair tip). Median 212. Exclude s1_010 drink pose. Reference s1_001_IDLE.png. */
 export const CINO_BASE_HEIGHT = 212;
+/** Diagnostic only. Opaque-with-hair ≈249. NEVER use for body scale. */
+export const CINO_OPAQUE_WITH_HAIR = 249;
 /** Roster BASE SCALE 100%. Future fighters side-by-side test idle body against this. */
 export const CINO_BASE_SCALE = 1;
 export const CINO_SPRITE_ZOOM = 2;

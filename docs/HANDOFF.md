@@ -13,6 +13,7 @@ Tay global roster law — locked in engine + extract. Future fighters (SB Cookin
 | Constant | Value | Role |
 |---|---|---|
 | `CINO_BASE_HEIGHT` | 212 | Scale Align **LOCKED**. Human idle **body**: feet/ground → crown of **head**, not hair tip. Median 212. Reference `s1_001_IDLE`. Never `s1_010` drink pose (221) |
+| `CINO_OPAQUE_WITH_HAIR` | 249 | Diagnostic only. Hair tip / opaque-with-hair. **Never** use for body scale |
 | `CINO_BASE_SCALE` | 1 | Roster **BASE SCALE / 100%**. Side-by-side lock for every later fighter |
 | `CINO_SPRITE_ZOOM` | 2 | `paint()` / `drawFighter` atlas zoom (named constant — never a magic `2`) |
 | `CINO_ATLAS_BODY_HEIGHT` | 106 | Atlas-space body px so `106 × 2 = 212` on canvas |

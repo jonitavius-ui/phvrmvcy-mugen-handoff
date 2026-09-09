@@ -90,11 +90,13 @@ SCALE_ALIGN_LOCK = {
     "excludeFrame": "s1_010_IDLE",
     "excludeReason": "drink pose height outlier (221); do not use for scale lock",
     "sheet1Inventory": "37/37 qa_pass",
+    "CINO_OPAQUE_WITH_HAIR": 249,
     "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json",
 }
 CINO_SPRITE_ZOOM = 2
 CINO_ATLAS_BODY_HEIGHT = CINO_BASE_HEIGHT / CINO_SPRITE_ZOOM  # 106
 CINO_HAIR_TO_CROWN = 249 / 212  # specialist: opaque-with-hair ≈249 vs body 212
+CINO_OPAQUE_WITH_HAIR = 249  # diagnostic only — NEVER use for body scale
 CINO_BULL_SCALE = 1.18  # modest bulk; still a playable fighter, not a giant
 CINO_FX_SCALE = 1.75  # VFX independent of body (splash / crystals / bull head)
 # Chief of Staff / MUGEN Lead — Cino v2 wiring gold criteria (roster lock).
