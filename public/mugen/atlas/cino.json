@@ -2370,6 +2370,9 @@
     "animMap": "/mugen/atlas/cino-anim-map.json",
     "animMapCompact": "/mugen/atlas/cino-anim-map-compact.json",
     "sourceMap": "mugen-extract/cino-v2/sheet1/anim_map.json",
+    "sourceAtlas": "/mugen/atlas/cino-sheet1-atlas.json",
+    "sourceNotes": "/mugen/atlas/cino-sheet1-ANIM_MAP.md",
+    "extractFrames": "mugen-extract/cino-v2/sheet1/frames/",
     "clips": {
       "IDLE": {
         "engineAnim": "idle",
