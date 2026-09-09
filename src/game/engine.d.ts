@@ -9,6 +9,16 @@ export const CINO_SPRITE_ZOOM = 2;
 export const CINO_ATLAS_BODY_HEIGHT = 106;
 export const CINO_BULL_SCALE = 1.18;
 export const CINO_FX_SCALE = 1.75;
+/** Sheet1 Human movement clip lock from anim_map (ms / counts). */
+export const CINO_SHEET1: {
+  IDLE: { ms: number; count: number; loop: boolean };
+  WALK: { ms: number; count: number; loop: boolean };
+  RUN: { ms: number; count: number; loop: boolean };
+  CROUCH: { ms: number; count: number; loop: boolean; holdLast: boolean };
+  JUMP_START: { ms: number; count: number; loop: boolean };
+  JUMP_AIR: { ms: number; count: number; loop: boolean };
+  JUMP_LAND: { ms: number; count: number; loop: boolean };
+};
 export const STAGES: Array<{ id: string; name: string; short: string; tag: string; accent: string }>;
 export const ROSTER: unknown[];
 export const INITIAL_SNAP: {
