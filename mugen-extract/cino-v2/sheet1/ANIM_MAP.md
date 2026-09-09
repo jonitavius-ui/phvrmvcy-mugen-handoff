@@ -20,4 +20,4 @@ Walk is a real 9-frame cycle (not sliding idle). Jump: JUMP_START → JUMP_AIR �
 
 Public copies for the engine feed: `public/mugen/atlas/cino-anim-map.json` + `cino-anim-map-compact.json`. Gameplay atlas `cino.json` tags each movement frame with `s1` / `clip` / `ms`.
 
-Soft-watch RUN `s1_025`: specialist native origin was ~221/246 (~90% right). Gameplay atlas after scale + snap is **ox=49 / w=108 (~45%)**, in band with the other run frames — no extra slide expected.
+Soft-watch RUN `s1_025`: specialist native origin was ~221/246 (~90% right). Gameplay atlas after scale + snap is **ox=49 / w=108 (~45%)**, same band as the other seven run frames (ox/w 0.446–0.455). Origin-aligned contact sheet: feet stay on the pivot; a 90% origin would yank the body backward. **No further ox adjust.**
