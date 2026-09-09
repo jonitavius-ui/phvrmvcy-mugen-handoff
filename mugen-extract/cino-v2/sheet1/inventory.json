@@ -5,6 +5,7 @@
   "CINO_OPAQUE_WITH_HAIR": 249,
   "opaqueWithHairIsDiagnosticOnly": true,
   "framesMissingOnThisVm": false,
+  "sheetSize": "1536x1024",
   "note": "Sheet1 sliced from public/mugen/assets/cino-sheet1-movement.jpg (image 1 human movement). Specialist 1536×1024 RGBA 01-human-basic-movement.png was not on this VM; equivalent 37-frame valley/occupancy rects + largest-CC isolation. Gameplay: public/mugen/frames/cino/{idle,walk,run,crouch,jumpStart,jumpLoop,jumpLand}_*.png at CINO_BASE_HEIGHT=212.",
   "clips": {
     "IDLE": { "s1": "s1_001–011", "count": 11, "loop": true, "ms": 100, "engine": "idle" },

@@ -112,10 +112,23 @@ GOLD_CRITERIA = {
     "bullPlayableSizedNotGiant": True,
     "futureFightersSideBySideAgainstHumanIdle": True,
 }
-CACHE_V = "six3"
+CACHE_V = "six4"
 CANVAS_MAX = 12
 CANVAS_CHROMA = 8
 SHEET1_DIR = ROOT / "mugen-extract/cino-v2/sheet1"
+SHEET1_PNG_CANDIDATES = [
+    ROOT / "mugen-facing/cino-v2/sheets/01-human-basic-movement.png",
+    ROOT / "mugen-extract/cino-v2/sheet1/01-human-basic-movement.png",
+    ROOT / "public/mugen/assets/01-human-basic-movement.png",
+]
+# Specialist atlas (1536×1024 RGBA). Windows are seeds; tight alpha bounds + pad follow.
+SHEET1_SPEC = {
+    "size": (1536, 1024),
+    "idle": {"y0": 28, "y1": 318, "n": 11, "x0": 40, "w": 158, "pad": 18},
+    "walk": {"y0": 312, "y1": 578, "n": 9, "x0": 30, "w": 188, "pad": 18},
+    "run": {"y0": 572, "y1": 816, "n": 8, "x0": 24, "w": 243, "pad": 16},
+    "bot": {"y0": 798, "y1": 1024, "n": 9, "x0": 40, "w": 160, "pad": 18},
+}
 # JPEG master is 1500×1000. Specialist atlas was 1536×1024 RGBA; rects here
 # are occupancy + valley cuts on the JPEG (equivalent slicing: full-alpha
 # bounds + padding, nothing cropped). Prefer these over fuzzy n_spans.
@@ -537,25 +550,88 @@ def pack_cell(rgba, seed, y0, y1, x0, x1, pad):
     }
 
 
-def extract_sheet1():
-    """Slice Human movement from JPEG using locked 37-frame rects."""
-    path = SHEETS["move"]
-    rgb = np.array(Image.open(path).convert("RGB"))
+def strip_origin_dots(rgba: np.ndarray) -> np.ndarray:
+    """Contact-preview yellow feet dots are not gameplay pixels."""
+    out = rgba.copy()
+    r, g, b, a = out[..., 0], out[..., 1], out[..., 2], out[..., 3]
+    yellow = (r > 180) & (g > 150) & (b < 90) & (a > 40)
+    if yellow.any() and yellow.mean() < 0.02:
+        out[yellow, 3] = 0
+    return out
+
+
+def jpeg_to_rgba1536(path: Path) -> np.ndarray:
+    rgb = np.array(Image.open(path).convert("RGB").resize((1536, 1024), Image.Resampling.LANCZOS))
     bg = border_canvas(rgb)
     seed = chromatic_seed(rgb) | (~bg & (rgb.max(axis=2) > 18))
-    rgba = np.dstack([rgb, np.where(~bg, 255, 0).astype(np.uint8)])
+    a = np.where(seed | ~bg, 255, 0).astype(np.uint8)
+    return np.dstack([rgb, a])
+
+
+def load_sheet1_rgba() -> tuple[np.ndarray, str]:
+    """Prefer the 1536×1024 RGBA master; otherwise scale the JPEG master."""
+    for p in SHEET1_PNG_CANDIDATES:
+        if not p.exists():
+            continue
+        im = Image.open(p).convert("RGBA")
+        if im.size != (1536, 1024):
+            im = im.resize((1536, 1024), Image.Resampling.LANCZOS)
+        arr = strip_origin_dots(np.array(im))
+        a0 = float((arr[..., 3] == 0).mean())
+        print(f"sheet1 PNG {p} alpha0={a0:.3f}")
+        dest = ROOT / "mugen-facing/cino-v2/sheets/01-human-basic-movement.png"
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if p.resolve() != dest.resolve():
+            Image.fromarray(arr, "RGBA").save(dest)
+        return arr, str(p)
+    jpg = SHEETS["move"]
+    print(f"sheet1 PNG missing — building 1536 RGBA from {jpg.name}")
+    arr = strip_origin_dots(jpeg_to_rgba1536(jpg))
+    dest = ROOT / "mugen-facing/cino-v2/sheets/01-human-basic-movement.png"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    Image.fromarray(arr, "RGBA").save(dest)
+    public = ROOT / "public/mugen/assets/01-human-basic-movement.png"
+    Image.fromarray(arr, "RGBA").save(public)
+    return arr, f"jpeg→1536:{jpg}"
+
+
+def row_windows(spec: dict, width: int) -> list[tuple[int, int]]:
+    n, x0, w = spec["n"], spec["x0"], spec["w"]
+    if n <= 1:
+        return [(x0, min(width, x0 + w))]
+    span = max(w, width - x0)
+    step = (span - w) / max(1, n - 1)
+    out = []
+    for i in range(n):
+        a = int(round(x0 + i * step))
+        b = min(width, a + w)
+        out.append((max(0, a), b))
+    return out
+
+
+def extract_sheet1():
+    """Slice Human movement from 1536×1024 Sheet1 (RGBA or JPEG-upscaled)."""
+    rgba, src = load_sheet1_rgba()
+    print("  sheet1 source", src, "size", rgba.shape[1], "x", rgba.shape[0])
+    seed = rgba[..., 3] > 12
     cells = []
-    expects = [11, 9, 8, 9]
-    for ri, spec in enumerate(SHEET1_SPANS):
+    order = ["idle", "walk", "run", "bot"]
+    for name in order:
+        spec = SHEET1_SPEC[name]
         y0, y1, pad = spec["y0"], spec["y1"], spec["pad"]
+        xs = row_windows(spec, rgba.shape[1])
+        xocc = seed[y0:y1].mean(axis=0)
+        spans = n_spans(xocc, spec["n"], min_sep=max(40, spec["w"] // 3))
+        if name != "run" and len(spans) == spec["n"]:
+            xs = [(max(0, a - 4), min(rgba.shape[1], b + 4)) for a, b in spans]
         row_cells = []
-        for x0, x1 in spec["xs"]:
+        for x0, x1 in xs:
             packed = pack_cell(rgba, seed, y0, y1, x0, x1, pad)
             if packed:
                 row_cells.append(packed)
         cells.append(row_cells)
         print(
-            f"  move  row{ri} n={len(row_cells)} expect={expects[ri]} "
+            f"  move  {name:5s} n={len(row_cells)} expect={spec['n']} "
             f"H={[c['h']-2*c['pad'] for c in row_cells]}"
         )
     return cells
@@ -1075,5 +1151,139 @@ def main():
     print("frames", len(list(OUT.glob("*.png"))))
 
 
+MOVEMENT_ANIMS = (
+    "idle",
+    "walk",
+    "run",
+    "dash",
+    "backdash",
+    "crouch",
+    "crouchWalk",
+    "jumpStart",
+    "jumpLoop",
+    "jumpLand",
+    "block",
+    "hit",
+    "knockdown",
+    "getUp",
+)
+
+
+def import_sheet1_only():
+    """Replace Human movement frames only. Combat / Bull files stay as-is."""
+    print("Sheet1 movement-only import (combat/Bull held)")
+    move = extract_sheet1()
+    idle = take(move[0])
+    walk = take(move[1])
+    run = take(move[2])
+    jump = take(move[3])
+    anims = {
+        "idle": idle,
+        "walk": walk,
+        "run": run,
+        "dash": run,
+        "backdash": list(reversed(run)),
+    }
+    if len(jump) >= 9:
+        anims["crouch"] = jump[:2]
+        anims["crouchWalk"] = jump[:2]
+        anims["jumpStart"] = jump[2:3]
+        anims["jumpLoop"] = jump[3:6]
+        anims["jumpLand"] = jump[6:9]
+    else:
+        anims["crouch"] = jump[:2] or jump
+        anims["crouchWalk"] = jump[:2] or jump
+        anims["jumpStart"] = jump[:1] or jump
+        anims["jumpLoop"] = jump[1:4] or jump
+        anims["jumpLand"] = jump[-3:] or jump
+    anims["block"] = anims.get("crouch") or idle[:2]
+    anims["hit"] = idle[-2:] if idle else []
+    anims["knockdown"] = anims.get("jumpLand") or idle[:2]
+    anims["getUp"] = (anims.get("jumpLand") or idle)[:3]
+
+    lock_src = [c for i, c in enumerate(idle) if i < 5] or idle[:1]
+    body_heights = []
+    for c in lock_src:
+        bh = feet_to_crown(c["canvas"], c["ox"], c["oy"])
+        if bh:
+            body_heights.append(bh)
+    idle_body = float(np.median(body_heights)) if body_heights else 200.0
+    scale = CINO_ATLAS_BODY_HEIGHT / idle_body
+    print(
+        f"CINO_BASE_HEIGHT={CINO_BASE_HEIGHT} native_body={idle_body:.1f} scale={scale:.4f}"
+    )
+
+    atlas = json.loads(ATLAS.read_text()) if ATLAS.exists() else {"id": "cino", "anims": {}}
+    atlas["version"] = CACHE_V
+    atlas.setdefault("scale", {})
+    atlas["scale"].update(
+        {
+            "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+            "CINO_BASE_SCALE": CINO_BASE_SCALE,
+            "CINO_SPRITE_ZOOM": CINO_SPRITE_ZOOM,
+            "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
+            "extractScale": scale,
+            "nativeJpegLockBodyPx": idle_body,
+            "sheet1Source": "1536x1024",
+        }
+    )
+    scaled = {}
+    for name in MOVEMENT_ANIMS:
+        frames = anims.get(name) or []
+        if not frames:
+            continue
+        entries, qc = [], []
+        for i, fr in enumerate(frames):
+            canvas, ox, oy = scale_canvas(fr["canvas"], scale, fr["ox"], fr["oy"])
+            fn = f"{name}_{i:02d}.png"
+            save_png(canvas, OUT / fn)
+            h, w = canvas.shape[:2]
+            entries.append(
+                {
+                    "file": f"/mugen/frames/cino/{fn}?v={CACHE_V}",
+                    "i": i,
+                    "ox": int(ox),
+                    "oy": int(oy),
+                    "w": int(w),
+                    "h": int(h),
+                }
+            )
+            qc.append({"canvas": canvas})
+        atlas["anims"][name] = entries
+        scaled[name] = qc
+        print(f"  wrote {name} {len(entries)}")
+    run_frames = atlas["anims"].get("run") or []
+    if run_frames:
+        for i, fr in enumerate(run_frames):
+            ratio = fr["ox"] / max(1, fr["w"])
+            if ratio > 0.72 or ratio < 0.32:
+                fr["ox"] = int(round(0.45 * fr["w"]))
+                print(f"  adjusted run_{i:02d} origin_x → {fr['ox']} (was {ratio:.2f})")
+    # Bump cache on leftover combat/bull files so HMR doesn't mix six3/six4.
+    for name, frames in atlas["anims"].items():
+        if name in MOVEMENT_ANIMS:
+            continue
+        for fr in frames:
+            fr["file"] = fr["file"].split("?")[0] + f"?v={CACHE_V}"
+    ATLAS.write_text(json.dumps(atlas, indent=2))
+    write_sheet1_aliases(atlas, scale)
+    contact(
+        {k: scaled[k] for k in ["idle", "walk", "run", "crouch", "jumpStart", "jumpLoop", "jumpLand"] if scaled.get(k)},
+        SHEET1_DIR / "preview-contact.png",
+        cols=11,
+    )
+    for clip, key in (("IDLE", "idle"), ("WALK", "walk"), ("RUN", "run")):
+        if scaled.get(key):
+            contact({key: scaled[key]}, SHEET1_DIR / f"preview-row-{clip}.png", cols=len(scaled[key]))
+    if (OUT / "idle_00.png").exists():
+        Image.open(OUT / "idle_00.png").save(ROOT / "public/mugen/portraits/cino.png")
+    print("sheet1 movement import done")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if "--sheet1-only" in sys.argv:
+        import_sheet1_only()
+    else:
+        main()
