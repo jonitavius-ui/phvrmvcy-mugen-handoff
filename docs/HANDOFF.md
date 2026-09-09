@@ -71,7 +71,7 @@ Production build: `npm run build` (Nitro Vercel preset).
 | Route | `src/routes/mugen.tsx` (also `/cino` in `src/routes/cino.tsx`) |
 | **Cino frames** | `public/mugen/frames/cino/` |
 | **Cino atlas** | `public/mugen/atlas/cino.json` |
-| **Cino scale lock** | `public/mugen/atlas/cino-scale.json` + `human-cino-base-scale.json` (`CINO_BASE_HEIGHT=212`, `CINO_BASE_SCALE=1`) |
+| **Sheet1 inventory (recreated)** | `mugen-extract/cino-v2/sheet1/inventory.json` · `mugen-facing/cino-v2/inventories/01-human-basic-movement.json` |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
 | **Cino source sheets** | `public/mugen/assets/cino-sheet1-movement.jpg` · `cino-sheet2-combat.jpg` · `cino-sheet3-bull-a.jpg` · `cino-sheet3-bull-b.jpg` (legacy `cino-v2-*.jpg` kept) |
 | **SB frames (ORIGINAL working set)** | `public/mugen/frames/sb/` |
