@@ -31,6 +31,17 @@ Tay global roster law — locked in engine + extract. Future fighters (SB Cookin
 
 Engine hook: `eH.scale` in `src/game/engine.js`. Extract: `scripts/extract_cino_v2.py` (one `scale` for Human anims, `scale * CINO_BULL_SCALE` for bull anims, `scale * CINO_FX_SCALE` for `fx*`). Meta: `public/mugen/atlas/cino-scale.json`.
 
+### Cino v2 wiring gold criteria (Chief of Staff / MUGEN Lead)
+
+- [x] Human Cino establishes roster **BASE SCALE = 100%** (`CINO_BASE_SCALE = 1`)
+- [x] Measure body height from idle **feet → head** (`CINO_BASE_HEIGHT = 212`)
+- [x] **ONE** scale constant across all Human Cino animations (no per-anim stretch)
+- [x] VFX independent and may be huge (`CINO_FX_SCALE`, `fx*` layers)
+- [x] Bull form somewhat bulkier only, still playable-sized — not a giant (`CINO_BULL_SCALE = 1.18`)
+- [x] No stretch/squash to fake size (uniform scale, aspect preserved)
+- [x] Named engine constants for later side-by-side tests against Human Cino idle height
+- [x] SB / lobby / stages / controls unchanged; Sheet1 movement + ↓+C permanent Bull still in
+
 Sheet1 movement clips: IDLE 11 @100ms · WALK 9 @80ms · RUN 8 @60ms · CROUCH 2 hold-last · JUMP_START 1 · JUMP_AIR 3 · JUMP_LAND 3.
 
 Dev preview: `sh /workspace/startup.sh` → `npm run dev` on port 8080  

@@ -82,6 +82,19 @@ CINO_ATLAS_BODY_HEIGHT = CINO_BASE_HEIGHT / CINO_SPRITE_ZOOM  # 106
 CINO_HAIR_TO_CROWN = 249 / 212  # specialist: opaque-with-hair ≈249 vs body 212
 CINO_BULL_SCALE = 1.18  # modest bulk; still a playable fighter, not a giant
 CINO_FX_SCALE = 1.75  # VFX independent of body (splash / crystals / bull head)
+# Chief of Staff / MUGEN Lead — Cino v2 wiring gold criteria (roster lock).
+GOLD_CRITERIA = {
+    "source": "Chief of Staff / MUGEN Lead",
+    "humanCinoIsRosterBaseScale": True,
+    "CINO_BASE_SCALE": 1,
+    "measure": "idle feet → head (character body only)",
+    "oneScaleAcrossHumanAnims": True,
+    "noPerAnimStretch": True,
+    "noStretchSquashToFakeSize": True,
+    "vfxIndependent": True,
+    "bullPlayableSizedNotGiant": True,
+    "futureFightersSideBySideAgainstHumanIdle": True,
+}
 CACHE_V = "six2"
 CANVAS_MAX = 12
 CANVAS_CHROMA = 8
@@ -595,6 +608,7 @@ def main():
             "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
             "CINO_BULL_SCALE": CINO_BULL_SCALE,
             "CINO_FX_SCALE": CINO_FX_SCALE,
+            "goldCriteria": GOLD_CRITERIA,
             "nativeBodyPx": idle_body,
             "extractScale": scale,
         },
@@ -684,6 +698,7 @@ def main():
                 "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
                 "CINO_BULL_SCALE": CINO_BULL_SCALE,
                 "CINO_FX_SCALE": CINO_FX_SCALE,
+                "goldCriteria": GOLD_CRITERIA,
                 "nativeBodyPx": idle_body,
                 "nativeOpaqueWithHairPx": idle_opaque,
                 "extractScale": scale,

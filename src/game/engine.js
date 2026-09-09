@@ -3,7 +3,7 @@
 export const TICK = 1/60;
 /** Human Cino idle feet → crown of head (NOT hair tip). Roster BASE SCALE 100% on the 960×540 canvas. */
 export const CINO_BASE_HEIGHT = 212;
-/** Roster 100%. Future fighters normalize their idle body height against this. */
+/** Roster 100% gold lock. Future fighters side-by-side test idle body vs this. */
 export const CINO_BASE_SCALE = 1;
 /** drawFighter atlas zoom. Atlas body px = CINO_BASE_HEIGHT / this. */
 export const CINO_SPRITE_ZOOM = 2;

@@ -6,6 +6,18 @@
   "CINO_ATLAS_BODY_HEIGHT": 106.0,
   "CINO_BULL_SCALE": 1.18,
   "CINO_FX_SCALE": 1.75,
+  "goldCriteria": {
+    "source": "Chief of Staff / MUGEN Lead",
+    "humanCinoIsRosterBaseScale": true,
+    "CINO_BASE_SCALE": 1,
+    "measure": "idle feet \u2192 head (character body only)",
+    "oneScaleAcrossHumanAnims": true,
+    "noPerAnimStretch": true,
+    "noStretchSquashToFakeSize": true,
+    "vfxIndependent": true,
+    "bullPlayableSizedNotGiant": true,
+    "futureFightersSideBySideAgainstHumanIdle": true
+  },
   "nativeBodyPx": 221.0,
   "nativeOpaqueWithHairPx": 245.0,
   "extractScale": 0.4796380090497738,
