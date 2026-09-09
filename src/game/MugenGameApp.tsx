@@ -90,6 +90,7 @@ export function MugenGameApp() {
       engine.attach();
       setReady(true);
       setSnap(engine.snapshot());
+      (window as unknown as { __mugen?: Engine }).__mugen = engine;
     });
     const unlock = shellRef.current ? lockGameGestures(shellRef.current) : undefined;
     return () => {

@@ -35,6 +35,7 @@ Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
 | **Cino atlas** | `public/mugen/atlas/cino.json` |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
 | **Cino source sheet** | `public/mugen/assets/cino-sheet.png` |
+| **Cino VFX (separate layers)** | `public/mugen/vfx/cino/` + `src/game/vfx.js` — see `docs/CINO_VFX.md` |
 | **SB frames (ORIGINAL working set)** | `public/mugen/frames/sb/` |
 | **SB atlas** | `public/mugen/atlas/sb.json` |
 | **SB portrait** | `public/mugen/portraits/sb.png` |
