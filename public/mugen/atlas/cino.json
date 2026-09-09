@@ -8,7 +8,10 @@
         "ox": 25,
         "oy": 127,
         "w": 77,
-        "h": 135
+        "h": 135,
+        "s1": "s1_001",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_01.png?v=six4",
@@ -16,7 +19,10 @@
         "ox": 35,
         "oy": 125,
         "w": 78,
-        "h": 134
+        "h": 134,
+        "s1": "s1_002",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_02.png?v=six4",
@@ -24,7 +30,10 @@
         "ox": 39,
         "oy": 124,
         "w": 77,
-        "h": 133
+        "h": 133,
+        "s1": "s1_003",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_03.png?v=six4",
@@ -32,7 +41,10 @@
         "ox": 35,
         "oy": 125,
         "w": 75,
-        "h": 134
+        "h": 134,
+        "s1": "s1_004",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_04.png?v=six4",
@@ -40,7 +52,10 @@
         "ox": 35,
         "oy": 127,
         "w": 77,
-        "h": 135
+        "h": 135,
+        "s1": "s1_005",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_05.png?v=six4",
@@ -48,7 +63,10 @@
         "ox": 38,
         "oy": 126,
         "w": 77,
-        "h": 134
+        "h": 134,
+        "s1": "s1_006",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_06.png?v=six4",
@@ -56,7 +74,10 @@
         "ox": 34,
         "oy": 126,
         "w": 76,
-        "h": 135
+        "h": 135,
+        "s1": "s1_007",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_07.png?v=six4",
@@ -64,7 +85,10 @@
         "ox": 35,
         "oy": 126,
         "w": 75,
-        "h": 134
+        "h": 134,
+        "s1": "s1_008",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_08.png?v=six4",
@@ -72,7 +96,10 @@
         "ox": 38,
         "oy": 125,
         "w": 77,
-        "h": 133
+        "h": 133,
+        "s1": "s1_009",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_09.png?v=six4",
@@ -80,7 +107,10 @@
         "ox": 37,
         "oy": 125,
         "w": 78,
-        "h": 134
+        "h": 134,
+        "s1": "s1_010",
+        "clip": "IDLE",
+        "ms": 100
       },
       {
         "file": "/mugen/frames/cino/idle_10.png?v=six4",
@@ -88,7 +118,10 @@
         "ox": 38,
         "oy": 124,
         "w": 79,
-        "h": 132
+        "h": 132,
+        "s1": "s1_011",
+        "clip": "IDLE",
+        "ms": 100
       }
     ],
     "walk": [
@@ -98,7 +131,10 @@
         "ox": 51,
         "oy": 112,
         "w": 96,
-        "h": 121
+        "h": 121,
+        "s1": "s1_012",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_01.png?v=six4",
@@ -106,7 +142,10 @@
         "ox": 53,
         "oy": 114,
         "w": 95,
-        "h": 122
+        "h": 122,
+        "s1": "s1_013",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_02.png?v=six4",
@@ -114,7 +153,10 @@
         "ox": 53,
         "oy": 112,
         "w": 99,
-        "h": 120
+        "h": 120,
+        "s1": "s1_014",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_03.png?v=six4",
@@ -122,7 +164,10 @@
         "ox": 53,
         "oy": 115,
         "w": 100,
-        "h": 123
+        "h": 123,
+        "s1": "s1_015",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_04.png?v=six4",
@@ -130,7 +175,10 @@
         "ox": 51,
         "oy": 113,
         "w": 95,
-        "h": 121
+        "h": 121,
+        "s1": "s1_016",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_05.png?v=six4",
@@ -138,7 +186,10 @@
         "ox": 47,
         "oy": 113,
         "w": 94,
-        "h": 121
+        "h": 121,
+        "s1": "s1_017",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_06.png?v=six4",
@@ -146,7 +197,10 @@
         "ox": 64,
         "oy": 115,
         "w": 91,
-        "h": 123
+        "h": 123,
+        "s1": "s1_018",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_07.png?v=six4",
@@ -154,7 +208,10 @@
         "ox": 52,
         "oy": 113,
         "w": 94,
-        "h": 122
+        "h": 122,
+        "s1": "s1_019",
+        "clip": "WALK",
+        "ms": 80
       },
       {
         "file": "/mugen/frames/cino/walk_08.png?v=six4",
@@ -162,7 +219,10 @@
         "ox": 47,
         "oy": 113,
         "w": 92,
-        "h": 121
+        "h": 121,
+        "s1": "s1_020",
+        "clip": "WALK",
+        "ms": 80
       }
     ],
     "run": [
@@ -172,7 +232,10 @@
         "ox": 51,
         "oy": 96,
         "w": 114,
-        "h": 103
+        "h": 103,
+        "s1": "s1_021",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_01.png?v=six4",
@@ -180,7 +243,10 @@
         "ox": 49,
         "oy": 92,
         "w": 109,
-        "h": 99
+        "h": 99,
+        "s1": "s1_022",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_02.png?v=six4",
@@ -188,7 +254,10 @@
         "ox": 48,
         "oy": 93,
         "w": 106,
-        "h": 100
+        "h": 100,
+        "s1": "s1_023",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_03.png?v=six4",
@@ -196,7 +265,10 @@
         "ox": 45,
         "oy": 92,
         "w": 100,
-        "h": 99
+        "h": 99,
+        "s1": "s1_024",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_04.png?v=six4",
@@ -204,7 +276,10 @@
         "ox": 49,
         "oy": 85,
         "w": 108,
-        "h": 93
+        "h": 93,
+        "s1": "s1_025",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_05.png?v=six4",
@@ -212,7 +287,10 @@
         "ox": 48,
         "oy": 91,
         "w": 107,
-        "h": 99
+        "h": 99,
+        "s1": "s1_026",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_06.png?v=six4",
@@ -220,7 +298,10 @@
         "ox": 50,
         "oy": 91,
         "w": 112,
-        "h": 99
+        "h": 99,
+        "s1": "s1_027",
+        "clip": "RUN",
+        "ms": 60
       },
       {
         "file": "/mugen/frames/cino/run_07.png?v=six4",
@@ -228,7 +309,10 @@
         "ox": 50,
         "oy": 92,
         "w": 110,
-        "h": 100
+        "h": 100,
+        "s1": "s1_028",
+        "clip": "RUN",
+        "ms": 60
       }
     ],
     "dash": [
@@ -370,7 +454,10 @@
         "ox": 45,
         "oy": 77,
         "w": 84,
-        "h": 85
+        "h": 85,
+        "s1": "s1_029",
+        "clip": "CROUCH",
+        "ms": 50
       },
       {
         "file": "/mugen/frames/cino/crouch_01.png?v=six4",
@@ -378,7 +465,10 @@
         "ox": 31,
         "oy": 88,
         "w": 77,
-        "h": 96
+        "h": 96,
+        "s1": "s1_030",
+        "clip": "CROUCH",
+        "ms": 50
       }
     ],
     "crouchWalk": [
@@ -406,7 +496,10 @@
         "ox": 37,
         "oy": 87,
         "w": 77,
-        "h": 95
+        "h": 95,
+        "s1": "s1_031",
+        "clip": "JUMP_START",
+        "ms": 50
       }
     ],
     "jumpLoop": [
@@ -416,7 +509,10 @@
         "ox": 36,
         "oy": 72,
         "w": 77,
-        "h": 80
+        "h": 80,
+        "s1": "s1_032",
+        "clip": "JUMP_AIR",
+        "ms": 70
       },
       {
         "file": "/mugen/frames/cino/jumpLoop_01.png?v=six4",
@@ -424,7 +520,10 @@
         "ox": 37,
         "oy": 79,
         "w": 79,
-        "h": 88
+        "h": 88,
+        "s1": "s1_033",
+        "clip": "JUMP_AIR",
+        "ms": 70
       },
       {
         "file": "/mugen/frames/cino/jumpLoop_02.png?v=six4",
@@ -432,7 +531,10 @@
         "ox": 33,
         "oy": 86,
         "w": 82,
-        "h": 94
+        "h": 94,
+        "s1": "s1_034",
+        "clip": "JUMP_AIR",
+        "ms": 70
       }
     ],
     "jumpLand": [
@@ -442,7 +544,10 @@
         "ox": 42,
         "oy": 86,
         "w": 84,
-        "h": 94
+        "h": 94,
+        "s1": "s1_035",
+        "clip": "JUMP_LAND",
+        "ms": 55
       },
       {
         "file": "/mugen/frames/cino/jumpLand_01.png?v=six4",
@@ -450,7 +555,10 @@
         "ox": 40,
         "oy": 77,
         "w": 78,
-        "h": 86
+        "h": 86,
+        "s1": "s1_036",
+        "clip": "JUMP_LAND",
+        "ms": 55
       },
       {
         "file": "/mugen/frames/cino/jumpLand_02.png?v=six4",
@@ -458,7 +566,10 @@
         "ox": 43,
         "oy": 75,
         "w": 87,
-        "h": 83
+        "h": 83,
+        "s1": "s1_037",
+        "clip": "JUMP_LAND",
+        "ms": 55
       }
     ],
     "lightJab": [
@@ -2251,5 +2362,115 @@
     "nativeJpegLockBodyPx": 230.0,
     "extractScale": 0.4608695652173913,
     "sheet1Source": "1536x1024"
+  },
+  "sheet1": {
+    "CINO_BASE_HEIGHT": 212,
+    "CINO_OPAQUE_WITH_HAIR": 249,
+    "opaqueWithHairIsDiagnosticOnly": true,
+    "animMap": "/mugen/atlas/cino-anim-map.json",
+    "animMapCompact": "/mugen/atlas/cino-anim-map-compact.json",
+    "sourceMap": "mugen-extract/cino-v2/sheet1/anim_map.json",
+    "clips": {
+      "IDLE": {
+        "engineAnim": "idle",
+        "count": 11,
+        "loop": true,
+        "holdLast": false,
+        "ms": 100,
+        "ids": [
+          "s1_001",
+          "s1_002",
+          "s1_003",
+          "s1_004",
+          "s1_005",
+          "s1_006",
+          "s1_007",
+          "s1_008",
+          "s1_009",
+          "s1_010",
+          "s1_011"
+        ]
+      },
+      "WALK": {
+        "engineAnim": "walk",
+        "count": 9,
+        "loop": true,
+        "holdLast": false,
+        "ms": 80,
+        "ids": [
+          "s1_012",
+          "s1_013",
+          "s1_014",
+          "s1_015",
+          "s1_016",
+          "s1_017",
+          "s1_018",
+          "s1_019",
+          "s1_020"
+        ]
+      },
+      "RUN": {
+        "engineAnim": "run",
+        "count": 8,
+        "loop": true,
+        "holdLast": false,
+        "ms": 60,
+        "ids": [
+          "s1_021",
+          "s1_022",
+          "s1_023",
+          "s1_024",
+          "s1_025",
+          "s1_026",
+          "s1_027",
+          "s1_028"
+        ]
+      },
+      "CROUCH": {
+        "engineAnim": "crouch",
+        "count": 2,
+        "loop": false,
+        "holdLast": true,
+        "ms": 50,
+        "ids": [
+          "s1_029",
+          "s1_030"
+        ]
+      },
+      "JUMP_START": {
+        "engineAnim": "jumpStart",
+        "count": 1,
+        "loop": false,
+        "holdLast": false,
+        "ms": 50,
+        "ids": [
+          "s1_031"
+        ]
+      },
+      "JUMP_AIR": {
+        "engineAnim": "jumpLoop",
+        "count": 3,
+        "loop": true,
+        "holdLast": false,
+        "ms": 70,
+        "ids": [
+          "s1_032",
+          "s1_033",
+          "s1_034"
+        ]
+      },
+      "JUMP_LAND": {
+        "engineAnim": "jumpLand",
+        "count": 3,
+        "loop": false,
+        "holdLast": false,
+        "ms": 55,
+        "ids": [
+          "s1_035",
+          "s1_036",
+          "s1_037"
+        ]
+      }
+    }
   }
 }
