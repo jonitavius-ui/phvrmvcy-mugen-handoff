@@ -1,0 +1,77 @@
+{
+  "CINO_BASE_HEIGHT": 212,
+  "CINO_BASE_SCALE": 1,
+  "meaning": "Human Cino idle feet/ground \u2192 crown of head (NOT hair tip). Roster BASE SCALE 100%. Future fighters normalize idle body height against this.",
+  "CINO_SPRITE_ZOOM": 2,
+  "CINO_ATLAS_BODY_HEIGHT": 106.0,
+  "CINO_BULL_SCALE": 1.18,
+  "CINO_FX_SCALE": 1.75,
+  "goldCriteria": {
+    "source": "Chief of Staff / MUGEN Lead",
+    "humanCinoIsRosterBaseScale": true,
+    "CINO_BASE_SCALE": 1,
+    "measure": "idle feet \u2192 head (character body only)",
+    "oneScaleAcrossHumanAnims": true,
+    "noPerAnimStretch": true,
+    "noStretchSquashToFakeSize": true,
+    "vfxIndependent": true,
+    "bullPlayableSizedNotGiant": true,
+    "futureFightersSideBySideAgainstHumanIdle": true
+  },
+  "scaleAlign": {
+    "CINO_BASE_HEIGHT": 212,
+    "authority": "Scale Align",
+    "referenceFrame": "s1_001_IDLE.png",
+    "excludeFrame": "s1_010_IDLE",
+    "excludeReason": "drink pose height outlier (221); do not use for scale lock",
+    "sheet1Inventory": "37/37 qa_pass",
+    "CINO_OPAQUE_WITH_HAIR": 249,
+    "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json"
+  },
+  "nativeJpegLockBodyPx": 219.0,
+  "nativeOpaqueWithHairPx": 243.0,
+  "extractScale": 0.4840182648401826,
+  "clips": {
+    "IDLE": {
+      "frames": "idle_00\u201310",
+      "count": 11,
+      "loop": true,
+      "ms": 100
+    },
+    "WALK": {
+      "frames": "walk_00\u201308",
+      "count": 9,
+      "loop": true,
+      "ms": 80
+    },
+    "RUN": {
+      "frames": "run_00\u201307",
+      "count": 8,
+      "loop": true,
+      "ms": 60
+    },
+    "CROUCH": {
+      "frames": "crouch_00\u201301",
+      "count": 2,
+      "holdLast": true,
+      "ms": 50
+    },
+    "JUMP_START": {
+      "frames": "jumpStart_00",
+      "count": 1,
+      "ms": 50
+    },
+    "JUMP_AIR": {
+      "frames": "jumpLoop_00\u201302",
+      "count": 3,
+      "loop": true,
+      "ms": 70
+    },
+    "JUMP_LAND": {
+      "frames": "jumpLand_00\u201302",
+      "count": 3,
+      "ms": 55
+    }
+  },
+  "note": "Engine drawFighter uses 2\u00d7 zoom; atlas body height is CINO_BASE_HEIGHT/2 so on-canvas feet\u2192crown = 212. nativeJpegLockBodyPx is this VM's JPEG idle 0\u20134 median \u2014 not the s1_010 drink-pose 221."
+}

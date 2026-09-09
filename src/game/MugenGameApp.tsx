@@ -38,11 +38,15 @@ const P1_HELP = [
   { keys: "W / S", action: "Jump / Crouch" },
   { keys: "J / pad A", action: "Light Jab" },
   { keys: "K / pad B", action: "Heavy Swing" },
-  { keys: "L / pad C", action: "Special 1 (Cino splash / SB coin)" },
+  { keys: "L / pad C", action: "Kick / Cino ↓+C Bull Form" },
   { keys: "Space / pad D", action: "Power (Cino rush / SB zone)" },
   { keys: "Shift", action: "Block" },
-  { keys: "↓→ + C", action: "Special 1" },
-  { keys: "↓← + C", action: "Special 2 (Chart Breaker)" },
+  { keys: "↓ + C", action: "Cino Bull Form (permanent)" },
+  { keys: "↓→ + A", action: "Lean Splash" },
+  { keys: "→→ + B", action: "Green Candle Rush" },
+  { keys: "↓← + B", action: "Chart Breaker" },
+  { keys: "→→ + A", action: "Bull Charge" },
+  { keys: "↓↓ + B / A", action: "Pill Storm / Shadow Clones" },
   { keys: "↓→ + D", action: "Super (full meter)" },
   { keys: "→→", action: "Dash" },
   { keys: "QCF / DP / QCB", action: "Advanced MUGEN motions" },
@@ -485,11 +489,11 @@ function MoveStrip({ p1Id }: { p1Id: string }) {
     : {
         cards: [
           { button: "A", name: "Light Jab", detail: "fast / low dmg" },
-          { button: "B", name: "Heavy Swing", detail: "slow / knockback" },
-          { button: "C", name: "Lean Splash", detail: "purple projectile" },
-          { button: "D", name: "Green Candle Rush", detail: "dash smash" },
+          { button: "B", name: "Heavy Swing", detail: "purple crescent" },
+          { button: "C", name: "Kick / ↓+C Bull", detail: "hold ↓+C to transform" },
+          { button: "D", name: "Candle / Super", detail: "rush · full-meter super" },
         ],
-        commands: "↓→ + C Lean Splash  ·  ↓← + C Chart Breaker  ·  ↓→ + D RX Overdrive",
+        commands: "↓+C BULL FORM  ·  QCF+A Lean Splash  ·  FF+B Candle  ·  FF+A Charge  ·  ↓↓+B Pill Storm  ·  ↓↓+A Clones  ·  QCF×2 Super",
       };
   return (
     <div className="relative z-20 border-t border-purple-900/70 bg-black/85 px-2 py-1.5">

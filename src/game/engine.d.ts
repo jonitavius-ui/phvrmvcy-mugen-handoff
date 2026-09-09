@@ -1,3 +1,24 @@
+export const TICK = 1 / 60;
+/** Scale Align LOCKED. Idle feet/ground → head crown (NOT hair tip). Median 212. Exclude s1_010 drink pose. Reference s1_001_IDLE.png. */
+export const CINO_BASE_HEIGHT = 212;
+/** Diagnostic only. Opaque-with-hair ≈249. NEVER use for body scale. */
+export const CINO_OPAQUE_WITH_HAIR = 249;
+/** Roster BASE SCALE 100%. Future fighters side-by-side test idle body against this. */
+export const CINO_BASE_SCALE = 1;
+export const CINO_SPRITE_ZOOM = 2;
+export const CINO_ATLAS_BODY_HEIGHT = 106;
+export const CINO_BULL_SCALE = 1.18;
+export const CINO_FX_SCALE = 1.75;
+/** Sheet1 Human movement clip lock from anim_map (ms / counts). */
+export const CINO_SHEET1: {
+  IDLE: { ms: number; count: number; loop: boolean };
+  WALK: { ms: number; count: number; loop: boolean };
+  RUN: { ms: number; count: number; loop: boolean };
+  CROUCH: { ms: number; count: number; loop: boolean; holdLast: boolean };
+  JUMP_START: { ms: number; count: number; loop: boolean };
+  JUMP_AIR: { ms: number; count: number; loop: boolean };
+  JUMP_LAND: { ms: number; count: number; loop: boolean };
+};
 export const STAGES: Array<{ id: string; name: string; short: string; tag: string; accent: string }>;
 export const ROSTER: unknown[];
 export const INITIAL_SNAP: {
@@ -50,7 +71,7 @@ export class GameEngine {
   tapPause(): void;
   sfx: { muted: boolean; toggle: () => boolean };
   session: {
-    roster: Array<{ id: string; short: string; style: string; accent: string; portrait: string }>;
+    roster: Array<{ id: string; short: string; style: string; accent: string; portrait: string; selectSprite?: string }>;
     selectIndex: number;
     stageIndex: number;
     stageId: string;

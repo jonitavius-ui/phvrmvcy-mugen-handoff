@@ -7,7 +7,7 @@ This repo is a **TanStack Start** app. The fighter lives at **`/mugen`**.
 ## Tonight's stable build
 
 - Playable roster: **Cino + original SB Cookin only** (`eE=[eH,eM]` in `src/game/engine.js`)
-- Do **not** rebuild Cino, lobby, player-select chrome, HUD, combat, or stages
+- Cino was rebuilt from the six-sheet Human+Bull pack. Do **not** rebuild lobby, player-select chrome, HUD, combat engine, or stages / SB Cookin
 - Extra generated fighters are in `public/mugen/_archive/` (not loaded)
 - User source uploads: `/workspace/attachments/` (keep)
 

@@ -1,20 +1,58 @@
 # PHVRMVCY MUGEN — Stable Handoff Build
 
-**Tonight's ship:** Cino (unchanged) + original SB Cookin + current lobby + current player select + all current stages.
+**Tonight's ship:** Cino six-sheet replacement (Human + permanent Bull) + original SB Cookin + current lobby + current player select + all current stages.
 
 Playable route: `/mugen`
 
-**Source repo (this exact build):** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff  
-Commit: `cf6cfac` — *Stable handoff: Cino + original SB Cookin, current lobby/select/stages.*
+**Source repo (this exact build):** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff
+
+## Roster scale law (Human Cino = 100%)
+
+Tay global roster law — locked in engine + extract. Future fighters (SB Cookin, etc.) normalize against this later. **Do not start those fighters now.**
+
+| Constant | Value | Role |
+|---|---|---|
+| `CINO_BASE_HEIGHT` | 212 | Scale Align **LOCKED**. Human idle **body**: feet/ground → crown of **head**, not hair tip. Median 212. Reference `s1_001_IDLE`. Never `s1_010` drink pose (221) |
+| `CINO_OPAQUE_WITH_HAIR` | 249 | Diagnostic only. Hair tip / opaque-with-hair. **Never** use for body scale |
+| `CINO_BASE_SCALE` | 1 | Roster **BASE SCALE / 100%**. Side-by-side lock for every later fighter |
+| `CINO_SPRITE_ZOOM` | 2 | `paint()` / `drawFighter` atlas zoom (named constant — never a magic `2`) |
+| `CINO_ATLAS_BODY_HEIGHT` | 106 | Atlas-space body px so `106 × 2 = 212` on canvas |
+| `CINO_BULL_SCALE` | 1.18 | After ↓+C: modest bulk. Still a playable fighter — **not** screen-sized |
+| `CINO_FX_SCALE` | 1.75 | Lean Splash / Green Candle / energy sphere / bull-head / super **VFX layers only** |
+
+**Measure from character body only** on neutral standing/idle. Never from full PNG dimensions, transparent padding, hair-only extent (opaque-with-hair ≈249 is diagnostic only), or special-effect frames. Scale Align inventory **37/37 qa_pass**. Prefer median **212**. **`s1_010_IDLE` drink pose (221) is excluded** from the lock. Reference frame: `s1_001_IDLE.png`. Authoritative meta: `mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json` (in-repo copy: `public/mugen/atlas/human-cino-base-scale.json`). This VM’s JPEG idle 0–4 median (~221 native px) is a source-resolution measure only — it is **not** the drink-pose outlier and is scaled so on-canvas crown = 212.
+
+**ONE character scale** across ALL of that fighter’s gameplay animations. Do not independently resize each frame (causes grow/shrink during attacks). Preserve aspect ratio — never stretch.
+
+**CHARACTER SCALE ≠ EFFECT SCALE.** Cino’s body stays normal fighter size while Lean Splash / Green Candle / energy sphere / bull manifestations / supers / projectiles may be enormous on separate `fx*` layers.
+
+**Bull Cino** (after ↓+C) may be somewhat larger and bulkier, but still moves, jumps, attacks, and gets hit as a normal playable fighter. Transform (`bullForm`) uses bull scale so the sequence does not snap-grow on idle.
+
+**Feet** aligned to the same stage ground plane (`y = 458`).
+
+Engine hook: `eH.scale` in `src/game/engine.js`. Extract: `scripts/extract_cino_v2.py` (one `scale` for Human anims, `scale * CINO_BULL_SCALE` for bull anims, `scale * CINO_FX_SCALE` for `fx*`). Meta: `public/mugen/atlas/cino-scale.json`.
+
+### Cino v2 wiring gold criteria (Chief of Staff / MUGEN Lead)
+
+- [x] Human Cino establishes roster **BASE SCALE = 100%** (`CINO_BASE_SCALE = 1`)
+- [x] Scale Align lock: `CINO_BASE_HEIGHT = 212` median; reference `s1_001_IDLE`; **exclude** `s1_010_IDLE` drink pose (221); Sheet1 37/37 qa_pass
+- [x] **ONE** scale constant across all Human Cino animations (no per-anim stretch)
+- [x] VFX independent and may be huge (`CINO_FX_SCALE`, `fx*` layers)
+- [x] Bull form somewhat bulkier only, still playable-sized — not a giant (`CINO_BULL_SCALE = 1.18`)
+- [x] No stretch/squash to fake size (uniform scale, aspect preserved)
+- [x] Named engine constants for later side-by-side tests against Human Cino idle height
+- [x] SB / lobby / stages / controls unchanged; Sheet1 movement + ↓+C permanent Bull still in
+
+Sheet1 movement clips: IDLE 11 @100ms · WALK 9 @80ms · RUN 8 @60ms · CROUCH 2 hold-last · JUMP_START 1 · JUMP_AIR 3 · JUMP_LAND 3. Anim map: `mugen-extract/cino-v2/sheet1/anim_map.json` (s1_001–037 aliases of gameplay frames).
 
 Dev preview: `sh /workspace/startup.sh` → `npm run dev` on port 8080  
-Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
+Production build: `npm run build` (Nitro Vercel preset).
 
 ---
 
 ## Do not break
 
-- Cino sprites, bull form (`DOWN + C`), attacks, FX
+- Cino six-sheet sprites, bull form (`DOWN + C` permanent), attacks, FX (do not revert to the old Cino set)
 - Lobby / title screen UI and background
 - Player select **screen** (layout/chrome) — roster is just shorter
 - HUD, combat engine, controls
@@ -32,9 +70,11 @@ Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
 | Touch helpers | `src/game/touch.ts` |
 | Route | `src/routes/mugen.tsx` (also `/cino` in `src/routes/cino.tsx`) |
 | **Cino frames** | `public/mugen/frames/cino/` |
-| **Cino atlas** | `public/mugen/atlas/cino.json` |
+| **Cino atlas** | `public/mugen/atlas/cino.json` (`sheet1` clip table + per-frame `s1`/`clip`/`ms`) |
+| **Sheet1 ANIM MAP** | `mugen-extract/cino-v2/sheet1/anim_map.json` · public copies `public/mugen/atlas/cino-anim-map.json` + `cino-anim-map-compact.json` |
+| **Sheet1 inventory (recreated)** | `mugen-extract/cino-v2/sheet1/inventory.json` · `mugen-facing/cino-v2/inventories/01-human-basic-movement.json` |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
-| **Cino source sheet** | `public/mugen/assets/cino-sheet.png` |
+| **Cino source sheets** | `public/mugen/assets/cino-sheet1-movement.jpg` · `cino-sheet2-combat.jpg` · `cino-sheet3-bull-a.jpg` · `cino-sheet3-bull-b.jpg` (legacy `cino-v2-*.jpg` kept) |
 | **SB frames (ORIGINAL working set)** | `public/mugen/frames/sb/` |
 | **SB atlas** | `public/mugen/atlas/sb.json` |
 | **SB portrait** | `public/mugen/portraits/sb.png` |
