@@ -5,248 +5,248 @@
       {
         "file": "/mugen/frames/cino/idle_00.png",
         "i": 0,
-        "ox": 47,
-        "oy": 135,
-        "w": 96,
-        "h": 150
+        "ox": 51,
+        "oy": 138,
+        "w": 106,
+        "h": 159
       },
       {
         "file": "/mugen/frames/cino/idle_01.png",
         "i": 1,
         "ox": 52,
-        "oy": 132,
-        "w": 104,
-        "h": 147
+        "oy": 137,
+        "w": 108,
+        "h": 159
       },
       {
         "file": "/mugen/frames/cino/idle_02.png",
         "i": 2,
-        "ox": 51,
-        "oy": 134,
-        "w": 104,
-        "h": 150
+        "ox": 49,
+        "oy": 139,
+        "w": 105,
+        "h": 160
       },
       {
         "file": "/mugen/frames/cino/idle_03.png",
         "i": 3,
-        "ox": 48,
-        "oy": 134,
-        "w": 98,
-        "h": 149
+        "ox": 50,
+        "oy": 139,
+        "w": 111,
+        "h": 160
       },
       {
         "file": "/mugen/frames/cino/idle_04.png",
         "i": 4,
-        "ox": 49,
-        "oy": 134,
-        "w": 103,
-        "h": 150
+        "ox": 50,
+        "oy": 139,
+        "w": 104,
+        "h": 160
       },
       {
         "file": "/mugen/frames/cino/idle_05.png",
         "i": 5,
-        "ox": 51,
-        "oy": 134,
-        "w": 103,
-        "h": 150
+        "ox": 50,
+        "oy": 140,
+        "w": 104,
+        "h": 161
       },
       {
         "file": "/mugen/frames/cino/idle_06.png",
         "i": 6,
-        "ox": 49,
-        "oy": 134,
-        "w": 101,
-        "h": 149
+        "ox": 50,
+        "oy": 140,
+        "w": 105,
+        "h": 161
       },
       {
         "file": "/mugen/frames/cino/idle_07.png",
         "i": 7,
-        "ox": 49,
-        "oy": 133,
-        "w": 99,
-        "h": 149
+        "ox": 57,
+        "oy": 139,
+        "w": 116,
+        "h": 160
       },
       {
         "file": "/mugen/frames/cino/idle_08.png",
         "i": 8,
-        "ox": 50,
-        "oy": 134,
-        "w": 98,
-        "h": 150
+        "ox": 57,
+        "oy": 141,
+        "w": 117,
+        "h": 162
       },
       {
         "file": "/mugen/frames/cino/idle_09.png",
         "i": 9,
-        "ox": 49,
-        "oy": 133,
-        "w": 101,
-        "h": 149
+        "ox": 57,
+        "oy": 140,
+        "w": 116,
+        "h": 161
       },
       {
         "file": "/mugen/frames/cino/idle_10.png",
         "i": 10,
-        "ox": 51,
-        "oy": 133,
-        "w": 101,
-        "h": 148
+        "ox": 56,
+        "oy": 139,
+        "w": 112,
+        "h": 160
       }
     ],
     "walk": [
       {
         "file": "/mugen/frames/cino/walk_00.png",
         "i": 0,
-        "ox": 59,
-        "oy": 121,
-        "w": 116,
-        "h": 137
+        "ox": 66,
+        "oy": 126,
+        "w": 135,
+        "h": 147
       },
       {
         "file": "/mugen/frames/cino/walk_01.png",
         "i": 1,
-        "ox": 65,
-        "oy": 122,
-        "w": 118,
-        "h": 138
+        "ox": 93,
+        "oy": 128,
+        "w": 169,
+        "h": 149
       },
       {
         "file": "/mugen/frames/cino/walk_02.png",
         "i": 2,
         "ox": 64,
-        "oy": 121,
-        "w": 122,
-        "h": 136
+        "oy": 126,
+        "w": 114,
+        "h": 147
       },
       {
         "file": "/mugen/frames/cino/walk_03.png",
         "i": 3,
-        "ox": 66,
-        "oy": 122,
-        "w": 121,
-        "h": 137
+        "ox": 78,
+        "oy": 127,
+        "w": 143,
+        "h": 148
       },
       {
         "file": "/mugen/frames/cino/walk_04.png",
         "i": 4,
-        "ox": 60,
-        "oy": 121,
-        "w": 118,
-        "h": 137
+        "ox": 82,
+        "oy": 126,
+        "w": 163,
+        "h": 147
       },
       {
         "file": "/mugen/frames/cino/walk_05.png",
         "i": 5,
-        "ox": 53,
-        "oy": 122,
-        "w": 117,
-        "h": 138
+        "ox": 62,
+        "oy": 127,
+        "w": 132,
+        "h": 148
       },
       {
         "file": "/mugen/frames/cino/walk_06.png",
         "i": 6,
-        "ox": 75,
-        "oy": 123,
-        "w": 114,
-        "h": 139
+        "ox": 60,
+        "oy": 129,
+        "w": 105,
+        "h": 150
       },
       {
         "file": "/mugen/frames/cino/walk_07.png",
         "i": 7,
-        "ox": 64,
-        "oy": 122,
-        "w": 116,
-        "h": 138
+        "ox": 73,
+        "oy": 128,
+        "w": 138,
+        "h": 149
       },
       {
         "file": "/mugen/frames/cino/walk_08.png",
         "i": 8,
-        "ox": 56,
-        "oy": 121,
-        "w": 111,
-        "h": 137
+        "ox": 63,
+        "oy": 128,
+        "w": 130,
+        "h": 149
       }
     ],
     "run": [
       {
         "file": "/mugen/frames/cino/run_00.png",
         "i": 0,
-        "ox": 67,
-        "oy": 105,
-        "w": 150,
-        "h": 121
+        "ox": 76,
+        "oy": 106,
+        "w": 166,
+        "h": 127
       },
       {
         "file": "/mugen/frames/cino/run_01.png",
         "i": 1,
-        "ox": 84,
-        "oy": 102,
-        "w": 124,
-        "h": 118
+        "ox": 75,
+        "oy": 103,
+        "w": 115,
+        "h": 124
       },
       {
         "file": "/mugen/frames/cino/run_02.png",
         "i": 2,
-        "ox": 97,
-        "oy": 108,
-        "w": 128,
+        "ox": 87,
+        "oy": 102,
+        "w": 129,
         "h": 123
       },
       {
         "file": "/mugen/frames/cino/run_03.png",
         "i": 3,
-        "ox": 18,
-        "oy": 108,
-        "w": 112,
-        "h": 124
+        "ox": 49,
+        "oy": 96,
+        "w": 126,
+        "h": 117
       },
       {
         "file": "/mugen/frames/cino/run_04.png",
         "i": 4,
-        "ox": 112,
+        "ox": 88,
         "oy": 102,
-        "w": 143,
-        "h": 118
+        "w": 119,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/run_05.png",
         "i": 5,
-        "ox": 84,
+        "ox": 75,
         "oy": 103,
-        "w": 129,
-        "h": 119
+        "w": 119,
+        "h": 124
       },
       {
         "file": "/mugen/frames/cino/run_06.png",
         "i": 6,
-        "ox": 79,
-        "oy": 102,
+        "ox": 75,
+        "oy": 104,
         "w": 123,
-        "h": 118
+        "h": 125
       },
       {
         "file": "/mugen/frames/cino/run_07.png",
         "i": 7,
-        "ox": 73,
-        "oy": 99,
-        "w": 120,
-        "h": 114
+        "ox": 61,
+        "oy": 100,
+        "w": 110,
+        "h": 121
       }
     ],
     "jumpStart": [
       {
         "file": "/mugen/frames/cino/jumpStart_00.png",
         "i": 0,
-        "ox": 53,
-        "oy": 85,
-        "w": 100,
-        "h": 101
+        "ox": 60,
+        "oy": 87,
+        "w": 115,
+        "h": 109
       },
       {
         "file": "/mugen/frames/cino/jumpStart_01.png",
         "i": 1,
-        "ox": 39,
-        "oy": 97,
-        "w": 91,
-        "h": 112
+        "ox": 43,
+        "oy": 100,
+        "w": 105,
+        "h": 121
       }
     ],
     "jumpLoop": [
@@ -254,1579 +254,1467 @@
         "file": "/mugen/frames/cino/jumpLoop_00.png",
         "i": 0,
         "ox": 48,
-        "oy": 98,
-        "w": 115,
-        "h": 113
+        "oy": 97,
+        "w": 103,
+        "h": 118
       },
       {
         "file": "/mugen/frames/cino/jumpLoop_01.png",
         "i": 1,
-        "ox": 46,
-        "oy": 82,
-        "w": 92,
-        "h": 98
+        "ox": 44,
+        "oy": 90,
+        "w": 102,
+        "h": 111
       },
       {
         "file": "/mugen/frames/cino/jumpLoop_02.png",
         "i": 2,
-        "ox": 47,
-        "oy": 91,
-        "w": 95,
-        "h": 106
+        "ox": 51,
+        "oy": 90,
+        "w": 109,
+        "h": 111
       }
     ],
     "jumpLand": [
       {
         "file": "/mugen/frames/cino/jumpLand_00.png",
         "i": 0,
-        "ox": 47,
-        "oy": 96,
-        "w": 102,
-        "h": 111
+        "ox": 42,
+        "oy": 95,
+        "w": 105,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/jumpLand_01.png",
         "i": 1,
-        "ox": 51,
+        "ox": 60,
         "oy": 94,
-        "w": 99,
-        "h": 110
+        "w": 113,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/jumpLand_02.png",
         "i": 2,
-        "ox": 46,
-        "oy": 85,
-        "w": 90,
-        "h": 101
+        "ox": 55,
+        "oy": 87,
+        "w": 106,
+        "h": 109
       },
       {
         "file": "/mugen/frames/cino/jumpLand_03.png",
         "i": 3,
-        "ox": 51,
-        "oy": 82,
-        "w": 101,
-        "h": 97
+        "ox": 58,
+        "oy": 83,
+        "w": 117,
+        "h": 104
       }
     ],
     "crouch": [
       {
         "file": "/mugen/frames/cino/crouch_00.png",
         "i": 0,
-        "ox": 46,
-        "oy": 85,
-        "w": 90,
-        "h": 101
+        "ox": 55,
+        "oy": 87,
+        "w": 106,
+        "h": 109
       },
       {
         "file": "/mugen/frames/cino/crouch_01.png",
         "i": 1,
-        "ox": 51,
-        "oy": 82,
-        "w": 101,
-        "h": 97
+        "ox": 58,
+        "oy": 83,
+        "w": 117,
+        "h": 104
       }
     ],
     "crouchWalk": [
       {
         "file": "/mugen/frames/cino/crouchWalk_00.png",
         "i": 0,
-        "ox": 46,
-        "oy": 85,
-        "w": 90,
-        "h": 101
+        "ox": 55,
+        "oy": 87,
+        "w": 106,
+        "h": 109
       },
       {
         "file": "/mugen/frames/cino/crouchWalk_01.png",
         "i": 1,
-        "ox": 51,
-        "oy": 82,
-        "w": 101,
-        "h": 97
+        "ox": 58,
+        "oy": 83,
+        "w": 117,
+        "h": 104
       }
     ],
     "lightJab": [
       {
         "file": "/mugen/frames/cino/lightJab_00.png",
         "i": 0,
-        "ox": 42,
-        "oy": 97,
-        "w": 87,
-        "h": 113
+        "ox": 50,
+        "oy": 104,
+        "w": 104,
+        "h": 125
       },
       {
         "file": "/mugen/frames/cino/lightJab_01.png",
         "i": 1,
-        "ox": 52,
-        "oy": 96,
-        "w": 105,
-        "h": 111
+        "ox": 62,
+        "oy": 101,
+        "w": 133,
+        "h": 122
       },
       {
         "file": "/mugen/frames/cino/lightJab_02.png",
         "i": 2,
-        "ox": 77,
-        "oy": 96,
-        "w": 140,
-        "h": 112
+        "ox": 98,
+        "oy": 107,
+        "w": 159,
+        "h": 128
       },
       {
         "file": "/mugen/frames/cino/lightJab_03.png",
         "i": 3,
-        "ox": 48,
-        "oy": 97,
-        "w": 98,
-        "h": 113
+        "ox": 82,
+        "oy": 108,
+        "w": 148,
+        "h": 129
       },
       {
         "file": "/mugen/frames/cino/lightJab_04.png",
         "i": 4,
-        "ox": 66,
-        "oy": 96,
-        "w": 125,
-        "h": 112
+        "ox": 93,
+        "oy": 104,
+        "w": 145,
+        "h": 125
       },
       {
         "file": "/mugen/frames/cino/lightJab_05.png",
         "i": 5,
-        "ox": 37,
-        "oy": 92,
-        "w": 70,
-        "h": 108
+        "ox": 88,
+        "oy": 112,
+        "w": 168,
+        "h": 133
       },
       {
         "file": "/mugen/frames/cino/lightJab_06.png",
         "i": 6,
-        "ox": 47,
-        "oy": 99,
-        "w": 98,
-        "h": 115
+        "ox": 106,
+        "oy": 104,
+        "w": 170,
+        "h": 125
       },
       {
         "file": "/mugen/frames/cino/lightJab_07.png",
         "i": 7,
-        "ox": 54,
-        "oy": 98,
-        "w": 86,
-        "h": 114
-      },
-      {
-        "file": "/mugen/frames/cino/lightJab_08.png",
-        "i": 8,
-        "ox": 57,
-        "oy": 91,
-        "w": 97,
-        "h": 107
-      },
-      {
-        "file": "/mugen/frames/cino/lightJab_09.png",
-        "i": 9,
-        "ox": 53,
-        "oy": 93,
-        "w": 85,
-        "h": 108
-      },
-      {
-        "file": "/mugen/frames/cino/lightJab_10.png",
-        "i": 10,
-        "ox": 48,
-        "oy": 99,
-        "w": 101,
-        "h": 114
-      },
-      {
-        "file": "/mugen/frames/cino/lightJab_11.png",
-        "i": 11,
-        "ox": 26,
-        "oy": 97,
-        "w": 77,
-        "h": 112
+        "ox": 66,
+        "oy": 111,
+        "w": 146,
+        "h": 132
       }
     ],
     "kick": [
       {
         "file": "/mugen/frames/cino/kick_00.png",
         "i": 0,
-        "ox": 36,
-        "oy": 100,
-        "w": 92,
-        "h": 116
+        "ox": 65,
+        "oy": 110,
+        "w": 179,
+        "h": 131
       },
       {
         "file": "/mugen/frames/cino/kick_01.png",
         "i": 1,
-        "ox": 38,
-        "oy": 97,
-        "w": 97,
-        "h": 113
+        "ox": 30,
+        "oy": 101,
+        "w": 126,
+        "h": 122
       },
       {
         "file": "/mugen/frames/cino/kick_02.png",
         "i": 2,
-        "ox": 28,
-        "oy": 92,
-        "w": 120,
-        "h": 108
+        "ox": 40,
+        "oy": 115,
+        "w": 125,
+        "h": 136
       },
       {
         "file": "/mugen/frames/cino/kick_03.png",
         "i": 3,
-        "ox": 42,
-        "oy": 96,
-        "w": 85,
-        "h": 112
+        "ox": 98,
+        "oy": 120,
+        "w": 165,
+        "h": 141
       },
       {
         "file": "/mugen/frames/cino/kick_04.png",
         "i": 4,
-        "ox": 30,
-        "oy": 71,
-        "w": 71,
-        "h": 86
+        "ox": 56,
+        "oy": 101,
+        "w": 114,
+        "h": 122
       },
       {
         "file": "/mugen/frames/cino/kick_05.png",
         "i": 5,
-        "ox": 36,
-        "oy": 105,
-        "w": 96,
-        "h": 121
+        "ox": 72,
+        "oy": 122,
+        "w": 161,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/kick_06.png",
         "i": 6,
-        "ox": 56,
-        "oy": 106,
-        "w": 83,
-        "h": 121
-      },
-      {
-        "file": "/mugen/frames/cino/kick_07.png",
-        "i": 7,
-        "ox": 55,
-        "oy": 97,
-        "w": 114,
-        "h": 112
-      },
-      {
-        "file": "/mugen/frames/cino/kick_08.png",
-        "i": 8,
-        "ox": 71,
-        "oy": 109,
-        "w": 160,
-        "h": 124
-      },
-      {
-        "file": "/mugen/frames/cino/kick_09.png",
-        "i": 9,
-        "ox": 63,
-        "oy": 105,
-        "w": 113,
-        "h": 120
+        "ox": 100,
+        "oy": 117,
+        "w": 152,
+        "h": 139
       }
     ],
     "leanSplash": [
       {
         "file": "/mugen/frames/cino/leanSplash_00.png",
         "i": 0,
-        "ox": 44,
-        "oy": 86,
-        "w": 87,
-        "h": 102
+        "ox": 42,
+        "oy": 94,
+        "w": 189,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/leanSplash_01.png",
         "i": 1,
-        "ox": 45,
-        "oy": 86,
-        "w": 89,
-        "h": 101
+        "ox": 113,
+        "oy": 73,
+        "w": 186,
+        "h": 94
       },
       {
         "file": "/mugen/frames/cino/leanSplash_02.png",
         "i": 2,
-        "ox": 52,
-        "oy": 86,
-        "w": 100,
-        "h": 102
+        "ox": 102,
+        "oy": 94,
+        "w": 164,
+        "h": 115
+      },
+      {
+        "file": "/mugen/frames/cino/leanSplash_03.png",
+        "i": 3,
+        "ox": 48,
+        "oy": 100,
+        "w": 213,
+        "h": 121
       }
     ],
     "candleRush": [
       {
         "file": "/mugen/frames/cino/candleRush_00.png",
         "i": 0,
-        "ox": 38,
-        "oy": 84,
-        "w": 85,
-        "h": 99
+        "ox": 72,
+        "oy": 95,
+        "w": 155,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/candleRush_01.png",
         "i": 1,
-        "ox": 68,
-        "oy": 84,
-        "w": 119,
-        "h": 99
+        "ox": 51,
+        "oy": 90,
+        "w": 127,
+        "h": 111
       },
       {
         "file": "/mugen/frames/cino/candleRush_02.png",
         "i": 2,
-        "ox": 16,
-        "oy": 84,
-        "w": 78,
-        "h": 99
+        "ox": 97,
+        "oy": 94,
+        "w": 200,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/candleRush_03.png",
         "i": 3,
-        "ox": 57,
-        "oy": 84,
-        "w": 112,
-        "h": 99
+        "ox": 48,
+        "oy": 79,
+        "w": 88,
+        "h": 100
       },
       {
         "file": "/mugen/frames/cino/candleRush_04.png",
         "i": 4,
-        "ox": 51,
-        "oy": 69,
-        "w": 74,
-        "h": 84
+        "ox": 59,
+        "oy": 82,
+        "w": 130,
+        "h": 103
       },
       {
         "file": "/mugen/frames/cino/candleRush_05.png",
         "i": 5,
-        "ox": 47,
-        "oy": 75,
-        "w": 111,
-        "h": 90
+        "ox": 46,
+        "oy": 77,
+        "w": 120,
+        "h": 99
       },
       {
         "file": "/mugen/frames/cino/candleRush_06.png",
         "i": 6,
-        "ox": 75,
-        "oy": 74,
-        "w": 162,
-        "h": 90
+        "ox": 175,
+        "oy": 95,
+        "w": 205,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/candleRush_07.png",
         "i": 7,
-        "ox": 153,
-        "oy": 84,
-        "w": 179,
-        "h": 99
-      },
-      {
-        "file": "/mugen/frames/cino/candleRush_08.png",
-        "i": 8,
-        "ox": 44,
-        "oy": 67,
-        "w": 107,
-        "h": 83
-      },
-      {
-        "file": "/mugen/frames/cino/candleRush_09.png",
-        "i": 9,
-        "ox": 38,
-        "oy": 67,
-        "w": 75,
-        "h": 83
+        "ox": 57,
+        "oy": 85,
+        "w": 164,
+        "h": 106
       }
     ],
     "heavySwing": [
       {
         "file": "/mugen/frames/cino/heavySwing_00.png",
         "i": 0,
-        "ox": 42,
-        "oy": 109,
-        "w": 87,
-        "h": 124
+        "ox": 49,
+        "oy": 122,
+        "w": 104,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/heavySwing_01.png",
         "i": 1,
-        "ox": 53,
-        "oy": 108,
-        "w": 107,
-        "h": 123
+        "ox": 60,
+        "oy": 122,
+        "w": 124,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/heavySwing_02.png",
         "i": 2,
-        "ox": 53,
-        "oy": 109,
-        "w": 113,
-        "h": 124
+        "ox": 62,
+        "oy": 122,
+        "w": 132,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/heavySwing_03.png",
         "i": 3,
-        "ox": 61,
-        "oy": 108,
-        "w": 127,
-        "h": 124
+        "ox": 72,
+        "oy": 122,
+        "w": 150,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/heavySwing_04.png",
         "i": 4,
-        "ox": 63,
-        "oy": 107,
-        "w": 127,
-        "h": 123
+        "ox": 73,
+        "oy": 121,
+        "w": 150,
+        "h": 142
       },
       {
         "file": "/mugen/frames/cino/heavySwing_05.png",
         "i": 5,
-        "ox": 78,
-        "oy": 107,
-        "w": 162,
-        "h": 123
+        "ox": 87,
+        "oy": 120,
+        "w": 182,
+        "h": 141
       },
       {
         "file": "/mugen/frames/cino/heavySwing_06.png",
         "i": 6,
-        "ox": 49,
-        "oy": 104,
-        "w": 101,
-        "h": 119
+        "ox": 59,
+        "oy": 117,
+        "w": 124,
+        "h": 139
       },
       {
         "file": "/mugen/frames/cino/heavySwing_07.png",
         "i": 7,
-        "ox": 83,
-        "oy": 109,
-        "w": 163,
-        "h": 124
+        "ox": 95,
+        "oy": 122,
+        "w": 186,
+        "h": 143
       }
     ],
     "uppercut": [
       {
         "file": "/mugen/frames/cino/uppercut_00.png",
         "i": 0,
-        "ox": 42,
-        "oy": 109,
-        "w": 87,
-        "h": 124
+        "ox": 49,
+        "oy": 122,
+        "w": 104,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/uppercut_01.png",
         "i": 1,
-        "ox": 53,
-        "oy": 108,
-        "w": 107,
-        "h": 123
+        "ox": 60,
+        "oy": 122,
+        "w": 124,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/uppercut_02.png",
         "i": 2,
-        "ox": 53,
-        "oy": 109,
-        "w": 113,
-        "h": 124
+        "ox": 62,
+        "oy": 122,
+        "w": 132,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/uppercut_03.png",
         "i": 3,
-        "ox": 61,
-        "oy": 108,
-        "w": 127,
-        "h": 124
+        "ox": 72,
+        "oy": 122,
+        "w": 150,
+        "h": 143
       },
       {
         "file": "/mugen/frames/cino/uppercut_04.png",
         "i": 4,
-        "ox": 63,
-        "oy": 107,
-        "w": 127,
-        "h": 123
+        "ox": 73,
+        "oy": 121,
+        "w": 150,
+        "h": 142
       },
       {
         "file": "/mugen/frames/cino/uppercut_05.png",
         "i": 5,
-        "ox": 78,
-        "oy": 107,
-        "w": 162,
-        "h": 123
+        "ox": 87,
+        "oy": 120,
+        "w": 182,
+        "h": 141
       },
       {
         "file": "/mugen/frames/cino/uppercut_06.png",
         "i": 6,
-        "ox": 49,
-        "oy": 104,
-        "w": 101,
-        "h": 119
+        "ox": 59,
+        "oy": 117,
+        "w": 124,
+        "h": 139
       },
       {
         "file": "/mugen/frames/cino/uppercut_07.png",
         "i": 7,
-        "ox": 83,
-        "oy": 109,
-        "w": 163,
-        "h": 124
+        "ox": 95,
+        "oy": 122,
+        "w": 186,
+        "h": 143
       }
     ],
     "chartBreaker": [
       {
         "file": "/mugen/frames/cino/chartBreaker_00.png",
         "i": 0,
-        "ox": 95,
-        "oy": 85,
-        "w": 219,
-        "h": 101
+        "ox": 201,
+        "oy": 97,
+        "w": 369,
+        "h": 118
       },
       {
         "file": "/mugen/frames/cino/chartBreaker_01.png",
         "i": 1,
-        "ox": 138,
-        "oy": 85,
-        "w": 277,
-        "h": 101
-      },
-      {
-        "file": "/mugen/frames/cino/chartBreaker_02.png",
-        "i": 2,
-        "ox": 103,
-        "oy": 85,
-        "w": 202,
-        "h": 101
+        "ox": 136,
+        "oy": 97,
+        "w": 250,
+        "h": 118
       }
     ],
     "airAttack": [
       {
         "file": "/mugen/frames/cino/airAttack_00.png",
         "i": 0,
-        "ox": 95,
-        "oy": 85,
-        "w": 219,
-        "h": 101
+        "ox": 201,
+        "oy": 97,
+        "w": 369,
+        "h": 118
       },
       {
         "file": "/mugen/frames/cino/airAttack_01.png",
         "i": 1,
-        "ox": 138,
-        "oy": 85,
-        "w": 277,
-        "h": 101
-      },
-      {
-        "file": "/mugen/frames/cino/airAttack_02.png",
-        "i": 2,
-        "ox": 103,
-        "oy": 85,
-        "w": 202,
-        "h": 101
+        "ox": 136,
+        "oy": 97,
+        "w": 250,
+        "h": 118
       }
     ],
     "overdrive": [
       {
         "file": "/mugen/frames/cino/overdrive_00.png",
         "i": 0,
-        "ox": 45,
-        "oy": 80,
-        "w": 92,
-        "h": 95
+        "ox": 123,
+        "oy": 96,
+        "w": 230,
+        "h": 117
       },
       {
         "file": "/mugen/frames/cino/overdrive_01.png",
         "i": 1,
-        "ox": 52,
-        "oy": 70,
-        "w": 102,
-        "h": 86
+        "ox": 64,
+        "oy": 98,
+        "w": 129,
+        "h": 119
       },
       {
         "file": "/mugen/frames/cino/overdrive_02.png",
         "i": 2,
-        "ox": 47,
-        "oy": 72,
-        "w": 93,
-        "h": 88
+        "ox": 67,
+        "oy": 101,
+        "w": 130,
+        "h": 122
       },
       {
         "file": "/mugen/frames/cino/overdrive_03.png",
         "i": 3,
-        "ox": 136,
-        "oy": 87,
-        "w": 258,
-        "h": 103
+        "ox": 95,
+        "oy": 110,
+        "w": 222,
+        "h": 131
       },
       {
         "file": "/mugen/frames/cino/overdrive_04.png",
         "i": 4,
-        "ox": 52,
-        "oy": 89,
-        "w": 116,
-        "h": 104
+        "ox": 95,
+        "oy": 113,
+        "w": 190,
+        "h": 134
       },
       {
         "file": "/mugen/frames/cino/overdrive_05.png",
         "i": 5,
-        "ox": 58,
-        "oy": 96,
-        "w": 122,
-        "h": 112
-      },
-      {
-        "file": "/mugen/frames/cino/overdrive_06.png",
-        "i": 6,
-        "ox": 50,
-        "oy": 96,
-        "w": 116,
-        "h": 111
-      },
-      {
-        "file": "/mugen/frames/cino/overdrive_07.png",
-        "i": 7,
-        "ox": 65,
-        "oy": 100,
-        "w": 126,
-        "h": 115
+        "ox": 56,
+        "oy": 113,
+        "w": 104,
+        "h": 134
       }
     ],
     "bullForm": [
       {
         "file": "/mugen/frames/cino/bullForm_00.png",
         "i": 0,
-        "ox": 45,
-        "oy": 80,
-        "w": 92,
-        "h": 95
+        "ox": 123,
+        "oy": 96,
+        "w": 230,
+        "h": 117
       },
       {
         "file": "/mugen/frames/cino/bullForm_01.png",
         "i": 1,
-        "ox": 52,
-        "oy": 70,
-        "w": 102,
-        "h": 86
+        "ox": 64,
+        "oy": 98,
+        "w": 129,
+        "h": 119
       },
       {
         "file": "/mugen/frames/cino/bullForm_02.png",
         "i": 2,
-        "ox": 47,
-        "oy": 72,
-        "w": 93,
-        "h": 88
+        "ox": 67,
+        "oy": 101,
+        "w": 130,
+        "h": 122
       },
       {
         "file": "/mugen/frames/cino/bullForm_03.png",
         "i": 3,
-        "ox": 136,
-        "oy": 87,
-        "w": 258,
-        "h": 103
+        "ox": 95,
+        "oy": 110,
+        "w": 222,
+        "h": 131
       },
       {
         "file": "/mugen/frames/cino/bullForm_04.png",
         "i": 4,
-        "ox": 52,
-        "oy": 89,
-        "w": 116,
-        "h": 104
+        "ox": 95,
+        "oy": 113,
+        "w": 190,
+        "h": 134
       },
       {
         "file": "/mugen/frames/cino/bullForm_05.png",
         "i": 5,
-        "ox": 58,
-        "oy": 96,
-        "w": 122,
-        "h": 112
-      },
-      {
-        "file": "/mugen/frames/cino/bullForm_06.png",
-        "i": 6,
-        "ox": 50,
-        "oy": 96,
-        "w": 116,
-        "h": 111
-      },
-      {
-        "file": "/mugen/frames/cino/bullForm_07.png",
-        "i": 7,
-        "ox": 65,
-        "oy": 100,
-        "w": 126,
-        "h": 115
+        "ox": 56,
+        "oy": 113,
+        "w": 104,
+        "h": 134
       }
     ],
     "bullIdle": [
       {
         "file": "/mugen/frames/cino/bullIdle_00.png",
         "i": 0,
-        "ox": 52,
-        "oy": 83,
-        "w": 113,
-        "h": 99
+        "ox": 63,
+        "oy": 93,
+        "w": 134,
+        "h": 114
       },
       {
         "file": "/mugen/frames/cino/bullIdle_01.png",
         "i": 1,
-        "ox": 57,
-        "oy": 82,
-        "w": 118,
-        "h": 97
+        "ox": 61,
+        "oy": 89,
+        "w": 127,
+        "h": 110
       },
       {
         "file": "/mugen/frames/cino/bullIdle_02.png",
         "i": 2,
-        "ox": 57,
-        "oy": 84,
-        "w": 117,
-        "h": 99
+        "ox": 54,
+        "oy": 92,
+        "w": 125,
+        "h": 113
       },
       {
         "file": "/mugen/frames/cino/bullIdle_03.png",
         "i": 3,
-        "ox": 62,
-        "oy": 84,
-        "w": 126,
-        "h": 100
+        "ox": 56,
+        "oy": 92,
+        "w": 131,
+        "h": 113
       },
       {
         "file": "/mugen/frames/cino/bullIdle_04.png",
         "i": 4,
-        "ox": 60,
-        "oy": 83,
-        "w": 122,
-        "h": 99
+        "ox": 62,
+        "oy": 92,
+        "w": 130,
+        "h": 113
       },
       {
         "file": "/mugen/frames/cino/bullIdle_05.png",
         "i": 5,
-        "ox": 54,
-        "oy": 84,
-        "w": 121,
-        "h": 100
+        "ox": 71,
+        "oy": 93,
+        "w": 132,
+        "h": 114
       },
       {
         "file": "/mugen/frames/cino/bullIdle_06.png",
         "i": 6,
-        "ox": 56,
-        "oy": 84,
-        "w": 128,
-        "h": 99
+        "ox": 71,
+        "oy": 95,
+        "w": 153,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/bullIdle_07.png",
         "i": 7,
-        "ox": 57,
-        "oy": 84,
-        "w": 118,
-        "h": 100
+        "ox": 64,
+        "oy": 94,
+        "w": 136,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/bullIdle_08.png",
         "i": 8,
-        "ox": 47,
-        "oy": 85,
-        "w": 101,
-        "h": 101
+        "ox": 58,
+        "oy": 94,
+        "w": 123,
+        "h": 115
       }
     ],
     "bullWalk": [
       {
         "file": "/mugen/frames/cino/bullWalk_00.png",
         "i": 0,
-        "ox": 62,
-        "oy": 70,
-        "w": 111,
-        "h": 86
+        "ox": 71,
+        "oy": 82,
+        "w": 130,
+        "h": 103
       },
       {
         "file": "/mugen/frames/cino/bullWalk_01.png",
         "i": 1,
-        "ox": 52,
-        "oy": 70,
-        "w": 114,
-        "h": 86
+        "ox": 62,
+        "oy": 81,
+        "w": 135,
+        "h": 102
       },
       {
         "file": "/mugen/frames/cino/bullWalk_02.png",
         "i": 2,
-        "ox": 57,
-        "oy": 70,
-        "w": 122,
-        "h": 85
+        "ox": 68,
+        "oy": 81,
+        "w": 143,
+        "h": 102
       },
       {
         "file": "/mugen/frames/cino/bullWalk_03.png",
         "i": 3,
-        "ox": 63,
-        "oy": 70,
-        "w": 127,
-        "h": 86
+        "ox": 74,
+        "oy": 81,
+        "w": 149,
+        "h": 102
       },
       {
         "file": "/mugen/frames/cino/bullWalk_04.png",
         "i": 4,
-        "ox": 62,
-        "oy": 72,
-        "w": 128,
-        "h": 87
+        "ox": 66,
+        "oy": 80,
+        "w": 150,
+        "h": 101
       },
       {
         "file": "/mugen/frames/cino/bullWalk_05.png",
         "i": 5,
-        "ox": 58,
-        "oy": 65,
-        "w": 143,
-        "h": 81
+        "ox": 70,
+        "oy": 75,
+        "w": 164,
+        "h": 96
       },
       {
         "file": "/mugen/frames/cino/bullWalk_06.png",
         "i": 6,
-        "ox": 43,
-        "oy": 70,
-        "w": 107,
-        "h": 85
+        "ox": 54,
+        "oy": 81,
+        "w": 127,
+        "h": 102
       },
       {
         "file": "/mugen/frames/cino/bullWalk_07.png",
         "i": 7,
-        "ox": 46,
-        "oy": 79,
-        "w": 106,
-        "h": 94
+        "ox": 56,
+        "oy": 90,
+        "w": 128,
+        "h": 111
       },
       {
         "file": "/mugen/frames/cino/bullWalk_08.png",
         "i": 8,
-        "ox": 56,
-        "oy": 77,
-        "w": 110,
-        "h": 92
+        "ox": 65,
+        "oy": 88,
+        "w": 125,
+        "h": 109
       }
     ],
     "bullRun": [
       {
         "file": "/mugen/frames/cino/bullRun_00.png",
         "i": 0,
-        "ox": 60,
-        "oy": 70,
-        "w": 116,
-        "h": 85
+        "ox": 72,
+        "oy": 79,
+        "w": 138,
+        "h": 100
       },
       {
         "file": "/mugen/frames/cino/bullRun_01.png",
         "i": 1,
-        "ox": 77,
-        "oy": 70,
-        "w": 163,
-        "h": 85
+        "ox": 86,
+        "oy": 78,
+        "w": 180,
+        "h": 99
       },
       {
         "file": "/mugen/frames/cino/bullRun_02.png",
         "i": 2,
-        "ox": 48,
-        "oy": 73,
-        "w": 114,
-        "h": 89
+        "ox": 62,
+        "oy": 76,
+        "w": 133,
+        "h": 97
       },
       {
         "file": "/mugen/frames/cino/bullRun_03.png",
         "i": 3,
-        "ox": 65,
-        "oy": 73,
-        "w": 141,
-        "h": 89
+        "ox": 76,
+        "oy": 78,
+        "w": 164,
+        "h": 100
       },
       {
         "file": "/mugen/frames/cino/bullRun_04.png",
         "i": 4,
-        "ox": 63,
-        "oy": 73,
-        "w": 142,
-        "h": 89
+        "ox": 74,
+        "oy": 83,
+        "w": 164,
+        "h": 104
       },
       {
         "file": "/mugen/frames/cino/bullRun_05.png",
         "i": 5,
-        "ox": 69,
-        "oy": 73,
-        "w": 152,
-        "h": 89
+        "ox": 60,
+        "oy": 78,
+        "w": 120,
+        "h": 99
       },
       {
         "file": "/mugen/frames/cino/bullRun_06.png",
         "i": 6,
-        "ox": 59,
-        "oy": 70,
-        "w": 161,
-        "h": 86
+        "ox": 54,
+        "oy": 78,
+        "w": 111,
+        "h": 99
+      },
+      {
+        "file": "/mugen/frames/cino/bullRun_07.png",
+        "i": 7,
+        "ox": 55,
+        "oy": 78,
+        "w": 126,
+        "h": 100
+      },
+      {
+        "file": "/mugen/frames/cino/bullRun_08.png",
+        "i": 8,
+        "ox": 44,
+        "oy": 80,
+        "w": 112,
+        "h": 101
       }
     ],
     "bullJumpStart": [
       {
         "file": "/mugen/frames/cino/bullJumpStart_00.png",
         "i": 0,
-        "ox": 45,
-        "oy": 73,
-        "w": 98,
-        "h": 89
+        "ox": 53,
+        "oy": 81,
+        "w": 111,
+        "h": 102
       },
       {
         "file": "/mugen/frames/cino/bullJumpStart_01.png",
         "i": 1,
-        "ox": 73,
-        "oy": 89,
-        "w": 119,
-        "h": 105
+        "ox": 71,
+        "oy": 100,
+        "w": 120,
+        "h": 121
       }
     ],
     "bullJump": [
       {
         "file": "/mugen/frames/cino/bullJump_00.png",
         "i": 0,
-        "ox": 53,
-        "oy": 80,
-        "w": 128,
-        "h": 96
+        "ox": 35,
+        "oy": 91,
+        "w": 121,
+        "h": 112
       },
       {
         "file": "/mugen/frames/cino/bullJump_01.png",
         "i": 1,
-        "ox": 102,
-        "oy": 96,
-        "w": 127,
-        "h": 112
+        "ox": 123,
+        "oy": 102,
+        "w": 146,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullJump_02.png",
         "i": 2,
-        "ox": 60,
-        "oy": 96,
-        "w": 129,
-        "h": 112
+        "ox": 128,
+        "oy": 110,
+        "w": 269,
+        "h": 131
       }
     ],
     "bullLand": [
       {
         "file": "/mugen/frames/cino/bullLand_00.png",
         "i": 0,
-        "ox": 100,
-        "oy": 93,
-        "w": 137,
-        "h": 109
+        "ox": 87,
+        "oy": 106,
+        "w": 174,
+        "h": 127
       },
       {
         "file": "/mugen/frames/cino/bullLand_01.png",
         "i": 1,
-        "ox": 76,
-        "oy": 93,
-        "w": 152,
-        "h": 109
+        "ox": 54,
+        "oy": 77,
+        "w": 109,
+        "h": 98
       },
       {
         "file": "/mugen/frames/cino/bullLand_02.png",
         "i": 2,
-        "ox": 70,
-        "oy": 79,
-        "w": 139,
-        "h": 95
+        "ox": 54,
+        "oy": 85,
+        "w": 106,
+        "h": 106
       }
     ],
     "bullAttack": [
       {
         "file": "/mugen/frames/cino/bullAttack_00.png",
         "i": 0,
-        "ox": 48,
-        "oy": 83,
-        "w": 95,
-        "h": 98
+        "ox": 57,
+        "oy": 93,
+        "w": 113,
+        "h": 114
       },
       {
         "file": "/mugen/frames/cino/bullAttack_01.png",
         "i": 1,
-        "ox": 61,
-        "oy": 83,
-        "w": 122,
-        "h": 98
+        "ox": 74,
+        "oy": 94,
+        "w": 143,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/bullAttack_02.png",
         "i": 2,
-        "ox": 57,
-        "oy": 84,
-        "w": 120,
-        "h": 99
+        "ox": 68,
+        "oy": 96,
+        "w": 140,
+        "h": 117
       },
       {
         "file": "/mugen/frames/cino/bullAttack_03.png",
         "i": 3,
-        "ox": 48,
-        "oy": 84,
-        "w": 109,
-        "h": 99
+        "ox": 60,
+        "oy": 95,
+        "w": 130,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/bullAttack_04.png",
         "i": 4,
-        "ox": 62,
-        "oy": 90,
-        "w": 124,
-        "h": 105
+        "ox": 70,
+        "oy": 102,
+        "w": 144,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullAttack_05.png",
         "i": 5,
-        "ox": 47,
-        "oy": 75,
-        "w": 107,
-        "h": 90
+        "ox": 56,
+        "oy": 85,
+        "w": 127,
+        "h": 106
       },
       {
         "file": "/mugen/frames/cino/bullAttack_06.png",
         "i": 6,
-        "ox": 56,
-        "oy": 78,
-        "w": 114,
-        "h": 94
+        "ox": 65,
+        "oy": 91,
+        "w": 135,
+        "h": 112
       },
       {
         "file": "/mugen/frames/cino/bullAttack_07.png",
         "i": 7,
-        "ox": 67,
-        "oy": 88,
-        "w": 131,
-        "h": 103
+        "ox": 80,
+        "oy": 100,
+        "w": 150,
+        "h": 121
       },
       {
         "file": "/mugen/frames/cino/bullAttack_08.png",
         "i": 8,
-        "ox": 75,
-        "oy": 81,
-        "w": 150,
-        "h": 96
+        "ox": 78,
+        "oy": 92,
+        "w": 174,
+        "h": 113
       }
     ],
     "bullSlash": [
       {
         "file": "/mugen/frames/cino/bullSlash_00.png",
         "i": 0,
-        "ox": 52,
-        "oy": 68,
-        "w": 106,
-        "h": 84
+        "ox": 112,
+        "oy": 86,
+        "w": 247,
+        "h": 107
       },
       {
         "file": "/mugen/frames/cino/bullSlash_01.png",
         "i": 1,
-        "ox": 76,
-        "oy": 80,
-        "w": 144,
-        "h": 95
+        "ox": 52,
+        "oy": 86,
+        "w": 134,
+        "h": 107
       },
       {
         "file": "/mugen/frames/cino/bullSlash_02.png",
         "i": 2,
-        "ox": 61,
-        "oy": 78,
-        "w": 129,
-        "h": 93
+        "ox": 93,
+        "oy": 86,
+        "w": 160,
+        "h": 107
       },
       {
         "file": "/mugen/frames/cino/bullSlash_03.png",
         "i": 3,
-        "ox": 100,
-        "oy": 80,
-        "w": 145,
-        "h": 96
+        "ox": 93,
+        "oy": 82,
+        "w": 152,
+        "h": 103
       },
       {
         "file": "/mugen/frames/cino/bullSlash_04.png",
         "i": 4,
-        "ox": 81,
-        "oy": 71,
-        "w": 132,
-        "h": 87
+        "ox": 105,
+        "oy": 81,
+        "w": 220,
+        "h": 102
       },
       {
         "file": "/mugen/frames/cino/bullSlash_05.png",
         "i": 5,
-        "ox": 53,
-        "oy": 70,
-        "w": 111,
-        "h": 86
-      },
-      {
-        "file": "/mugen/frames/cino/bullSlash_06.png",
-        "i": 6,
-        "ox": 57,
-        "oy": 70,
-        "w": 119,
-        "h": 86
-      },
-      {
-        "file": "/mugen/frames/cino/bullSlash_07.png",
-        "i": 7,
-        "ox": 76,
-        "oy": 76,
-        "w": 147,
-        "h": 91
+        "ox": 87,
+        "oy": 83,
+        "w": 169,
+        "h": 104
       }
     ],
     "bullSpecial": [
       {
         "file": "/mugen/frames/cino/bullSpecial_00.png",
         "i": 0,
-        "ox": 84,
-        "oy": 90,
-        "w": 131,
-        "h": 105
+        "ox": 91,
+        "oy": 95,
+        "w": 136,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_01.png",
         "i": 1,
-        "ox": 23,
-        "oy": 90,
-        "w": 125,
-        "h": 105
+        "ox": 32,
+        "oy": 102,
+        "w": 161,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_02.png",
         "i": 2,
-        "ox": 64,
-        "oy": 90,
-        "w": 154,
-        "h": 105
+        "ox": 62,
+        "oy": 102,
+        "w": 165,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_03.png",
         "i": 3,
-        "ox": 53,
-        "oy": 90,
-        "w": 120,
-        "h": 105
+        "ox": 76,
+        "oy": 98,
+        "w": 152,
+        "h": 119
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_04.png",
         "i": 4,
-        "ox": 40,
-        "oy": 90,
-        "w": 113,
-        "h": 105
+        "ox": 49,
+        "oy": 102,
+        "w": 132,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_05.png",
         "i": 5,
-        "ox": 102,
-        "oy": 90,
-        "w": 120,
-        "h": 105
+        "ox": 117,
+        "oy": 102,
+        "w": 141,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_06.png",
         "i": 6,
-        "ox": 49,
-        "oy": 90,
-        "w": 98,
-        "h": 105
+        "ox": 58,
+        "oy": 102,
+        "w": 117,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/bullSpecial_07.png",
         "i": 7,
-        "ox": 110,
-        "oy": 90,
-        "w": 170,
-        "h": 105
+        "ox": 124,
+        "oy": 102,
+        "w": 195,
+        "h": 123
       }
     ],
     "bullSuper": [
       {
         "file": "/mugen/frames/cino/bullSuper_00.png",
         "i": 0,
-        "ox": 59,
-        "oy": 77,
-        "w": 125,
-        "h": 92
+        "ox": 68,
+        "oy": 86,
+        "w": 146,
+        "h": 107
       },
       {
         "file": "/mugen/frames/cino/bullSuper_01.png",
         "i": 1,
-        "ox": 63,
-        "oy": 81,
-        "w": 119,
-        "h": 96
+        "ox": 74,
+        "oy": 91,
+        "w": 140,
+        "h": 112
       },
       {
         "file": "/mugen/frames/cino/bullSuper_02.png",
         "i": 2,
-        "ox": 71,
-        "oy": 82,
-        "w": 144,
-        "h": 97
+        "ox": 83,
+        "oy": 93,
+        "w": 166,
+        "h": 114
       },
       {
         "file": "/mugen/frames/cino/bullSuper_03.png",
         "i": 3,
-        "ox": 72,
-        "oy": 81,
-        "w": 147,
-        "h": 96
+        "ox": 84,
+        "oy": 91,
+        "w": 169,
+        "h": 112
       },
       {
         "file": "/mugen/frames/cino/bullSuper_04.png",
         "i": 4,
-        "ox": 58,
-        "oy": 79,
-        "w": 112,
-        "h": 95
+        "ox": 68,
+        "oy": 90,
+        "w": 132,
+        "h": 111
       },
       {
         "file": "/mugen/frames/cino/bullSuper_05.png",
         "i": 5,
-        "ox": 67,
-        "oy": 71,
-        "w": 146,
-        "h": 86
+        "ox": 81,
+        "oy": 83,
+        "w": 171,
+        "h": 104
       },
       {
         "file": "/mugen/frames/cino/bullSuper_06.png",
         "i": 6,
-        "ox": 100,
-        "oy": 81,
-        "w": 197,
-        "h": 97
+        "ox": 107,
+        "oy": 90,
+        "w": 222,
+        "h": 111
       }
     ],
     "bullHit": [
       {
         "file": "/mugen/frames/cino/bullHit_00.png",
         "i": 0,
-        "ox": 43,
-        "oy": 63,
-        "w": 96,
-        "h": 78
+        "ox": 66,
+        "oy": 67,
+        "w": 140,
+        "h": 88
       },
       {
         "file": "/mugen/frames/cino/bullHit_01.png",
         "i": 1,
-        "ox": 44,
-        "oy": 61,
-        "w": 97,
-        "h": 77
+        "ox": 45,
+        "oy": 72,
+        "w": 93,
+        "h": 93
       },
       {
         "file": "/mugen/frames/cino/bullHit_02.png",
         "i": 2,
-        "ox": 56,
-        "oy": 66,
-        "w": 113,
-        "h": 82
+        "ox": 67,
+        "oy": 75,
+        "w": 132,
+        "h": 96
       }
     ],
     "bullKnockdown": [
       {
         "file": "/mugen/frames/cino/bullKnockdown_00.png",
         "i": 0,
-        "ox": 43,
-        "oy": 57,
-        "w": 94,
-        "h": 72
+        "ox": 58,
+        "oy": 55,
+        "w": 127,
+        "h": 76
       },
       {
         "file": "/mugen/frames/cino/bullKnockdown_01.png",
         "i": 1,
-        "ox": 51,
-        "oy": 48,
-        "w": 105,
-        "h": 63
+        "ox": 67,
+        "oy": 56,
+        "w": 131,
+        "h": 77
       },
       {
         "file": "/mugen/frames/cino/bullKnockdown_02.png",
         "i": 2,
-        "ox": 56,
-        "oy": 44,
+        "ox": 59,
+        "oy": 52,
         "w": 106,
-        "h": 60
+        "h": 73
       }
     ],
     "bullGetUp": [
       {
         "file": "/mugen/frames/cino/bullGetUp_00.png",
         "i": 0,
-        "ox": 44,
-        "oy": 63,
-        "w": 92,
-        "h": 79
+        "ox": 54,
+        "oy": 68,
+        "w": 112,
+        "h": 89
       },
       {
         "file": "/mugen/frames/cino/bullGetUp_01.png",
         "i": 1,
-        "ox": 47,
-        "oy": 68,
-        "w": 96,
-        "h": 84
+        "ox": 54,
+        "oy": 75,
+        "w": 106,
+        "h": 96
       },
       {
         "file": "/mugen/frames/cino/bullGetUp_02.png",
         "i": 2,
-        "ox": 51,
-        "oy": 70,
-        "w": 99,
-        "h": 85
+        "ox": 46,
+        "oy": 76,
+        "w": 102,
+        "h": 97
       }
     ],
     "block": [
       {
         "file": "/mugen/frames/cino/block_00.png",
         "i": 0,
-        "ox": 46,
-        "oy": 85,
-        "w": 90,
-        "h": 101
+        "ox": 55,
+        "oy": 87,
+        "w": 106,
+        "h": 109
       },
       {
         "file": "/mugen/frames/cino/block_01.png",
         "i": 1,
-        "ox": 51,
-        "oy": 82,
-        "w": 101,
-        "h": 97
+        "ox": 58,
+        "oy": 83,
+        "w": 117,
+        "h": 104
       }
     ],
     "hit": [
       {
         "file": "/mugen/frames/cino/hit_00.png",
         "i": 0,
-        "ox": 49,
-        "oy": 133,
-        "w": 101,
-        "h": 149
+        "ox": 57,
+        "oy": 140,
+        "w": 116,
+        "h": 161
       },
       {
         "file": "/mugen/frames/cino/hit_01.png",
         "i": 1,
-        "ox": 51,
-        "oy": 133,
-        "w": 101,
-        "h": 148
+        "ox": 56,
+        "oy": 139,
+        "w": 112,
+        "h": 160
       }
     ],
     "knockdown": [
       {
         "file": "/mugen/frames/cino/knockdown_00.png",
         "i": 0,
-        "ox": 47,
-        "oy": 96,
-        "w": 102,
-        "h": 111
+        "ox": 42,
+        "oy": 95,
+        "w": 105,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/knockdown_01.png",
         "i": 1,
-        "ox": 51,
+        "ox": 60,
         "oy": 94,
-        "w": 99,
-        "h": 110
+        "w": 113,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/knockdown_02.png",
         "i": 2,
-        "ox": 46,
-        "oy": 85,
-        "w": 90,
-        "h": 101
+        "ox": 55,
+        "oy": 87,
+        "w": 106,
+        "h": 109
       },
       {
         "file": "/mugen/frames/cino/knockdown_03.png",
         "i": 3,
-        "ox": 51,
-        "oy": 82,
-        "w": 101,
-        "h": 97
+        "ox": 58,
+        "oy": 83,
+        "w": 117,
+        "h": 104
       }
     ],
     "getUp": [
       {
         "file": "/mugen/frames/cino/getUp_00.png",
         "i": 0,
-        "ox": 47,
-        "oy": 96,
-        "w": 102,
-        "h": 111
+        "ox": 42,
+        "oy": 95,
+        "w": 105,
+        "h": 116
       },
       {
         "file": "/mugen/frames/cino/getUp_01.png",
         "i": 1,
-        "ox": 51,
+        "ox": 60,
         "oy": 94,
-        "w": 99,
-        "h": 110
+        "w": 113,
+        "h": 115
       },
       {
         "file": "/mugen/frames/cino/getUp_02.png",
         "i": 2,
-        "ox": 46,
-        "oy": 85,
-        "w": 90,
-        "h": 101
+        "ox": 55,
+        "oy": 87,
+        "w": 106,
+        "h": 109
       }
     ],
     "taunt": [
       {
         "file": "/mugen/frames/cino/taunt_00.png",
         "i": 0,
-        "ox": 47,
-        "oy": 135,
-        "w": 96,
-        "h": 150
+        "ox": 51,
+        "oy": 138,
+        "w": 106,
+        "h": 159
       },
       {
         "file": "/mugen/frames/cino/taunt_01.png",
         "i": 1,
         "ox": 52,
-        "oy": 132,
-        "w": 104,
-        "h": 147
+        "oy": 137,
+        "w": 108,
+        "h": 159
       },
       {
         "file": "/mugen/frames/cino/taunt_02.png",
         "i": 2,
-        "ox": 51,
-        "oy": 134,
-        "w": 104,
-        "h": 150
+        "ox": 49,
+        "oy": 139,
+        "w": 105,
+        "h": 160
       },
       {
         "file": "/mugen/frames/cino/taunt_03.png",
         "i": 3,
-        "ox": 48,
-        "oy": 134,
-        "w": 98,
-        "h": 149
+        "ox": 50,
+        "oy": 139,
+        "w": 111,
+        "h": 160
       }
     ],
     "dash": [
       {
         "file": "/mugen/frames/cino/dash_00.png",
         "i": 0,
-        "ox": 67,
-        "oy": 105,
-        "w": 150,
-        "h": 121
+        "ox": 76,
+        "oy": 106,
+        "w": 166,
+        "h": 127
       },
       {
         "file": "/mugen/frames/cino/dash_01.png",
         "i": 1,
-        "ox": 84,
-        "oy": 102,
-        "w": 124,
-        "h": 118
+        "ox": 75,
+        "oy": 103,
+        "w": 115,
+        "h": 124
       },
       {
         "file": "/mugen/frames/cino/dash_02.png",
         "i": 2,
-        "ox": 97,
-        "oy": 108,
-        "w": 128,
+        "ox": 87,
+        "oy": 102,
+        "w": 129,
         "h": 123
       },
       {
         "file": "/mugen/frames/cino/dash_03.png",
         "i": 3,
-        "ox": 18,
-        "oy": 108,
-        "w": 112,
-        "h": 124
+        "ox": 49,
+        "oy": 96,
+        "w": 126,
+        "h": 117
       },
       {
         "file": "/mugen/frames/cino/dash_04.png",
         "i": 4,
-        "ox": 112,
+        "ox": 88,
         "oy": 102,
-        "w": 143,
-        "h": 118
+        "w": 119,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/dash_05.png",
         "i": 5,
-        "ox": 84,
+        "ox": 75,
         "oy": 103,
-        "w": 129,
-        "h": 119
+        "w": 119,
+        "h": 124
       },
       {
         "file": "/mugen/frames/cino/dash_06.png",
         "i": 6,
-        "ox": 79,
-        "oy": 102,
+        "ox": 75,
+        "oy": 104,
         "w": 123,
-        "h": 118
+        "h": 125
       },
       {
         "file": "/mugen/frames/cino/dash_07.png",
         "i": 7,
-        "ox": 73,
-        "oy": 99,
-        "w": 120,
-        "h": 114
+        "ox": 61,
+        "oy": 100,
+        "w": 110,
+        "h": 121
       }
     ],
     "backdash": [
       {
         "file": "/mugen/frames/cino/backdash_00.png",
         "i": 0,
-        "ox": 73,
-        "oy": 99,
-        "w": 120,
-        "h": 114
+        "ox": 61,
+        "oy": 100,
+        "w": 110,
+        "h": 121
       },
       {
         "file": "/mugen/frames/cino/backdash_01.png",
         "i": 1,
-        "ox": 79,
-        "oy": 102,
+        "ox": 75,
+        "oy": 104,
         "w": 123,
-        "h": 118
+        "h": 125
       },
       {
         "file": "/mugen/frames/cino/backdash_02.png",
         "i": 2,
-        "ox": 84,
+        "ox": 75,
         "oy": 103,
-        "w": 129,
-        "h": 119
+        "w": 119,
+        "h": 124
       },
       {
         "file": "/mugen/frames/cino/backdash_03.png",
         "i": 3,
-        "ox": 112,
+        "ox": 88,
         "oy": 102,
-        "w": 143,
-        "h": 118
+        "w": 119,
+        "h": 123
       },
       {
         "file": "/mugen/frames/cino/backdash_04.png",
         "i": 4,
-        "ox": 18,
-        "oy": 108,
-        "w": 112,
-        "h": 124
+        "ox": 49,
+        "oy": 96,
+        "w": 126,
+        "h": 117
       },
       {
         "file": "/mugen/frames/cino/backdash_05.png",
         "i": 5,
-        "ox": 97,
-        "oy": 108,
-        "w": 128,
+        "ox": 87,
+        "oy": 102,
+        "w": 129,
         "h": 123
       },
       {
         "file": "/mugen/frames/cino/backdash_06.png",
         "i": 6,
-        "ox": 84,
-        "oy": 102,
-        "w": 124,
-        "h": 118
+        "ox": 75,
+        "oy": 103,
+        "w": 115,
+        "h": 124
       },
       {
         "file": "/mugen/frames/cino/backdash_07.png",
         "i": 7,
-        "ox": 67,
-        "oy": 105,
-        "w": 150,
-        "h": 121
+        "ox": 76,
+        "oy": 106,
+        "w": 166,
+        "h": 127
       }
     ]
   }
