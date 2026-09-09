@@ -17,3 +17,7 @@ Gameplay frames: `public/mugen/frames/cino/` (idle/walk/run/crouch/jump*). Alias
 | JUMP_LAND | s1_035–037 (3) | no | 55 | jumpLand |
 
 Walk is a real 9-frame cycle (not sliding idle). Jump: JUMP_START → JUMP_AIR → JUMP_LAND.
+
+Public copies for the engine feed: `public/mugen/atlas/cino-anim-map.json` + `cino-anim-map-compact.json`. Gameplay atlas `cino.json` tags each movement frame with `s1` / `clip` / `ms`.
+
+Soft-watch RUN `s1_025`: specialist native origin was ~221/246 (~90% right). Gameplay atlas after scale + snap is **ox=49 / w=108 (~45%)**, in band with the other run frames — no extra slide expected.
