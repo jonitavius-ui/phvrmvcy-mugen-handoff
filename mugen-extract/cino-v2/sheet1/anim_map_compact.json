@@ -1,0 +1,98 @@
+{
+  "CINO_BASE_HEIGHT": 212,
+  "clips": {
+    "IDLE": {
+      "engine": "idle",
+      "frames": [
+        "s1_001",
+        "s1_002",
+        "s1_003",
+        "s1_004",
+        "s1_005",
+        "s1_006",
+        "s1_007",
+        "s1_008",
+        "s1_009",
+        "s1_010",
+        "s1_011"
+      ],
+      "count": 11,
+      "loop": true,
+      "ms": 100
+    },
+    "WALK": {
+      "engine": "walk",
+      "frames": [
+        "s1_012",
+        "s1_013",
+        "s1_014",
+        "s1_015",
+        "s1_016",
+        "s1_017",
+        "s1_018",
+        "s1_019",
+        "s1_020"
+      ],
+      "count": 9,
+      "loop": true,
+      "ms": 80
+    },
+    "RUN": {
+      "engine": "run",
+      "frames": [
+        "s1_021",
+        "s1_022",
+        "s1_023",
+        "s1_024",
+        "s1_025",
+        "s1_026",
+        "s1_027",
+        "s1_028"
+      ],
+      "count": 8,
+      "loop": true,
+      "ms": 60
+    },
+    "CROUCH": {
+      "engine": "crouch",
+      "frames": [
+        "s1_029",
+        "s1_030"
+      ],
+      "count": 2,
+      "loop": false,
+      "ms": 50
+    },
+    "JUMP_START": {
+      "engine": "jumpStart",
+      "frames": [
+        "s1_031"
+      ],
+      "count": 1,
+      "loop": false,
+      "ms": 50
+    },
+    "JUMP_AIR": {
+      "engine": "jumpLoop",
+      "frames": [
+        "s1_032",
+        "s1_033",
+        "s1_034"
+      ],
+      "count": 3,
+      "loop": true,
+      "ms": 70
+    },
+    "JUMP_LAND": {
+      "engine": "jumpLand",
+      "frames": [
+        "s1_035",
+        "s1_036",
+        "s1_037"
+      ],
+      "count": 3,
+      "loop": false,
+      "ms": 55
+    }
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "CINO_BASE_HEIGHT": 212,
+  "clips": {
+    "IDLE": {
+      "engineAnim": "idle",
+      "count": 11,
+      "loop": true,
+      "holdLast": false,
+      "ms": 100,
+      "ids": [
+        "s1_001",
+        "s1_002",
+        "s1_003",
+        "s1_004",
+        "s1_005",
+        "s1_006",
+        "s1_007",
+        "s1_008",
+        "s1_009",
+        "s1_010",
+        "s1_011"
+      ]
+    },
+    "WALK": {
+      "engineAnim": "walk",
+      "count": 9,
+      "loop": true,
+      "holdLast": false,
+      "ms": 80,
+      "ids": [
+        "s1_012",
+        "s1_013",
+        "s1_014",
+        "s1_015",
+        "s1_016",
+        "s1_017",
+        "s1_018",
+        "s1_019",
+        "s1_020"
+      ]
+    },
+    "RUN": {
+      "engineAnim": "run",
+      "count": 8,
+      "loop": true,
+      "holdLast": false,
+      "ms": 60,
+      "ids": [
+        "s1_021",
+        "s1_022",
+        "s1_023",
+        "s1_024",
+        "s1_025",
+        "s1_026",
+        "s1_027",
+        "s1_028"
+      ]
+    },
+    "CROUCH": {
+      "engineAnim": "crouch",
+      "count": 2,
+      "loop": false,
+      "holdLast": true,
+      "ms": 50,
+      "ids": [
+        "s1_029",
+        "s1_030"
+      ]
+    },
+    "JUMP_START": {
+      "engineAnim": "jumpStart",
+      "count": 1,
+      "loop": false,
+      "holdLast": false,
+      "ms": 50,
+      "ids": [
+        "s1_031"
+      ]
+    },
+    "JUMP_AIR": {
+      "engineAnim": "jumpLoop",
+      "count": 3,
+      "loop": true,
+      "holdLast": false,
+      "ms": 70,
+      "ids": [
+        "s1_032",
+        "s1_033",
+        "s1_034"
+      ]
+    },
+    "JUMP_LAND": {
+      "engineAnim": "jumpLand",
+      "count": 3,
+      "loop": false,
+      "holdLast": false,
+      "ms": 55,
+      "ids": [
+        "s1_035",
+        "s1_036",
+        "s1_037"
+      ]
+    }
+  },
+  "frames": [
+    {
+      "id": "s1_001",
+      "file": "frames/s1_001_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 0,
+      "ox": 46,
+      "oy": 136,
+      "w": 97,
+      "h": 153,
+      "gameplay": "/mugen/frames/cino/idle_00.png"
+    },
+    {
+      "id": "s1_002",
+      "file": "frames/s1_002_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 1,
+      "ox": 55,
+      "oy": 133,
+      "w": 111,
+      "h": 151,
+      "gameplay": "/mugen/frames/cino/idle_01.png"
+    },
+    {
+      "id": "s1_003",
+      "file": "frames/s1_003_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 2,
+      "ox": 53,
+      "oy": 135,
+      "w": 110,
+      "h": 152,
+      "gameplay": "/mugen/frames/cino/idle_02.png"
+    },
+    {
+      "id": "s1_004",
+      "file": "frames/s1_004_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 3,
+      "ox": 53,
+      "oy": 135,
+      "w": 109,
+      "h": 153,
+      "gameplay": "/mugen/frames/cino/idle_03.png"
+    },
+    {
+      "id": "s1_005",
+      "file": "frames/s1_005_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 4,
+      "ox": 52,
+      "oy": 134,
+      "w": 108,
+      "h": 151,
+      "gameplay": "/mugen/frames/cino/idle_04.png"
+    },
+    {
+      "id": "s1_006",
+      "file": "frames/s1_006_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 5,
+      "ox": 56,
+      "oy": 134,
+      "w": 109,
+      "h": 152,
+      "gameplay": "/mugen/frames/cino/idle_05.png"
+    },
+    {
+      "id": "s1_007",
+      "file": "frames/s1_007_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 6,
+      "ox": 54,
+      "oy": 134,
+      "w": 109,
+      "h": 152,
+      "gameplay": "/mugen/frames/cino/idle_06.png"
+    },
+    {
+      "id": "s1_008",
+      "file": "frames/s1_008_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 7,
+      "ox": 53,
+      "oy": 134,
+      "w": 107,
+      "h": 151,
+      "gameplay": "/mugen/frames/cino/idle_07.png"
+    },
+    {
+      "id": "s1_009",
+      "file": "frames/s1_009_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 8,
+      "ox": 55,
+      "oy": 135,
+      "w": 109,
+      "h": 153,
+      "gameplay": "/mugen/frames/cino/idle_08.png"
+    },
+    {
+      "id": "s1_010",
+      "file": "frames/s1_010_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 9,
+      "ox": 55,
+      "oy": 134,
+      "w": 111,
+      "h": 152,
+      "gameplay": "/mugen/frames/cino/idle_09.png"
+    },
+    {
+      "id": "s1_011",
+      "file": "frames/s1_011_IDLE.png",
+      "clip": "IDLE",
+      "engineAnim": "idle",
+      "i": 10,
+      "ox": 51,
+      "oy": 134,
+      "w": 103,
+      "h": 152,
+      "gameplay": "/mugen/frames/cino/idle_10.png"
+    },
+    {
+      "id": "s1_012",
+      "file": "frames/s1_012_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 0,
+      "ox": 59,
+      "oy": 123,
+      "w": 121,
+      "h": 140,
+      "gameplay": "/mugen/frames/cino/walk_00.png"
+    },
+    {
+      "id": "s1_013",
+      "file": "frames/s1_013_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 1,
+      "ox": 71,
+      "oy": 124,
+      "w": 128,
+      "h": 141,
+      "gameplay": "/mugen/frames/cino/walk_01.png"
+    },
+    {
+      "id": "s1_014",
+      "file": "frames/s1_014_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 2,
+      "ox": 65,
+      "oy": 123,
+      "w": 132,
+      "h": 140,
+      "gameplay": "/mugen/frames/cino/walk_02.png"
+    },
+    {
+      "id": "s1_015",
+      "file": "frames/s1_015_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 3,
+      "ox": 70,
+      "oy": 123,
+      "w": 132,
+      "h": 141,
+      "gameplay": "/mugen/frames/cino/walk_03.png"
+    },
+    {
+      "id": "s1_016",
+      "file": "frames/s1_016_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 4,
+      "ox": 62,
+      "oy": 122,
+      "w": 128,
+      "h": 139,
+      "gameplay": "/mugen/frames/cino/walk_04.png"
+    },
+    {
+      "id": "s1_017",
+      "file": "frames/s1_017_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 5,
+      "ox": 56,
+      "oy": 124,
+      "w": 127,
+      "h": 141,
+      "gameplay": "/mugen/frames/cino/walk_05.png"
+    },
+    {
+      "id": "s1_018",
+      "file": "frames/s1_018_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 6,
+      "ox": 79,
+      "oy": 124,
+      "w": 125,
+      "h": 141,
+      "gameplay": "/mugen/frames/cino/walk_06.png"
+    },
+    {
+      "id": "s1_019",
+      "file": "frames/s1_019_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 7,
+      "ox": 67,
+      "oy": 124,
+      "w": 126,
+      "h": 141,
+      "gameplay": "/mugen/frames/cino/walk_07.png"
+    },
+    {
+      "id": "s1_020",
+      "file": "frames/s1_020_WALK.png",
+      "clip": "WALK",
+      "engineAnim": "walk",
+      "i": 8,
+      "ox": 58,
+      "oy": 123,
+      "w": 118,
+      "h": 141,
+      "gameplay": "/mugen/frames/cino/walk_08.png"
+    },
+    {
+      "id": "s1_021",
+      "file": "frames/s1_021_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 0,
+      "ox": 67,
+      "oy": 106,
+      "w": 167,
+      "h": 124,
+      "gameplay": "/mugen/frames/cino/run_00.png"
+    },
+    {
+      "id": "s1_022",
+      "file": "frames/s1_022_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 1,
+      "ox": 77,
+      "oy": 102,
+      "w": 132,
+      "h": 119,
+      "gameplay": "/mugen/frames/cino/run_01.png"
+    },
+    {
+      "id": "s1_023",
+      "file": "frames/s1_023_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 2,
+      "ox": 86,
+      "oy": 113,
+      "w": 114,
+      "h": 130,
+      "gameplay": "/mugen/frames/cino/run_02.png"
+    },
+    {
+      "id": "s1_024",
+      "file": "frames/s1_024_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 3,
+      "ox": 33,
+      "oy": 113,
+      "w": 137,
+      "h": 130,
+      "gameplay": "/mugen/frames/cino/run_03.png"
+    },
+    {
+      "id": "s1_025",
+      "file": "frames/s1_025_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 4,
+      "ox": 115,
+      "oy": 103,
+      "w": 162,
+      "h": 120,
+      "gameplay": "/mugen/frames/cino/run_04.png"
+    },
+    {
+      "id": "s1_026",
+      "file": "frames/s1_026_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 5,
+      "ox": 78,
+      "oy": 104,
+      "w": 138,
+      "h": 121,
+      "gameplay": "/mugen/frames/cino/run_05.png"
+    },
+    {
+      "id": "s1_027",
+      "file": "frames/s1_027_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 6,
+      "ox": 75,
+      "oy": 103,
+      "w": 142,
+      "h": 120,
+      "gameplay": "/mugen/frames/cino/run_06.png"
+    },
+    {
+      "id": "s1_028",
+      "file": "frames/s1_028_RUN.png",
+      "clip": "RUN",
+      "engineAnim": "run",
+      "i": 7,
+      "ox": 64,
+      "oy": 100,
+      "w": 107,
+      "h": 118,
+      "gameplay": "/mugen/frames/cino/run_07.png"
+    },
+    {
+      "id": "s1_029",
+      "file": "frames/s1_029_CROUCH.png",
+      "clip": "CROUCH",
+      "engineAnim": "crouch",
+      "i": 0,
+      "ox": 53,
+      "oy": 88,
+      "w": 105,
+      "h": 107,
+      "gameplay": "/mugen/frames/cino/crouch_00.png"
+    },
+    {
+      "id": "s1_030",
+      "file": "frames/s1_030_CROUCH.png",
+      "clip": "CROUCH",
+      "engineAnim": "crouch",
+      "i": 1,
+      "ox": 39,
+      "oy": 100,
+      "w": 95,
+      "h": 119,
+      "gameplay": "/mugen/frames/cino/crouch_01.png"
+    },
+    {
+      "id": "s1_031",
+      "file": "frames/s1_031_JUMP_START.png",
+      "clip": "JUMP_START",
+      "engineAnim": "jumpStart",
+      "i": 0,
+      "ox": 50,
+      "oy": 98,
+      "w": 100,
+      "h": 117,
+      "gameplay": "/mugen/frames/cino/jumpStart_00.png"
+    },
+    {
+      "id": "s1_032",
+      "file": "frames/s1_032_JUMP_AIR.png",
+      "clip": "JUMP_AIR",
+      "engineAnim": "jumpLoop",
+      "i": 0,
+      "ox": 46,
+      "oy": 87,
+      "w": 98,
+      "h": 106,
+      "gameplay": "/mugen/frames/cino/jumpLoop_00.png"
+    },
+    {
+      "id": "s1_033",
+      "file": "frames/s1_033_JUMP_AIR.png",
+      "clip": "JUMP_AIR",
+      "engineAnim": "jumpLoop",
+      "i": 1,
+      "ox": 47,
+      "oy": 91,
+      "w": 99,
+      "h": 110,
+      "gameplay": "/mugen/frames/cino/jumpLoop_01.png"
+    },
+    {
+      "id": "s1_034",
+      "file": "frames/s1_034_JUMP_AIR.png",
+      "clip": "JUMP_AIR",
+      "engineAnim": "jumpLoop",
+      "i": 2,
+      "ox": 94,
+      "oy": 106,
+      "w": 115,
+      "h": 125,
+      "gameplay": "/mugen/frames/cino/jumpLoop_02.png"
+    },
+    {
+      "id": "s1_035",
+      "file": "frames/s1_035_JUMP_LAND.png",
+      "clip": "JUMP_LAND",
+      "engineAnim": "jumpLand",
+      "i": 0,
+      "ox": 61,
+      "oy": 95,
+      "w": 113,
+      "h": 114,
+      "gameplay": "/mugen/frames/cino/jumpLand_00.png"
+    },
+    {
+      "id": "s1_036",
+      "file": "frames/s1_036_JUMP_LAND.png",
+      "clip": "JUMP_LAND",
+      "engineAnim": "jumpLand",
+      "i": 1,
+      "ox": 48,
+      "oy": 89,
+      "w": 97,
+      "h": 108,
+      "gameplay": "/mugen/frames/cino/jumpLand_01.png"
+    },
+    {
+      "id": "s1_037",
+      "file": "frames/s1_037_JUMP_LAND.png",
+      "clip": "JUMP_LAND",
+      "engineAnim": "jumpLand",
+      "i": 2,
+      "ox": 53,
+      "oy": 85,
+      "w": 108,
+      "h": 105,
+      "gameplay": "/mugen/frames/cino/jumpLand_02.png"
+    }
+  ]
+}
