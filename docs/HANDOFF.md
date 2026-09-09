@@ -12,14 +12,14 @@ Tay global roster law — locked in engine + extract. Future fighters (SB Cookin
 
 | Constant | Value | Role |
 |---|---|---|
-| `CINO_BASE_HEIGHT` | 212 | Human idle **body** height on the 960×540 canvas: feet/ground → crown of **head**, not hair tip |
+| `CINO_BASE_HEIGHT` | 212 | Scale Align **LOCKED**. Human idle **body**: feet/ground → crown of **head**, not hair tip. Median 212. Reference `s1_001_IDLE`. Never `s1_010` drink pose (221) |
 | `CINO_BASE_SCALE` | 1 | Roster **BASE SCALE / 100%**. Side-by-side lock for every later fighter |
 | `CINO_SPRITE_ZOOM` | 2 | `paint()` / `drawFighter` atlas zoom (named constant — never a magic `2`) |
 | `CINO_ATLAS_BODY_HEIGHT` | 106 | Atlas-space body px so `106 × 2 = 212` on canvas |
 | `CINO_BULL_SCALE` | 1.18 | After ↓+C: modest bulk. Still a playable fighter — **not** screen-sized |
 | `CINO_FX_SCALE` | 1.75 | Lean Splash / Green Candle / energy sphere / bull-head / super **VFX layers only** |
 
-**Measure from character body only** on neutral standing/idle. Never from full PNG dimensions, transparent padding, hair-only extent (opaque-with-hair ≈249 is diagnostic only), or special-effect frames. Drink-pose idle outlier (~221 native) is excluded from the lock.
+**Measure from character body only** on neutral standing/idle. Never from full PNG dimensions, transparent padding, hair-only extent (opaque-with-hair ≈249 is diagnostic only), or special-effect frames. Scale Align inventory **37/37 qa_pass**. Prefer median **212**. **`s1_010_IDLE` drink pose (221) is excluded** from the lock. Reference frame: `s1_001_IDLE.png`. Authoritative meta: `mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json` (in-repo copy: `public/mugen/atlas/human-cino-base-scale.json`). This VM’s JPEG idle 0–4 median (~221 native px) is a source-resolution measure only — it is **not** the drink-pose outlier and is scaled so on-canvas crown = 212.
 
 **ONE character scale** across ALL of that fighter’s gameplay animations. Do not independently resize each frame (causes grow/shrink during attacks). Preserve aspect ratio — never stretch.
 
@@ -34,7 +34,7 @@ Engine hook: `eH.scale` in `src/game/engine.js`. Extract: `scripts/extract_cino_
 ### Cino v2 wiring gold criteria (Chief of Staff / MUGEN Lead)
 
 - [x] Human Cino establishes roster **BASE SCALE = 100%** (`CINO_BASE_SCALE = 1`)
-- [x] Measure body height from idle **feet → head** (`CINO_BASE_HEIGHT = 212`)
+- [x] Scale Align lock: `CINO_BASE_HEIGHT = 212` median; reference `s1_001_IDLE`; **exclude** `s1_010_IDLE` drink pose (221); Sheet1 37/37 qa_pass
 - [x] **ONE** scale constant across all Human Cino animations (no per-anim stretch)
 - [x] VFX independent and may be huge (`CINO_FX_SCALE`, `fx*` layers)
 - [x] Bull form somewhat bulkier only, still playable-sized — not a giant (`CINO_BULL_SCALE = 1.18`)
@@ -70,7 +70,7 @@ Production build: `npm run build` (Nitro Vercel preset).
 | Route | `src/routes/mugen.tsx` (also `/cino` in `src/routes/cino.tsx`) |
 | **Cino frames** | `public/mugen/frames/cino/` |
 | **Cino atlas** | `public/mugen/atlas/cino.json` |
-| **Cino scale lock** | `public/mugen/atlas/cino-scale.json` (`CINO_BASE_HEIGHT=212`, `CINO_BASE_SCALE=1`) |
+| **Cino scale lock** | `public/mugen/atlas/cino-scale.json` + `human-cino-base-scale.json` (`CINO_BASE_HEIGHT=212`, `CINO_BASE_SCALE=1`) |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
 | **Cino source sheets** | `public/mugen/assets/cino-sheet1-movement.jpg` · `cino-sheet2-combat.jpg` · `cino-sheet3-bull-a.jpg` · `cino-sheet3-bull-b.jpg` (legacy `cino-v2-*.jpg` kept) |
 | **SB frames (ORIGINAL working set)** | `public/mugen/frames/sb/` |

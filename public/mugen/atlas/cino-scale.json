@@ -18,7 +18,16 @@
     "bullPlayableSizedNotGiant": true,
     "futureFightersSideBySideAgainstHumanIdle": true
   },
-  "nativeBodyPx": 221.0,
+  "scaleAlign": {
+    "CINO_BASE_HEIGHT": 212,
+    "authority": "Scale Align",
+    "referenceFrame": "s1_001_IDLE.png",
+    "excludeFrame": "s1_010_IDLE",
+    "excludeReason": "drink pose height outlier (221); do not use for scale lock",
+    "sheet1Inventory": "37/37 qa_pass",
+    "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json"
+  },
+  "nativeJpegLockBodyPx": 221.0,
   "nativeOpaqueWithHairPx": 245.0,
   "extractScale": 0.4796380090497738,
   "clips": {

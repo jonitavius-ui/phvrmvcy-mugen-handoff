@@ -70,13 +70,28 @@ ROWS = {
 OUT = ROOT / "public/mugen/frames/cino"
 ATLAS = ROOT / "public/mugen/atlas/cino.json"
 SCALE_META = ROOT / "public/mugen/atlas/cino-scale.json"
+BASE_SCALE_JSON = ROOT / "public/mugen/atlas/human-cino-base-scale.json"
+SPECIALIST_SCALE_JSON = (
+    ROOT / "mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json"
+)
 QC = Path("/tmp/cino_v2_qc")
 # Roster law: Human Cino = BASE SCALE / 100% for the whole game.
 # Measure BODY only on idle: feet → crown of head. Never PNG box, padding,
 # hair tip, or FX frames. One character scale for ALL Human gameplay anims
 # (no per-frame resize). CHARACTER SCALE ≠ EFFECT SCALE. Preserve aspect.
+# Scale Align LOCKED. Median idle feet→crown = 212. Reference s1_001_IDLE.
+# Never lock from s1_010_IDLE (drink pose outlier 221) or hair tip.
 CINO_BASE_HEIGHT = 212
 CINO_BASE_SCALE = 1  # roster 100%; future fighters normalize against this
+SCALE_ALIGN_LOCK = {
+    "CINO_BASE_HEIGHT": 212,
+    "authority": "Scale Align",
+    "referenceFrame": "s1_001_IDLE.png",
+    "excludeFrame": "s1_010_IDLE",
+    "excludeReason": "drink pose height outlier (221); do not use for scale lock",
+    "sheet1Inventory": "37/37 qa_pass",
+    "source": "/workspace/mugen-extract/cino-v2/sheet1/meta/human-cino-base-scale.json",
+}
 CINO_SPRITE_ZOOM = 2
 CINO_ATLAS_BODY_HEIGHT = CINO_BASE_HEIGHT / CINO_SPRITE_ZOOM  # 106
 CINO_HAIR_TO_CROWN = 249 / 212  # specialist: opaque-with-hair ≈249 vs body 212
@@ -464,8 +479,8 @@ def main():
     b2 = extract_sheet("bull2", min_col_sep=78)
 
     idle_row = list(move[0] if move else [])
-    # Drink pose (later idle frames) is a known height outlier — lock on 0..4.
-    lock_src = idle_row[:5] or idle_row
+    # Scale Align: lock on s1_001–005 (indices 0–4). NEVER s1_010 drink pose (index 9, 221).
+    lock_src = [c for i, c in enumerate(idle_row) if i < 5] or idle_row[:1]
     body_heights = []
     opaque_heights = []
     for c in lock_src:
@@ -609,7 +624,8 @@ def main():
             "CINO_BULL_SCALE": CINO_BULL_SCALE,
             "CINO_FX_SCALE": CINO_FX_SCALE,
             "goldCriteria": GOLD_CRITERIA,
-            "nativeBodyPx": idle_body,
+            "scaleAlign": SCALE_ALIGN_LOCK,
+            "nativeJpegLockBodyPx": idle_body,
             "extractScale": scale,
         },
     }
@@ -699,7 +715,8 @@ def main():
                 "CINO_BULL_SCALE": CINO_BULL_SCALE,
                 "CINO_FX_SCALE": CINO_FX_SCALE,
                 "goldCriteria": GOLD_CRITERIA,
-                "nativeBodyPx": idle_body,
+                "scaleAlign": SCALE_ALIGN_LOCK,
+                "nativeJpegLockBodyPx": idle_body,
                 "nativeOpaqueWithHairPx": idle_opaque,
                 "extractScale": scale,
                 "clips": {
@@ -711,12 +728,30 @@ def main():
                     "JUMP_AIR": {"frames": "jumpLoop_00–02", "count": 3, "loop": True, "ms": 70},
                     "JUMP_LAND": {"frames": "jumpLand_00–02", "count": 3, "ms": 55},
                 },
-                "note": "Engine drawFighter uses 2× zoom; atlas body height is CINO_BASE_HEIGHT/2 so on-canvas feet→crown = 212.",
+                "note": "Engine drawFighter uses 2× zoom; atlas body height is CINO_BASE_HEIGHT/2 so on-canvas feet→crown = 212. nativeJpegLockBodyPx is this VM's JPEG idle 0–4 median — not the s1_010 drink-pose 221.",
             },
             indent=2,
         )
     )
-    print("wrote", ATLAS, "and", SCALE_META)
+    lock_doc = {
+        "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+        "CINO_BASE_SCALE": CINO_BASE_SCALE,
+        "locked": True,
+        **SCALE_ALIGN_LOCK,
+        "meaning": "Human Cino idle feet/ground → head crown (NOT hair tip). Roster BASE SCALE 100% for all future side-by-sides.",
+        "oneScaleAcrossHumanAnims": True,
+        "preserveAspect": True,
+        "neverStretch": True,
+        "vfxScaleIndependent": True,
+        "bullPlayableSizedNotGiant": True,
+        "inRepoCopy": "/mugen/atlas/human-cino-base-scale.json",
+        "note": "Specialist extract dir may be absent. Constant is Scale Align 212. Engine paints atlas at 2× so atlas body = 106 → 212 on canvas.",
+    }
+    BASE_SCALE_JSON.parent.mkdir(parents=True, exist_ok=True)
+    BASE_SCALE_JSON.write_text(json.dumps(lock_doc, indent=2))
+    SPECIALIST_SCALE_JSON.parent.mkdir(parents=True, exist_ok=True)
+    SPECIALIST_SCALE_JSON.write_text(json.dumps(lock_doc, indent=2))
+    print("wrote", ATLAS, "and", SCALE_META, "and", BASE_SCALE_JSON)
     run_frames = atlas["anims"].get("run") or []
     if run_frames:
         ratios = [fr["ox"] / max(1, fr["w"]) for fr in run_frames]
