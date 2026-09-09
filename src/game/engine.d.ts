@@ -1,3 +1,8 @@
+export const TICK = 1 / 60;
+/** Human Cino idle feet → crown of head (NOT hair tip). Roster BASE SCALE 100%. */
+export const CINO_BASE_HEIGHT = 212;
+export const CINO_SPRITE_ZOOM = 2;
+export const CINO_BULL_SCALE = 1.18;
 export const STAGES: Array<{ id: string; name: string; short: string; tag: string; accent: string }>;
 export const ROSTER: unknown[];
 export const INITIAL_SNAP: {

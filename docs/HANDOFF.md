@@ -4,11 +4,14 @@
 
 Playable route: `/mugen`
 
-**Source repo (this exact build):** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff  
-Commit: `cf6cfac` — *Stable handoff: Cino + original SB Cookin, current lobby/select/stages.*
+**Source repo (this exact build):** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff
+
+Human Cino roster scale (locked): `CINO_BASE_HEIGHT = 212` (feet → crown, not hair tip) in `src/game/engine.js` and `public/mugen/atlas/cino-scale.json`. Atlas body is 106px because `drawFighter` paints at 2× (`CINO_SPRITE_ZOOM`). Bull uses `CINO_BULL_SCALE = 1.18`. VFX layers scale independently.
+
+Sheet1 movement clips: IDLE 11 @100ms · WALK 9 @80ms · RUN 8 @60ms · CROUCH 2 hold-last · JUMP_START 1 · JUMP_AIR 3 · JUMP_LAND 3.
 
 Dev preview: `sh /workspace/startup.sh` → `npm run dev` on port 8080  
-Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
+Production build: `npm run build` (Nitro Vercel preset).
 
 ---
 
@@ -33,6 +36,7 @@ Production build: `npm run build` (verified 2026-09-08, Nitro Vercel preset).
 | Route | `src/routes/mugen.tsx` (also `/cino` in `src/routes/cino.tsx`) |
 | **Cino frames** | `public/mugen/frames/cino/` |
 | **Cino atlas** | `public/mugen/atlas/cino.json` |
+| **Cino scale lock** | `public/mugen/atlas/cino-scale.json` (`CINO_BASE_HEIGHT=212`) |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
 | **Cino source sheets** | `public/mugen/assets/cino-sheet1-movement.jpg` · `cino-sheet2-combat.jpg` · `cino-sheet3-bull-a.jpg` · `cino-sheet3-bull-b.jpg` (legacy `cino-v2-*.jpg` kept) |
 | **SB frames (ORIGINAL working set)** | `public/mugen/frames/sb/` |

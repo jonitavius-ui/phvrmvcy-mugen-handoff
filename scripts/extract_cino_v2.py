@@ -32,12 +32,13 @@ SHEETS = {
     "bull2": ROOT / "public/mugen/assets/cino-v2-bull2.jpg",
 }
 # y0, y1, expected frame count, extra pad
+# Sheet1 clips (37): IDLE 11 | WALK 9 | RUN 8 | CROUCH 2 + JUMP 4 + LAND 3
 ROWS = {
     "move": [
         (24, 298, 11, 36),
         (298, 558, 9, 36),
-        (548, 778, 9, 36),
-        (768, 998, 10, 40),
+        (548, 778, 8, 36),
+        (768, 998, 9, 40),
     ],
     "atk": [
         (4, 198, 8, 48),
@@ -68,8 +69,17 @@ ROWS = {
 }
 OUT = ROOT / "public/mugen/frames/cino"
 ATLAS = ROOT / "public/mugen/atlas/cino.json"
+SCALE_META = ROOT / "public/mugen/atlas/cino-scale.json"
 QC = Path("/tmp/cino_v2_qc")
-TARGET_IDLE_H = 118
+# Roster 100%: Human idle feet → crown (NOT hair tip) on the 960×540 canvas.
+# Engine drawFighter paints atlas frames at 2×, so atlas body = 212 / 2.
+CINO_BASE_HEIGHT = 212
+CINO_SPRITE_ZOOM = 2
+CINO_ATLAS_BODY_HEIGHT = CINO_BASE_HEIGHT / CINO_SPRITE_ZOOM  # 106
+CINO_HAIR_TO_CROWN = 249 / 212  # specialist: opaque-with-hair ≈249 vs body 212
+CINO_BULL_SCALE = 1.18  # modest bulk; still a playable fighter, not a giant
+CINO_FX_SCALE = 1.75  # VFX independent of body (splash / crystals / bull head)
+CACHE_V = "six2"
 CANVAS_MAX = 12
 CANVAS_CHROMA = 8
 
@@ -281,6 +291,44 @@ def crop_cell(rgba, seed, y0, y1, x0, x1, pad=40):
     return canvas, (x0 + sx0, y0 + sy0, x0 + sx1, y0 + sy1)
 
 
+def feet_to_crown(canvas, ox, oy):
+    """Idle body height: feet (oy) → crown of head, skipping hair tip.
+
+    Skin at the temples/forehead is the crown lock. Drink-pose outliers
+    (head tipped back) should be excluded by the caller. Fallback uses the
+    specialist hair/body ratio 249/212 on opaque-from-feet height.
+    """
+    a = canvas[..., 3]
+    r, g, b = canvas[..., 0], canvas[..., 1], canvas[..., 2]
+    mx = np.maximum(np.maximum(r, g), b)
+    mn = np.minimum(np.minimum(r, g), b)
+    chroma = mx.astype(np.int16) - mn
+    skin = (
+        (a > 80)
+        & (r > 68)
+        & (g > 28)
+        & (b < r)
+        & (g < (r * 0.98).astype(np.uint8))
+        & (chroma >= 8)
+    )
+    if skin.sum() >= 24:
+        ys, xs = np.where(skin)
+        # prefer skin near the torso column so a stray cup highlight is ignored
+        near = np.abs(xs.astype(np.int32) - int(ox)) < max(28, canvas.shape[1] // 3)
+        if near.any():
+            crown = int(ys[near].min())
+        else:
+            crown = int(ys.min())
+        h = int(oy) - crown
+        if 40 <= h <= 400:
+            return h
+    ys, xs = np.where(a > 80)
+    if len(ys) == 0:
+        return None
+    opaque = int(oy) - int(ys.min())
+    return int(round(opaque / CINO_HAIR_TO_CROWN))
+
+
 def body_foot(canvas):
     a = canvas[..., 3]
     r, g, b = canvas[..., 0], canvas[..., 1], canvas[..., 2]
@@ -326,7 +374,8 @@ def extract_sheet(key: str, min_col_sep=70):
                 continue
             canvas, box = got
             bh, bw = canvas.shape[0] - 2 * pad, canvas.shape[1] - 2 * pad
-            if bh < 28 or bw < 12:
+            # Drop sliced limbs / occupancy fragments (the old run_00 foot was 72px).
+            if bh < 88 or bw < 18:
                 continue
             ox, oy = body_foot(canvas)
             row_cells.append(
@@ -398,10 +447,26 @@ def main():
     b1 = extract_sheet("bull1", min_col_sep=78)
     b2 = extract_sheet("bull2", min_col_sep=78)
 
-    idle_native = [c["h"] - 2 * c["pad"] for c in (move[0] if move else [])]
-    idle_h = float(np.median(idle_native)) if idle_native else 200
-    scale = TARGET_IDLE_H / idle_h
-    print(f"idle native h={idle_h:.1f} n={len(idle_native)} scale={scale:.3f}")
+    idle_row = list(move[0] if move else [])
+    # Drink pose (later idle frames) is a known height outlier — lock on 0..4.
+    lock_src = idle_row[:5] or idle_row
+    body_heights = []
+    opaque_heights = []
+    for c in lock_src:
+        a = c["canvas"][..., 3]
+        ys = np.where(a > 80)[0]
+        if len(ys):
+            opaque_heights.append(int(c["oy"]) - int(ys.min()))
+        bh = feet_to_crown(c["canvas"], c["ox"], c["oy"])
+        if bh:
+            body_heights.append(bh)
+    idle_body = float(np.median(body_heights)) if body_heights else 200.0
+    idle_opaque = float(np.median(opaque_heights)) if opaque_heights else idle_body * CINO_HAIR_TO_CROWN
+    scale = CINO_ATLAS_BODY_HEIGHT / idle_body
+    print(
+        f"CINO_BASE_HEIGHT={CINO_BASE_HEIGHT} atlas_body={CINO_ATLAS_BODY_HEIGHT:.1f} "
+        f"native_body={idle_body:.1f} native_opaque(hair)={idle_opaque:.1f} scale={scale:.4f}"
+    )
 
     def brow(sheet, i):
         return sheet[i] if sheet and len(sheet) > i else []
@@ -418,17 +483,24 @@ def main():
         "dash": run,
         "backdash": list(reversed(run)),
     }
-    if len(jump) >= 8:
-        anims["crouch"] = jump[:3]
-        anims["crouchWalk"] = jump[:3]
-        anims["jumpStart"] = jump[2:5]
-        anims["jumpLoop"] = jump[4:7]
-        anims["jumpLand"] = jump[6:]
+    # Sheet1 anim map: CROUCH 2 hold-last | JUMP_START 1 | JUMP_AIR 3 | JUMP_LAND 3
+    if len(jump) >= 9:
+        anims["crouch"] = jump[:2]
+        anims["crouchWalk"] = jump[:2]
+        anims["jumpStart"] = jump[2:3]
+        anims["jumpLoop"] = jump[3:6]
+        anims["jumpLand"] = jump[6:9]
+    elif len(jump) >= 8:
+        anims["crouch"] = jump[:2]
+        anims["crouchWalk"] = jump[:2]
+        anims["jumpStart"] = jump[2:3]
+        anims["jumpLoop"] = jump[3:6]
+        anims["jumpLand"] = jump[5:]
     elif jump:
         anims["crouch"] = jump[:2] or jump
         anims["crouchWalk"] = jump[:2] or jump
-        anims["jumpStart"] = jump[:2] or jump
-        anims["jumpLoop"] = jump[2:5] or jump
+        anims["jumpStart"] = jump[:1] or jump
+        anims["jumpLoop"] = jump[1:4] or jump
         anims["jumpLand"] = jump[-3:] or jump
 
     punch = take(brow(atk, 0))
@@ -509,18 +581,83 @@ def main():
             p.unlink()
     OUT.mkdir(parents=True, exist_ok=True)
 
-    atlas = {"id": "cino", "anims": {}, "version": "sixsheet1"}
+    atlas = {
+        "id": "cino",
+        "anims": {},
+        "version": CACHE_V,
+        "scale": {
+            "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+            "CINO_SPRITE_ZOOM": CINO_SPRITE_ZOOM,
+            "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
+            "CINO_BULL_SCALE": CINO_BULL_SCALE,
+            "nativeBodyPx": idle_body,
+            "extractScale": scale,
+        },
+    }
+    CHAR_ANIMS = {
+        "idle",
+        "walk",
+        "run",
+        "dash",
+        "backdash",
+        "crouch",
+        "crouchWalk",
+        "jumpStart",
+        "jumpLoop",
+        "jumpLand",
+        "lightJab",
+        "heavySwing",
+        "kick",
+        "airAttack",
+        "block",
+        "hit",
+        "knockdown",
+        "getUp",
+        "taunt",
+        "win",
+        "leanSplash",
+        "uppercut",
+        "candleRush",
+        "chartBreaker",
+        "bullCharge",
+        "pillStorm",
+        "shadowClones",
+        "overdrive",
+        "bullForm",
+    }
+    BULL_ANIMS = {
+        "bullIdle",
+        "bullWalk",
+        "bullRun",
+        "bullJumpStart",
+        "bullJump",
+        "bullLand",
+        "bullAttack",
+        "bullSlash",
+        "bullSpecial",
+        "bullSuper",
+        "bullHit",
+        "bullKnockdown",
+        "bullGetUp",
+        "bullWin",
+    }
     scaled = {}
     for name, frames in anims.items():
+        if name in BULL_ANIMS:
+            use = scale * CINO_BULL_SCALE
+        elif name.startswith("fx"):
+            use = scale * CINO_FX_SCALE
+        else:
+            use = scale
         entries, qc = [], []
         for i, fr in enumerate(frames):
-            canvas, ox, oy = scale_canvas(fr["canvas"], scale, fr["ox"], fr["oy"])
+            canvas, ox, oy = scale_canvas(fr["canvas"], use, fr["ox"], fr["oy"])
             fn = f"{name}_{i:02d}.png"
             save_png(canvas, OUT / fn)
             h, w = canvas.shape[:2]
             entries.append(
                 {
-                    "file": f"/mugen/frames/cino/{fn}?v=six1",
+                    "file": f"/mugen/frames/cino/{fn}?v={CACHE_V}",
                     "i": i,
                     "ox": int(ox),
                     "oy": int(oy),
@@ -532,7 +669,43 @@ def main():
         atlas["anims"][name] = entries
         scaled[name] = qc
     ATLAS.write_text(json.dumps(atlas, indent=2))
-    print("wrote", ATLAS)
+    SCALE_META.write_text(
+        json.dumps(
+            {
+                "CINO_BASE_HEIGHT": CINO_BASE_HEIGHT,
+                "meaning": "Human Cino idle feet/ground → crown of head (NOT hair tip). Roster BASE SCALE 100%.",
+                "CINO_SPRITE_ZOOM": CINO_SPRITE_ZOOM,
+                "CINO_ATLAS_BODY_HEIGHT": CINO_ATLAS_BODY_HEIGHT,
+                "CINO_BULL_SCALE": CINO_BULL_SCALE,
+                "CINO_FX_SCALE": CINO_FX_SCALE,
+                "nativeBodyPx": idle_body,
+                "nativeOpaqueWithHairPx": idle_opaque,
+                "extractScale": scale,
+                "clips": {
+                    "IDLE": {"frames": "idle_00–10", "count": 11, "loop": True, "ms": 100},
+                    "WALK": {"frames": "walk_00–08", "count": 9, "loop": True, "ms": 80},
+                    "RUN": {"frames": "run_00–07", "count": 8, "loop": True, "ms": 60},
+                    "CROUCH": {"frames": "crouch_00–01", "count": 2, "holdLast": True, "ms": 50},
+                    "JUMP_START": {"frames": "jumpStart_00", "count": 1, "ms": 50},
+                    "JUMP_AIR": {"frames": "jumpLoop_00–02", "count": 3, "loop": True, "ms": 70},
+                    "JUMP_LAND": {"frames": "jumpLand_00–02", "count": 3, "ms": 55},
+                },
+                "note": "Engine drawFighter uses 2× zoom; atlas body height is CINO_BASE_HEIGHT/2 so on-canvas feet→crown = 212.",
+            },
+            indent=2,
+        )
+    )
+    print("wrote", ATLAS, "and", SCALE_META)
+    run_frames = atlas["anims"].get("run") or []
+    if run_frames:
+        ratios = [fr["ox"] / max(1, fr["w"]) for fr in run_frames]
+        med = float(np.median(ratios))
+        for i, fr in enumerate(run_frames):
+            ratio = fr["ox"] / max(1, fr["w"])
+            if ratio > 0.82:
+                fr["ox"] = int(round(med * fr["w"]))
+                print(f"  adjusted run_{i:02d} origin_x → {fr['ox']} (was {ratio:.2f}, median {med:.2f})")
+        ATLAS.write_text(json.dumps(atlas, indent=2))
     if (OUT / "idle_00.png").exists():
         Image.open(OUT / "idle_00.png").save(ROOT / "public/mugen/portraits/cino.png")
 
