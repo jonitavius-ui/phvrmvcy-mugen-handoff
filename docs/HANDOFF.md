@@ -52,7 +52,7 @@ Production build: `npm run build` (Nitro Vercel preset).
 
 ## Do not break
 
-- Cino six-sheet sprites, bull form (`DOWN + C` permanent), attacks, FX (do not revert to the old Cino set)
+- Cino v2 six-sheet sprites (long dreads), bull form (`DOWN + C` permanent), attacks, FX — **do not revert to archived short-hair Cino** (`public/mugen/_archive/cino-old/`)
 - Lobby / title screen UI and background
 - Player select **screen** (layout/chrome) — roster is just shorter
 - HUD, combat engine, controls
@@ -69,8 +69,9 @@ Production build: `npm run build` (Nitro Vercel preset).
 | React shell (lobby buttons, select overlay, HUD chrome, touch bar) | `src/game/MugenGameApp.tsx` |
 | Touch helpers | `src/game/touch.ts` |
 | Route | `src/routes/mugen.tsx` (also `/cino` in `src/routes/cino.tsx`) |
-| **Cino frames** | `public/mugen/frames/cino/` |
-| **Cino atlas** | `public/mugen/atlas/cino.json` (`sheet1` clip table + per-frame `s1`/`clip`/`ms`) |
+| **Cino frames** | `public/mugen/frames/cino/` (NEW v2 long-dread extract; 265 RGBA PNGs) |
+| **Cino atlas** | `public/mugen/atlas/cino.json` (`?v=six4`, sheet1 clip table + per-frame `s1`/`clip`/`ms`) |
+| **Old Cino (archived, not loaded)** | `public/mugen/_archive/cino-old/` — short-hair idle / `?v=solid1` atlas / old portrait from `9fd2d5e` |
 | **Sheet1 ANIM MAP** | `mugen-extract/cino-v2/sheet1/anim_map.json` · public copies `public/mugen/atlas/cino-anim-map.json` + `cino-anim-map-compact.json` |
 | **Sheet1 inventory (recreated)** | `mugen-extract/cino-v2/sheet1/inventory.json` · `mugen-facing/cino-v2/inventories/01-human-basic-movement.json` |
 | **Cino portrait** | `public/mugen/portraits/cino.png` |
@@ -157,3 +158,12 @@ Photo stages use `ePhoto` in `engine.js` with live overlay FX. Do not remove the
 **Source:** https://github.com/jonitavius-ui/phvrmvcy-mugen-handoff
 
 GitHub Pages build lives in https://github.com/jonitavius-ui/jonitavius-ui.github.io
+
+That Pages tree is a **standalone** `mugen/game.js` + static `mugen/frames|atlas|portraits` copy — not this TanStack app, and this repo has no Actions workflow that publishes it. As of 2026-09-09 the live Pages atlas is still the old short-hair set (`idle_00` + `?v=solid1`). **Deploy must copy into `jonitavius-ui.github.io`:**
+
+1. `public/mugen/frames/cino/` (265 v2 RGBA frames)
+2. `public/mugen/atlas/cino.json` (and `cino-scale.json` / anim-map copies if the Pages `game.js` is also updated)
+3. `public/mugen/portraits/cino.png`
+4. A rebuilt `game.js` (or the full Start app) so `eH` uses `?v=six4` + v2 scale/moves — copying frames alone onto the old `solid1` atlas will mis-anchor ox/oy
+
+Until that copy lands, https://jonitavius-ui.github.io/mugen/ will keep showing old Cino even though this repo’s boot paths are v2.
