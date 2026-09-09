@@ -1,4 +1,5 @@
 /* @ts-nocheck */
+/* Separate-layer VFX. Check JS, not TS — same contract as engine.js. */
 /**
  * Separate-layer VFX for PHVRMVCY MUGEN.
  *
@@ -191,8 +192,8 @@ function startMove(fight, f) {
         facing,
         accent: f.def.accent2 || "#39ff14",
       };
-      fight.flash = Math.max(fight.flash || 0, 14);
-      fight.shake = Math.max(fight.shake || 0, 18);
+      fight.flash = Math.min(8, Math.max(fight.flash || 0, 6));
+      fight.shake = Math.max(fight.shake || 0, 14);
       continue;
     }
     const ground = name === "shockwave";
@@ -204,15 +205,16 @@ function startMove(fight, f) {
       facing,
       follow: aura ? f : null,
       followY: 0,
-      scale: name === "superBurst" ? 1 : name === "transformBurst" ? 0.95 : name === "superRing" ? 1.05 : 1,
+      scale: name === "superBurst" ? 0.68 : name === "transformBurst" ? 0.88 : name === "superRing" ? 0.92 : 1,
+      alpha: name === "superBurst" ? 0.82 : 1,
       z: aura ? "behind" : zFor(name),
     });
   }
   if (id === "bullForm") {
-    extraParticles(fight, f.x, f.y - 80, "#b44cff", 18, "spark");
-    extraParticles(fight, f.x, f.y - 40, "#39ff14", 12, "spark");
-    fight.flash = Math.max(fight.flash || 0, 10);
-    fight.shake = Math.max(fight.shake || 0, 14);
+    extraParticles(fight, f.x, f.y - 80, "#b44cff", 14, "spark");
+    extraParticles(fight, f.x, f.y - 40, "#39ff14", 10, "spark");
+    fight.flash = Math.min(8, Math.max(fight.flash || 0, 5));
+    fight.shake = Math.max(fight.shake || 0, 12);
     fight.sparks.push({
       alive: true,
       x: f.x,
@@ -227,7 +229,7 @@ function startMove(fight, f) {
     });
   }
   if (id === "overdrive") {
-    extraParticles(fight, f.x, f.y - 90, "#39ff14", 22, "spark");
+    extraParticles(fight, f.x, f.y - 90, "#39ff14", 14, "spark");
   }
 }
 
@@ -367,10 +369,10 @@ export function drawOverlay(ctx, fight, sprites) {
   const h = 236;
   const slide = (left ? -1 : 1) * 80 * intro;
   ctx.save();
-  ctx.globalAlpha = 0.42 * fade;
+  ctx.globalAlpha = 0.22 * fade;
   ctx.fillStyle = "#050208";
   ctx.fillRect(0, 0, 960, 540);
-  ctx.globalAlpha = 0.85 * fade;
+  ctx.globalAlpha = 0.8 * fade;
   ctx.fillRect(0, 0, 960, 28);
   ctx.fillRect(0, 512, 960, 28);
   ctx.restore();
