@@ -1,6 +1,7 @@
 export const TICK = 1 / 60;
 /** Human Cino idle feet → crown of head (NOT hair tip). Roster BASE SCALE 100%. */
 export const CINO_BASE_HEIGHT = 212;
+/** Roster BASE SCALE 100%. Future fighters side-by-side test idle body against this. */
 export const CINO_BASE_SCALE = 1;
 export const CINO_SPRITE_ZOOM = 2;
 export const CINO_ATLAS_BODY_HEIGHT = 106;
