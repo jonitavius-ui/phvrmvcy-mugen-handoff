@@ -50,7 +50,7 @@ export class GameEngine {
   tapPause(): void;
   sfx: { muted: boolean; toggle: () => boolean };
   session: {
-    roster: Array<{ id: string; short: string; style: string; accent: string; portrait: string }>;
+    roster: Array<{ id: string; short: string; style: string; accent: string; portrait: string; selectSprite?: string }>;
     selectIndex: number;
     stageIndex: number;
     stageId: string;

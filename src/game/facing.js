@@ -6,29 +6,43 @@
 /** Ignore tiny overlaps so fighters don't flicker while stacked. */
 export const FACE_DEADZONE = 8;
 
+/** @param {number} facing */
 export function facingSign(facing) {
   return facing === 1 || facing > 0 ? 1 : -1;
 }
 
+/** @param {number} facing */
 export function spriteFlipX(facing) {
   return facingSign(facing);
 }
 
+/**
+ * @param {{ hp?: number, state?: string, moveId?: string | null, dashT?: number, stun?: number, blockstun?: number } | null | undefined} fighter
+ */
 export function canUpdateFacing(fighter) {
-  if (!fighter || fighter.hp <= 0) return false;
+  if (!fighter || (fighter.hp ?? 0) <= 0) return false;
   if (fighter.state === "ko" || fighter.state === "knockdown") return false;
-  if (fighter.moveId || fighter.dashT > 0) return false;
-  if (fighter.stun > 0 || fighter.blockstun > 0) return false;
+  if (fighter.moveId || (fighter.dashT ?? 0) > 0) return false;
+  if ((fighter.stun ?? 0) > 0 || (fighter.blockstun ?? 0) > 0) return false;
   return true;
 }
 
+/**
+ * @param {number} selfX
+ * @param {number} otherX
+ * @param {number} [current]
+ */
 export function facingToward(selfX, otherX, current = 1) {
   const dx = otherX - selfX;
   if (Math.abs(dx) < FACE_DEADZONE) return facingSign(current);
   return dx >= 0 ? 1 : -1;
 }
 
-/** Mutates fighter.facing so they look at the opponent when they are free to turn. */
+/**
+ * Mutates fighter.facing so they look at the opponent when they are free to turn.
+ * @param {{ facing: number, x: number, hp?: number, state?: string, moveId?: string | null, dashT?: number, stun?: number, blockstun?: number }} self
+ * @param {{ x: number } | null | undefined} other
+ */
 export function applyFacing(self, other) {
   if (!canUpdateFacing(self) || !other) return self?.facing;
   self.facing = facingToward(self.x, other.x, self.facing);
@@ -38,6 +52,11 @@ export function applyFacing(self, other) {
 /**
  * Map screen left/right to MUGEN F/B using current facing.
  * Facing right: D = F, A = B. Facing left (after a cross): A = F, D = B.
+ * @param {boolean} heldLeft
+ * @param {boolean} heldRight
+ * @param {boolean} heldUp
+ * @param {boolean} heldDown
+ * @param {number} facing
  */
 export function screenToFB(heldLeft, heldRight, heldUp, heldDown, facing) {
   const sx = (heldRight ? 1 : 0) - (heldLeft ? 1 : 0);
@@ -54,7 +73,13 @@ export function screenToFB(heldLeft, heldRight, heldUp, heldDown, facing) {
   return "DB";
 }
 
-/** Author boxes as if facing right; flip them around the fighter origin. */
+/**
+ * Author boxes as if facing right; flip them around the fighter origin.
+ * @param {number} originX
+ * @param {number} originY
+ * @param {number} facing
+ * @param {{ x: number, y: number, w: number, h: number }} box
+ */
 export function flipBox(originX, originY, facing, box) {
   return {
     x: facingSign(facing) === 1 ? originX + box.x : originX - box.x - box.w,
