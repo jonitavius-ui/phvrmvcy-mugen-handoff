@@ -39,7 +39,7 @@ const P1_HELP = [
   { keys: "J / pad A", action: "Light Jab" },
   { keys: "K / pad B", action: "Heavy Swing" },
   { keys: "L / pad C", action: "Kick / Cino ↓+C Bull Form" },
-  { keys: "Space / pad D", action: "Power (Cino rush / SB zone)" },
+  { keys: "Space / pad D", action: "↑+D Cino Green Bull Super" },
   { keys: "Shift", action: "Block" },
   { keys: "↓ + C", action: "Cino Bull Form (permanent)" },
   { keys: "↓→ + A", action: "Lean Splash" },
@@ -491,9 +491,9 @@ function MoveStrip({ p1Id }: { p1Id: string }) {
           { button: "A", name: "Light Jab", detail: "fast / low dmg" },
           { button: "B", name: "Heavy Swing", detail: "purple crescent" },
           { button: "C", name: "Kick / ↓+C Bull", detail: "hold ↓+C to transform" },
-          { button: "D", name: "Candle / Super", detail: "rush · full-meter super" },
+          { button: "D", name: "↑+D Green Bull", detail: "hold up + D super" },
         ],
-        commands: "↓+C BULL FORM  ·  QCF+A Lean Splash  ·  FF+B Candle  ·  FF+A Charge  ·  ↓↓+B Pill Storm  ·  ↓↓+A Clones  ·  QCF×2 Super",
+        commands: "↓+C BULL FORM  ·  ↑+D GREEN BULL SUPER  ·  QCF+A Lean Splash  ·  FF+B Candle  ·  FF+A Charge  ·  ↓↓+B Pill Storm  ·  ↓↓+A Clones",
       };
   return (
     <div className="relative z-20 border-t border-purple-900/70 bg-black/85 px-2 py-1.5">
