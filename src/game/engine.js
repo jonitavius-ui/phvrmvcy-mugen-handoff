@@ -118,6 +118,54 @@ class ePhoto{
       em(e,300+.1*s,168,360,36,"$BTC  $ETH  $SOL  $DOGE",u.gold,t);
       eo(e,t,92,"  STACK ▲  TRADE ▲  WIN ▲  HIGHER GROUND ▲  ",u.gold);
       e.restore();
+    } else if(id==="icecrash"){
+      e.save();
+      for(let i=0;i<28;i++){
+        let x=(i*73+t*52)%960, y=(i*41+t*88)%520;
+        e.globalAlpha=.16+.32*((Math.sin(t*3+i)+1)/2);
+        e.fillStyle="#e8f6ff";
+        e.beginPath();e.arc(x+.04*s,y,1.1+i%3,0,6.28);e.fill();
+      }
+      e.globalAlpha=.1+.16*Math.abs(Math.sin(t*4));
+      e.fillStyle="#ff3b4a";
+      e.fillRect(88+.05*s,68,74,118);
+      e.globalAlpha=.08+.1*Math.abs(Math.sin(t*2));
+      e.fillStyle="#9fd8ff";
+      e.fillRect(0,430,960,92);
+      e.restore();
+    } else if(id==="pharmapool"){
+      e.save();
+      for(let i=0;i<16;i++){
+        e.globalAlpha=.08+.14*((Math.sin(t*2.2+i)+1)/2);
+        e.fillStyle="#d48cff";
+        e.fillRect(70+i*54+.06*s,305+(i%3)*16,44,3);
+      }
+      for(let i=0;i<12;i++){
+        let x=190+(i%6)*92, y=70+(t*42+i*28)%230;
+        e.globalAlpha=.12+.2*Math.abs(Math.sin(t*5+i));
+        e.fillStyle="#ffffff";
+        e.fillRect(x+.04*s,y,2,14);
+      }
+      e.globalAlpha=.08+.12*Math.abs(Math.sin(t*3));
+      e.fillStyle="#c44cff";
+      e.fillRect(250+.08*s,318,460,78);
+      e.restore();
+    } else if(id==="bulltemple"){
+      e.save();
+      e.globalAlpha=.1+.18*Math.abs(Math.sin(t*3));
+      e.fillStyle="#39ff14";
+      e.beginPath();e.ellipse(480+.05*s,210,170,128,0,0,6.28);e.fill();
+      for(let i=0;i<18;i++){
+        let x=70+i*48, y=440-(t*36+i*17)%190;
+        e.globalAlpha=.1+.22*((Math.sin(t*4+i)+1)/2);
+        e.fillStyle=i%2?"#ffd76a":"#7cff9a";
+        e.beginPath();e.arc(x+.03*s,y,1.4+i%2,0,6.28);e.fill();
+      }
+      e.globalAlpha=.2+.28*Math.abs(Math.sin(t*6));
+      e.fillStyle="#ffd76a";
+      e.beginPath();e.arc(158+.04*s,428,6,0,6.28);e.fill();
+      e.beginPath();e.arc(802+.04*s,428,6,0,6.28);e.fill();
+      e.restore();
     } else if(id==="lobby"){
       e.save();
       ec(e,t,330+.08*s,210,210,78,9);
