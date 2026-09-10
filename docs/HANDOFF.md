@@ -56,7 +56,7 @@ Production build: `npm run build` (Nitro Vercel preset).
 - Lobby / title screen UI and background
 - Player select **screen** (layout/chrome) — roster is just shorter
 - HUD, combat engine, controls
-- Current stages (TRVP Exchange, Prime, SpaceX Mars, Trap House, Cino Bank)
+- Current stages (TRVP Exchange, Prime, SpaceX Mars, Trap House, Cino Bank, Bear Market Freeze, PHVRMVCY Pool, Bull Temple)
 
 ---
 
@@ -119,7 +119,7 @@ CPU: approaches and mixes normals; specials are cooldown-gated (keep this).
 
 ## Stages (keep)
 
-`eD = [eS, ePrime, eSpace, eTrap, eCinoBank]`
+`eD = [eS, ePrime, eSpace, eTrap, eCinoBank, eIce, ePool, eTemple]`
 
 | id | art |
 |---|---|
@@ -128,6 +128,9 @@ CPU: approaches and mixes normals; specials are cooldown-gated (keep this).
 | `spacex` | `public/mugen/stages/spacex-mars.jpg` |
 | `traphouse` | `public/mugen/stages/trap-house.jpg` |
 | `cinobank` | `public/mugen/stages/cino-bank.jpg` |
+| `icecrash` | `public/mugen/stages/ice-crash.jpg` |
+| `pharmapool` | `public/mugen/stages/pharma-pool.jpg` |
+| `bulltemple` | `public/mugen/stages/bull-temple.jpg` |
 
 Photo stages use `ePhoto` in `engine.js` with live overlay FX. Do not remove them.
 
