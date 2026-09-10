@@ -3,166 +3,62 @@
   "anims": {
     "idle": [
       {
-        "file": "/mugen/frames/cino/idle_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/idle_00.png?v=g1",
         "i": 0,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       },
       {
-        "file": "/mugen/frames/cino/idle_01.png?v=pipe3",
+        "file": "/mugen/frames/cino/idle_01.png?v=g1",
         "i": 1,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       },
       {
-        "file": "/mugen/frames/cino/idle_02.png?v=pipe3",
+        "file": "/mugen/frames/cino/idle_02.png?v=g1",
         "i": 2,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_03.png?v=pipe3",
-        "i": 3,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_04.png?v=pipe3",
-        "i": 4,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_05.png?v=pipe3",
-        "i": 5,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_06.png?v=pipe3",
-        "i": 6,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_07.png?v=pipe3",
-        "i": 7,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_08.png?v=pipe3",
-        "i": 8,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_09.png?v=pipe3",
-        "i": 9,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
-      },
-      {
-        "file": "/mugen/frames/cino/idle_10.png?v=pipe3",
-        "i": 10,
-        "ox": 59,
-        "oy": 147,
-        "w": 131,
-        "h": 176
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       }
     ],
     "walk": [
       {
-        "file": "/mugen/frames/cino/walk_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/walk_00.png?v=g1",
         "i": 0,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       },
       {
-        "file": "/mugen/frames/cino/walk_01.png?v=pipe3",
+        "file": "/mugen/frames/cino/walk_01.png?v=g1",
         "i": 1,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       },
       {
-        "file": "/mugen/frames/cino/walk_02.png?v=pipe3",
+        "file": "/mugen/frames/cino/walk_02.png?v=g1",
         "i": 2,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       },
       {
-        "file": "/mugen/frames/cino/walk_03.png?v=pipe3",
+        "file": "/mugen/frames/cino/walk_03.png?v=g1",
         "i": 3,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
-      },
-      {
-        "file": "/mugen/frames/cino/walk_04.png?v=pipe3",
-        "i": 4,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
-      },
-      {
-        "file": "/mugen/frames/cino/walk_05.png?v=pipe3",
-        "i": 5,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
-      },
-      {
-        "file": "/mugen/frames/cino/walk_06.png?v=pipe3",
-        "i": 6,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
-      },
-      {
-        "file": "/mugen/frames/cino/walk_07.png?v=pipe3",
-        "i": 7,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
-      },
-      {
-        "file": "/mugen/frames/cino/walk_08.png?v=pipe3",
-        "i": 8,
-        "ox": 84,
-        "oy": 135,
-        "w": 151,
-        "h": 164
+        "ox": 52,
+        "oy": 131,
+        "w": 109,
+        "h": 151
       }
     ],
     "run": [
