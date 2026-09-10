@@ -261,20 +261,12 @@
     ],
     "crouch": [
       {
-        "file": "/mugen/frames/cino/crouch_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/crouch_00.png?v=g2",
         "i": 0,
-        "ox": 65,
-        "oy": 108,
-        "w": 131,
-        "h": 136
-      },
-      {
-        "file": "/mugen/frames/cino/crouch_01.png?v=pipe3",
-        "i": 1,
-        "ox": 65,
-        "oy": 108,
-        "w": 131,
-        "h": 136
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       }
     ],
     "crouchWalk": [
@@ -297,106 +289,58 @@
     ],
     "jumpStart": [
       {
-        "file": "/mugen/frames/cino/jumpStart_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/jumpStart_00.png?v=g2",
         "i": 0,
-        "ox": 57,
-        "oy": 107,
-        "w": 117,
-        "h": 135
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       }
     ],
     "jumpLoop": [
       {
-        "file": "/mugen/frames/cino/jumpLoop_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/jumpLoop_00.png?v=g2",
         "i": 0,
-        "ox": 57,
-        "oy": 106,
-        "w": 126,
-        "h": 135
-      },
-      {
-        "file": "/mugen/frames/cino/jumpLoop_01.png?v=pipe3",
-        "i": 1,
-        "ox": 57,
-        "oy": 106,
-        "w": 126,
-        "h": 135
-      },
-      {
-        "file": "/mugen/frames/cino/jumpLoop_02.png?v=pipe3",
-        "i": 2,
-        "ox": 57,
-        "oy": 106,
-        "w": 126,
-        "h": 135
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       }
     ],
     "jumpLand": [
       {
-        "file": "/mugen/frames/cino/jumpLand_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/lightJab_00.png?v=g2",
         "i": 0,
-        "ox": 63,
-        "oy": 106,
-        "w": 127,
-        "h": 135
-      },
-      {
-        "file": "/mugen/frames/cino/jumpLand_01.png?v=pipe3",
-        "i": 1,
-        "ox": 63,
-        "oy": 106,
-        "w": 127,
-        "h": 135
-      },
-      {
-        "file": "/mugen/frames/cino/jumpLand_02.png?v=pipe3",
-        "i": 2,
-        "ox": 63,
-        "oy": 106,
-        "w": 127,
-        "h": 135
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       }
     ],
     "lightJab": [
       {
-        "file": "/mugen/frames/cino/lightJab_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/lightJab_00.png?v=g2",
         "i": 0,
-        "ox": 116,
-        "oy": 148,
-        "w": 248,
-        "h": 211
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       },
       {
-        "file": "/mugen/frames/cino/lightJab_01.png?v=pipe3",
+        "file": "/mugen/frames/cino/lightJab_01.png?v=g2",
         "i": 1,
-        "ox": 116,
-        "oy": 148,
-        "w": 248,
-        "h": 211
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       },
       {
-        "file": "/mugen/frames/cino/lightJab_02.png?v=pipe3",
+        "file": "/mugen/frames/cino/lightJab_02.png?v=g2",
         "i": 2,
-        "ox": 116,
-        "oy": 148,
-        "w": 248,
-        "h": 211
-      },
-      {
-        "file": "/mugen/frames/cino/lightJab_03.png?v=pipe3",
-        "i": 3,
-        "ox": 116,
-        "oy": 148,
-        "w": 248,
-        "h": 211
-      },
-      {
-        "file": "/mugen/frames/cino/lightJab_04.png?v=pipe3",
-        "i": 4,
-        "ox": 116,
-        "oy": 148,
-        "w": 248,
-        "h": 211
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       }
     ],
     "heavySwing": [
@@ -443,86 +387,54 @@
     ],
     "kick": [
       {
-        "file": "/mugen/frames/cino/kick_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/kick_00.png?v=g2",
         "i": 0,
-        "ox": 83,
-        "oy": 129,
-        "w": 195,
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
         "h": 172
       },
       {
-        "file": "/mugen/frames/cino/kick_01.png?v=pipe3",
+        "file": "/mugen/frames/cino/kick_01.png?v=g2",
         "i": 1,
-        "ox": 83,
-        "oy": 129,
-        "w": 195,
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
         "h": 172
       },
       {
-        "file": "/mugen/frames/cino/kick_02.png?v=pipe3",
+        "file": "/mugen/frames/cino/kick_02.png?v=g2",
         "i": 2,
-        "ox": 83,
-        "oy": 129,
-        "w": 195,
-        "h": 172
-      },
-      {
-        "file": "/mugen/frames/cino/kick_03.png?v=pipe3",
-        "i": 3,
-        "ox": 83,
-        "oy": 129,
-        "w": 195,
-        "h": 172
-      },
-      {
-        "file": "/mugen/frames/cino/kick_04.png?v=pipe3",
-        "i": 4,
-        "ox": 83,
-        "oy": 129,
-        "w": 195,
-        "h": 172
-      },
-      {
-        "file": "/mugen/frames/cino/kick_05.png?v=pipe3",
-        "i": 5,
-        "ox": 83,
-        "oy": 129,
-        "w": 195,
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
         "h": 172
       }
     ],
     "airAttack": [
       {
-        "file": "/mugen/frames/cino/airAttack_00.png?v=pipe3",
+        "file": "/mugen/frames/cino/kick_00.png?v=g2",
         "i": 0,
-        "ox": 83,
-        "oy": 128,
-        "w": 195,
-        "h": 171
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       },
       {
-        "file": "/mugen/frames/cino/airAttack_01.png?v=pipe3",
+        "file": "/mugen/frames/cino/kick_01.png?v=g2",
         "i": 1,
-        "ox": 83,
-        "oy": 128,
-        "w": 195,
-        "h": 171
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       },
       {
-        "file": "/mugen/frames/cino/airAttack_02.png?v=pipe3",
+        "file": "/mugen/frames/cino/kick_02.png?v=g2",
         "i": 2,
-        "ox": 83,
-        "oy": 128,
-        "w": 195,
-        "h": 171
-      },
-      {
-        "file": "/mugen/frames/cino/airAttack_03.png?v=pipe3",
-        "i": 3,
-        "ox": 83,
-        "oy": 128,
-        "w": 195,
-        "h": 171
+        "ox": 59,
+        "oy": 152,
+        "w": 116,
+        "h": 172
       }
     ],
     "leanSplash": [
