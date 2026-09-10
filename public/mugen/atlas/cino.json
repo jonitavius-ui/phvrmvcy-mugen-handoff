@@ -3,7 +3,7 @@
   "anims": {
     "idle": [
       {
-        "file": "/mugen/frames/cino/idle_00.png?v=six5",
+        "file": "/mugen/frames/cino/idle_00.png?v=box1",
         "i": 0,
         "ox": 25,
         "oy": 127,
@@ -14,7 +14,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_01.png?v=six5",
+        "file": "/mugen/frames/cino/idle_01.png?v=box1",
         "i": 1,
         "ox": 35,
         "oy": 125,
@@ -25,7 +25,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_02.png?v=six5",
+        "file": "/mugen/frames/cino/idle_02.png?v=box1",
         "i": 2,
         "ox": 39,
         "oy": 124,
@@ -36,7 +36,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_03.png?v=six5",
+        "file": "/mugen/frames/cino/idle_03.png?v=box1",
         "i": 3,
         "ox": 35,
         "oy": 125,
@@ -47,7 +47,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_04.png?v=six5",
+        "file": "/mugen/frames/cino/idle_04.png?v=box1",
         "i": 4,
         "ox": 35,
         "oy": 127,
@@ -58,7 +58,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_05.png?v=six5",
+        "file": "/mugen/frames/cino/idle_05.png?v=box1",
         "i": 5,
         "ox": 38,
         "oy": 126,
@@ -69,7 +69,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_06.png?v=six5",
+        "file": "/mugen/frames/cino/idle_06.png?v=box1",
         "i": 6,
         "ox": 34,
         "oy": 126,
@@ -80,7 +80,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_07.png?v=six5",
+        "file": "/mugen/frames/cino/idle_07.png?v=box1",
         "i": 7,
         "ox": 35,
         "oy": 126,
@@ -91,7 +91,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_08.png?v=six5",
+        "file": "/mugen/frames/cino/idle_08.png?v=box1",
         "i": 8,
         "ox": 38,
         "oy": 125,
@@ -102,7 +102,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_09.png?v=six5",
+        "file": "/mugen/frames/cino/idle_09.png?v=box1",
         "i": 9,
         "ox": 37,
         "oy": 125,
@@ -113,7 +113,7 @@
         "ms": 100
       },
       {
-        "file": "/mugen/frames/cino/idle_10.png?v=six5",
+        "file": "/mugen/frames/cino/idle_10.png?v=box1",
         "i": 10,
         "ox": 38,
         "oy": 124,
@@ -126,7 +126,7 @@
     ],
     "walk": [
       {
-        "file": "/mugen/frames/cino/walk_00.png?v=six5",
+        "file": "/mugen/frames/cino/walk_00.png?v=box1",
         "i": 0,
         "ox": 51,
         "oy": 112,
@@ -137,7 +137,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_01.png?v=six5",
+        "file": "/mugen/frames/cino/walk_01.png?v=box1",
         "i": 1,
         "ox": 53,
         "oy": 114,
@@ -148,7 +148,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_02.png?v=six5",
+        "file": "/mugen/frames/cino/walk_02.png?v=box1",
         "i": 2,
         "ox": 53,
         "oy": 112,
@@ -159,7 +159,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_03.png?v=six5",
+        "file": "/mugen/frames/cino/walk_03.png?v=box1",
         "i": 3,
         "ox": 53,
         "oy": 115,
@@ -170,7 +170,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_04.png?v=six5",
+        "file": "/mugen/frames/cino/walk_04.png?v=box1",
         "i": 4,
         "ox": 51,
         "oy": 113,
@@ -181,7 +181,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_05.png?v=six5",
+        "file": "/mugen/frames/cino/walk_05.png?v=box1",
         "i": 5,
         "ox": 47,
         "oy": 113,
@@ -192,7 +192,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_06.png?v=six5",
+        "file": "/mugen/frames/cino/walk_06.png?v=box1",
         "i": 6,
         "ox": 64,
         "oy": 115,
@@ -203,7 +203,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_07.png?v=six5",
+        "file": "/mugen/frames/cino/walk_07.png?v=box1",
         "i": 7,
         "ox": 52,
         "oy": 113,
@@ -214,7 +214,7 @@
         "ms": 80
       },
       {
-        "file": "/mugen/frames/cino/walk_08.png?v=six5",
+        "file": "/mugen/frames/cino/walk_08.png?v=box1",
         "i": 8,
         "ox": 47,
         "oy": 113,
@@ -227,7 +227,7 @@
     ],
     "run": [
       {
-        "file": "/mugen/frames/cino/run_00.png?v=six5",
+        "file": "/mugen/frames/cino/run_00.png?v=box1",
         "i": 0,
         "ox": 51,
         "oy": 96,
@@ -238,7 +238,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_01.png?v=six5",
+        "file": "/mugen/frames/cino/run_01.png?v=box1",
         "i": 1,
         "ox": 49,
         "oy": 92,
@@ -249,7 +249,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_02.png?v=six5",
+        "file": "/mugen/frames/cino/run_02.png?v=box1",
         "i": 2,
         "ox": 48,
         "oy": 93,
@@ -260,7 +260,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_03.png?v=six5",
+        "file": "/mugen/frames/cino/run_03.png?v=box1",
         "i": 3,
         "ox": 45,
         "oy": 92,
@@ -271,7 +271,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_04.png?v=six5",
+        "file": "/mugen/frames/cino/run_04.png?v=box1",
         "i": 4,
         "ox": 49,
         "oy": 85,
@@ -282,7 +282,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_05.png?v=six5",
+        "file": "/mugen/frames/cino/run_05.png?v=box1",
         "i": 5,
         "ox": 48,
         "oy": 91,
@@ -293,7 +293,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_06.png?v=six5",
+        "file": "/mugen/frames/cino/run_06.png?v=box1",
         "i": 6,
         "ox": 50,
         "oy": 91,
@@ -304,7 +304,7 @@
         "ms": 60
       },
       {
-        "file": "/mugen/frames/cino/run_07.png?v=six5",
+        "file": "/mugen/frames/cino/run_07.png?v=box1",
         "i": 7,
         "ox": 50,
         "oy": 92,
@@ -317,7 +317,7 @@
     ],
     "dash": [
       {
-        "file": "/mugen/frames/cino/dash_00.png?v=six5",
+        "file": "/mugen/frames/cino/dash_00.png?v=box1",
         "i": 0,
         "ox": 51,
         "oy": 96,
@@ -325,7 +325,7 @@
         "h": 103
       },
       {
-        "file": "/mugen/frames/cino/dash_01.png?v=six5",
+        "file": "/mugen/frames/cino/dash_01.png?v=box1",
         "i": 1,
         "ox": 49,
         "oy": 92,
@@ -333,7 +333,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/dash_02.png?v=six5",
+        "file": "/mugen/frames/cino/dash_02.png?v=box1",
         "i": 2,
         "ox": 48,
         "oy": 93,
@@ -341,7 +341,7 @@
         "h": 100
       },
       {
-        "file": "/mugen/frames/cino/dash_03.png?v=six5",
+        "file": "/mugen/frames/cino/dash_03.png?v=box1",
         "i": 3,
         "ox": 45,
         "oy": 92,
@@ -349,7 +349,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/dash_04.png?v=six5",
+        "file": "/mugen/frames/cino/dash_04.png?v=box1",
         "i": 4,
         "ox": 49,
         "oy": 85,
@@ -357,7 +357,7 @@
         "h": 93
       },
       {
-        "file": "/mugen/frames/cino/dash_05.png?v=six5",
+        "file": "/mugen/frames/cino/dash_05.png?v=box1",
         "i": 5,
         "ox": 48,
         "oy": 91,
@@ -365,7 +365,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/dash_06.png?v=six5",
+        "file": "/mugen/frames/cino/dash_06.png?v=box1",
         "i": 6,
         "ox": 50,
         "oy": 91,
@@ -373,7 +373,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/dash_07.png?v=six5",
+        "file": "/mugen/frames/cino/dash_07.png?v=box1",
         "i": 7,
         "ox": 50,
         "oy": 92,
@@ -383,7 +383,7 @@
     ],
     "backdash": [
       {
-        "file": "/mugen/frames/cino/backdash_00.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_00.png?v=box1",
         "i": 0,
         "ox": 50,
         "oy": 92,
@@ -391,7 +391,7 @@
         "h": 100
       },
       {
-        "file": "/mugen/frames/cino/backdash_01.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_01.png?v=box1",
         "i": 1,
         "ox": 50,
         "oy": 91,
@@ -399,7 +399,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/backdash_02.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_02.png?v=box1",
         "i": 2,
         "ox": 48,
         "oy": 91,
@@ -407,7 +407,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/backdash_03.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_03.png?v=box1",
         "i": 3,
         "ox": 49,
         "oy": 85,
@@ -415,7 +415,7 @@
         "h": 93
       },
       {
-        "file": "/mugen/frames/cino/backdash_04.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_04.png?v=box1",
         "i": 4,
         "ox": 45,
         "oy": 92,
@@ -423,7 +423,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/backdash_05.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_05.png?v=box1",
         "i": 5,
         "ox": 48,
         "oy": 93,
@@ -431,7 +431,7 @@
         "h": 100
       },
       {
-        "file": "/mugen/frames/cino/backdash_06.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_06.png?v=box1",
         "i": 6,
         "ox": 49,
         "oy": 92,
@@ -439,7 +439,7 @@
         "h": 99
       },
       {
-        "file": "/mugen/frames/cino/backdash_07.png?v=six5",
+        "file": "/mugen/frames/cino/backdash_07.png?v=box1",
         "i": 7,
         "ox": 51,
         "oy": 96,
@@ -449,7 +449,7 @@
     ],
     "crouch": [
       {
-        "file": "/mugen/frames/cino/crouch_00.png?v=six5",
+        "file": "/mugen/frames/cino/crouch_00.png?v=box1",
         "i": 0,
         "ox": 45,
         "oy": 77,
@@ -460,7 +460,7 @@
         "ms": 50
       },
       {
-        "file": "/mugen/frames/cino/crouch_01.png?v=six5",
+        "file": "/mugen/frames/cino/crouch_01.png?v=box1",
         "i": 1,
         "ox": 31,
         "oy": 88,
@@ -473,7 +473,7 @@
     ],
     "crouchWalk": [
       {
-        "file": "/mugen/frames/cino/crouchWalk_00.png?v=six5",
+        "file": "/mugen/frames/cino/crouchWalk_00.png?v=box1",
         "i": 0,
         "ox": 45,
         "oy": 77,
@@ -481,7 +481,7 @@
         "h": 85
       },
       {
-        "file": "/mugen/frames/cino/crouchWalk_01.png?v=six5",
+        "file": "/mugen/frames/cino/crouchWalk_01.png?v=box1",
         "i": 1,
         "ox": 31,
         "oy": 88,
@@ -491,7 +491,7 @@
     ],
     "jumpStart": [
       {
-        "file": "/mugen/frames/cino/jumpStart_00.png?v=six5",
+        "file": "/mugen/frames/cino/jumpStart_00.png?v=box1",
         "i": 0,
         "ox": 37,
         "oy": 87,
@@ -504,7 +504,7 @@
     ],
     "jumpLoop": [
       {
-        "file": "/mugen/frames/cino/jumpLoop_00.png?v=six5",
+        "file": "/mugen/frames/cino/jumpLoop_00.png?v=box1",
         "i": 0,
         "ox": 36,
         "oy": 72,
@@ -515,7 +515,7 @@
         "ms": 70
       },
       {
-        "file": "/mugen/frames/cino/jumpLoop_01.png?v=six5",
+        "file": "/mugen/frames/cino/jumpLoop_01.png?v=box1",
         "i": 1,
         "ox": 37,
         "oy": 79,
@@ -526,7 +526,7 @@
         "ms": 70
       },
       {
-        "file": "/mugen/frames/cino/jumpLoop_02.png?v=six5",
+        "file": "/mugen/frames/cino/jumpLoop_02.png?v=box1",
         "i": 2,
         "ox": 33,
         "oy": 86,
@@ -539,7 +539,7 @@
     ],
     "jumpLand": [
       {
-        "file": "/mugen/frames/cino/jumpLand_00.png?v=six5",
+        "file": "/mugen/frames/cino/jumpLand_00.png?v=box1",
         "i": 0,
         "ox": 42,
         "oy": 86,
@@ -550,7 +550,7 @@
         "ms": 55
       },
       {
-        "file": "/mugen/frames/cino/jumpLand_01.png?v=six5",
+        "file": "/mugen/frames/cino/jumpLand_01.png?v=box1",
         "i": 1,
         "ox": 40,
         "oy": 77,
@@ -561,7 +561,7 @@
         "ms": 55
       },
       {
-        "file": "/mugen/frames/cino/jumpLand_02.png?v=six5",
+        "file": "/mugen/frames/cino/jumpLand_02.png?v=box1",
         "i": 2,
         "ox": 43,
         "oy": 75,
@@ -574,7 +574,7 @@
     ],
     "lightJab": [
       {
-        "file": "/mugen/frames/cino/lightJab_00.png?v=six5",
+        "file": "/mugen/frames/cino/lightJab_00.png?v=box1",
         "i": 0,
         "ox": 51,
         "oy": 106,
@@ -582,7 +582,7 @@
         "h": 129
       },
       {
-        "file": "/mugen/frames/cino/lightJab_01.png?v=six5",
+        "file": "/mugen/frames/cino/lightJab_01.png?v=box1",
         "i": 1,
         "ox": 50,
         "oy": 105,
@@ -590,7 +590,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/lightJab_02.png?v=six5",
+        "file": "/mugen/frames/cino/lightJab_02.png?v=box1",
         "i": 2,
         "ox": 63,
         "oy": 102,
@@ -598,7 +598,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/lightJab_03.png?v=six5",
+        "file": "/mugen/frames/cino/lightJab_03.png?v=box1",
         "i": 3,
         "ox": 76,
         "oy": 103,
@@ -606,7 +606,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/lightJab_04.png?v=six5",
+        "file": "/mugen/frames/cino/lightJab_04.png?v=box1",
         "i": 4,
         "ox": 57,
         "oy": 108,
@@ -616,7 +616,7 @@
     ],
     "heavySwing": [
       {
-        "file": "/mugen/frames/cino/heavySwing_00.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_00.png?v=box1",
         "i": 0,
         "ox": 51,
         "oy": 106,
@@ -624,7 +624,7 @@
         "h": 129
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_01.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_01.png?v=box1",
         "i": 1,
         "ox": 50,
         "oy": 105,
@@ -632,7 +632,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_02.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_02.png?v=box1",
         "i": 2,
         "ox": 63,
         "oy": 102,
@@ -640,7 +640,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_03.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_03.png?v=box1",
         "i": 3,
         "ox": 76,
         "oy": 103,
@@ -648,7 +648,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_04.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_04.png?v=box1",
         "i": 4,
         "ox": 57,
         "oy": 108,
@@ -656,7 +656,7 @@
         "h": 131
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_05.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_05.png?v=box1",
         "i": 5,
         "ox": 47,
         "oy": 87,
@@ -664,7 +664,7 @@
         "h": 110
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_06.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_06.png?v=box1",
         "i": 6,
         "ox": 55,
         "oy": 107,
@@ -672,7 +672,7 @@
         "h": 130
       },
       {
-        "file": "/mugen/frames/cino/heavySwing_07.png?v=six5",
+        "file": "/mugen/frames/cino/heavySwing_07.png?v=box1",
         "i": 7,
         "ox": 38,
         "oy": 103,
@@ -682,7 +682,7 @@
     ],
     "kick": [
       {
-        "file": "/mugen/frames/cino/kick_00.png?v=six5",
+        "file": "/mugen/frames/cino/kick_00.png?v=box1",
         "i": 0,
         "ox": 37,
         "oy": 109,
@@ -690,7 +690,7 @@
         "h": 132
       },
       {
-        "file": "/mugen/frames/cino/kick_01.png?v=six5",
+        "file": "/mugen/frames/cino/kick_01.png?v=box1",
         "i": 1,
         "ox": 35,
         "oy": 105,
@@ -698,7 +698,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/kick_02.png?v=six5",
+        "file": "/mugen/frames/cino/kick_02.png?v=box1",
         "i": 2,
         "ox": 32,
         "oy": 100,
@@ -706,7 +706,7 @@
         "h": 123
       },
       {
-        "file": "/mugen/frames/cino/kick_03.png?v=six5",
+        "file": "/mugen/frames/cino/kick_03.png?v=box1",
         "i": 3,
         "ox": 44,
         "oy": 108,
@@ -714,7 +714,7 @@
         "h": 131
       },
       {
-        "file": "/mugen/frames/cino/kick_04.png?v=six5",
+        "file": "/mugen/frames/cino/kick_04.png?v=box1",
         "i": 4,
         "ox": 39,
         "oy": 101,
@@ -722,7 +722,7 @@
         "h": 124
       },
       {
-        "file": "/mugen/frames/cino/kick_05.png?v=six5",
+        "file": "/mugen/frames/cino/kick_05.png?v=box1",
         "i": 5,
         "ox": 63,
         "oy": 105,
@@ -732,7 +732,7 @@
     ],
     "airAttack": [
       {
-        "file": "/mugen/frames/cino/airAttack_00.png?v=six5",
+        "file": "/mugen/frames/cino/airAttack_00.png?v=box1",
         "i": 0,
         "ox": 32,
         "oy": 100,
@@ -740,7 +740,7 @@
         "h": 123
       },
       {
-        "file": "/mugen/frames/cino/airAttack_01.png?v=six5",
+        "file": "/mugen/frames/cino/airAttack_01.png?v=box1",
         "i": 1,
         "ox": 44,
         "oy": 108,
@@ -748,7 +748,7 @@
         "h": 131
       },
       {
-        "file": "/mugen/frames/cino/airAttack_02.png?v=six5",
+        "file": "/mugen/frames/cino/airAttack_02.png?v=box1",
         "i": 2,
         "ox": 39,
         "oy": 101,
@@ -756,7 +756,7 @@
         "h": 124
       },
       {
-        "file": "/mugen/frames/cino/airAttack_03.png?v=six5",
+        "file": "/mugen/frames/cino/airAttack_03.png?v=box1",
         "i": 3,
         "ox": 63,
         "oy": 105,
@@ -766,83 +766,75 @@
     ],
     "leanSplash": [
       {
-        "file": "/mugen/frames/cino/leanSplash_00.png?v=six5",
+        "file": "/mugen/frames/cino/leanSplash_00.png?v=box1",
         "i": 0,
-        "ox": 50,
-        "oy": 100,
-        "w": 105,
-        "h": 127
+        "ox": 253,
+        "oy": 213,
+        "w": 409,
+        "h": 271
       },
       {
-        "file": "/mugen/frames/cino/leanSplash_01.png?v=six5",
+        "file": "/mugen/frames/cino/leanSplash_01.png?v=box1",
         "i": 1,
-        "ox": 51,
-        "oy": 100,
-        "w": 109,
-        "h": 127
+        "ox": 253,
+        "oy": 213,
+        "w": 409,
+        "h": 271
       },
       {
-        "file": "/mugen/frames/cino/leanSplash_02.png?v=six5",
+        "file": "/mugen/frames/cino/leanSplash_02.png?v=box1",
         "i": 2,
-        "ox": 52,
-        "oy": 100,
-        "w": 111,
-        "h": 127
+        "ox": 253,
+        "oy": 213,
+        "w": 409,
+        "h": 271
       },
       {
-        "file": "/mugen/frames/cino/leanSplash_03.png?v=six5",
+        "file": "/mugen/frames/cino/leanSplash_03.png?v=box1",
         "i": 3,
-        "ox": 67,
-        "oy": 76,
-        "w": 121,
-        "h": 103
+        "ox": 253,
+        "oy": 213,
+        "w": 409,
+        "h": 271
       }
     ],
     "fxSplash": [
       {
-        "file": "/mugen/frames/cino/fxSplash_00.png?v=six5",
+        "file": "/mugen/frames/cino/fxSplash_00.png?v=box1",
         "i": 0,
-        "ox": 117,
-        "oy": 133,
-        "w": 212,
-        "h": 180
+        "ox": 253,
+        "oy": 213,
+        "w": 459,
+        "h": 271
       },
       {
-        "file": "/mugen/frames/cino/fxSplash_01.png?v=six5",
+        "file": "/mugen/frames/cino/fxSplash_01.png?v=box1",
         "i": 1,
-        "ox": 205,
-        "oy": 131,
-        "w": 313,
-        "h": 179
+        "ox": 253,
+        "oy": 213,
+        "w": 459,
+        "h": 271
       },
       {
-        "file": "/mugen/frames/cino/fxSplash_02.png?v=six5",
+        "file": "/mugen/frames/cino/fxSplash_02.png?v=box1",
         "i": 2,
-        "ox": 163,
-        "oy": 165,
-        "w": 269,
-        "h": 213
+        "ox": 253,
+        "oy": 213,
+        "w": 459,
+        "h": 271
       },
       {
-        "file": "/mugen/frames/cino/fxSplash_03.png?v=six5",
+        "file": "/mugen/frames/cino/fxSplash_04.png?v=box1",
         "i": 3,
-        "ox": 76,
-        "oy": 144,
-        "w": 156,
-        "h": 191
-      },
-      {
-        "file": "/mugen/frames/cino/fxSplash_04.png?v=six5",
-        "i": 4,
-        "ox": 153,
-        "oy": 165,
-        "w": 311,
-        "h": 213
+        "ox": 253,
+        "oy": 213,
+        "w": 459,
+        "h": 271
       }
     ],
     "uppercut": [
       {
-        "file": "/mugen/frames/cino/uppercut_00.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_00.png?v=box1",
         "i": 0,
         "ox": 37,
         "oy": 109,
@@ -850,7 +842,7 @@
         "h": 132
       },
       {
-        "file": "/mugen/frames/cino/uppercut_01.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_01.png?v=box1",
         "i": 1,
         "ox": 35,
         "oy": 105,
@@ -858,7 +850,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/uppercut_02.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_02.png?v=box1",
         "i": 2,
         "ox": 32,
         "oy": 100,
@@ -866,7 +858,7 @@
         "h": 123
       },
       {
-        "file": "/mugen/frames/cino/uppercut_03.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_03.png?v=box1",
         "i": 3,
         "ox": 49,
         "oy": 101,
@@ -874,7 +866,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/uppercut_04.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_04.png?v=box1",
         "i": 4,
         "ox": 52,
         "oy": 101,
@@ -882,7 +874,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/uppercut_05.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_05.png?v=box1",
         "i": 5,
         "ox": 58,
         "oy": 82,
@@ -890,7 +882,7 @@
         "h": 109
       },
       {
-        "file": "/mugen/frames/cino/uppercut_06.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_06.png?v=box1",
         "i": 6,
         "ox": 59,
         "oy": 89,
@@ -898,7 +890,7 @@
         "h": 116
       },
       {
-        "file": "/mugen/frames/cino/uppercut_07.png?v=six5",
+        "file": "/mugen/frames/cino/uppercut_07.png?v=box1",
         "i": 7,
         "ox": 94,
         "oy": 86,
@@ -908,7 +900,7 @@
     ],
     "fxBeam": [
       {
-        "file": "/mugen/frames/cino/fxBeam_00.png?v=six5",
+        "file": "/mugen/frames/cino/fxBeam_00.png?v=box1",
         "i": 0,
         "ox": 102,
         "oy": 156,
@@ -916,7 +908,7 @@
         "h": 203
       },
       {
-        "file": "/mugen/frames/cino/fxBeam_01.png?v=six5",
+        "file": "/mugen/frames/cino/fxBeam_01.png?v=box1",
         "i": 1,
         "ox": 165,
         "oy": 150,
@@ -924,7 +916,7 @@
         "h": 197
       },
       {
-        "file": "/mugen/frames/cino/fxBeam_02.png?v=six5",
+        "file": "/mugen/frames/cino/fxBeam_02.png?v=box1",
         "i": 2,
         "ox": 291,
         "oy": 152,
@@ -932,7 +924,7 @@
         "h": 200
       },
       {
-        "file": "/mugen/frames/cino/fxBeam_03.png?v=six5",
+        "file": "/mugen/frames/cino/fxBeam_03.png?v=box1",
         "i": 3,
         "ox": 91,
         "oy": 141,
@@ -940,7 +932,7 @@
         "h": 188
       },
       {
-        "file": "/mugen/frames/cino/fxBeam_04.png?v=six5",
+        "file": "/mugen/frames/cino/fxBeam_04.png?v=box1",
         "i": 4,
         "ox": 90,
         "oy": 138,
@@ -950,49 +942,49 @@
     ],
     "candleRush": [
       {
-        "file": "/mugen/frames/cino/candleRush_00.png?v=six5",
+        "file": "/mugen/frames/cino/candleRush_00.png?v=box1",
         "i": 0,
-        "ox": 55,
-        "oy": 89,
-        "w": 139,
-        "h": 116
+        "ox": 130,
+        "oy": 142,
+        "w": 262,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/candleRush_01.png?v=six5",
+        "file": "/mugen/frames/cino/candleRush_01.png?v=box1",
         "i": 1,
-        "ox": 57,
-        "oy": 84,
-        "w": 135,
-        "h": 111
+        "ox": 130,
+        "oy": 142,
+        "w": 262,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/candleRush_02.png?v=six5",
+        "file": "/mugen/frames/cino/candleRush_02.png?v=box1",
         "i": 2,
-        "ox": 60,
-        "oy": 86,
-        "w": 140,
-        "h": 113
+        "ox": 130,
+        "oy": 142,
+        "w": 262,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/candleRush_03.png?v=six5",
+        "file": "/mugen/frames/cino/candleRush_03.png?v=box1",
         "i": 3,
-        "ox": 54,
-        "oy": 88,
-        "w": 135,
-        "h": 115
+        "ox": 130,
+        "oy": 142,
+        "w": 262,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/candleRush_04.png?v=six5",
+        "file": "/mugen/frames/cino/candleRush_04.png?v=box1",
         "i": 4,
-        "ox": 82,
-        "oy": 94,
-        "w": 162,
-        "h": 121
+        "ox": 130,
+        "oy": 142,
+        "w": 262,
+        "h": 179
       }
     ],
     "chartBreaker": [
       {
-        "file": "/mugen/frames/cino/chartBreaker_00.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_00.png?v=box1",
         "i": 0,
         "ox": 49,
         "oy": 102,
@@ -1000,7 +992,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/chartBreaker_01.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_01.png?v=box1",
         "i": 1,
         "ox": 61,
         "oy": 94,
@@ -1008,7 +1000,7 @@
         "h": 118
       },
       {
-        "file": "/mugen/frames/cino/chartBreaker_02.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_02.png?v=box1",
         "i": 2,
         "ox": 167,
         "oy": 87,
@@ -1016,7 +1008,7 @@
         "h": 114
       },
       {
-        "file": "/mugen/frames/cino/chartBreaker_03.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_03.png?v=box1",
         "i": 3,
         "ox": 52,
         "oy": 80,
@@ -1024,7 +1016,7 @@
         "h": 107
       },
       {
-        "file": "/mugen/frames/cino/chartBreaker_04.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_04.png?v=box1",
         "i": 4,
         "ox": 51,
         "oy": 79,
@@ -1032,7 +1024,7 @@
         "h": 106
       },
       {
-        "file": "/mugen/frames/cino/chartBreaker_05.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_05.png?v=box1",
         "i": 5,
         "ox": 44,
         "oy": 82,
@@ -1040,7 +1032,7 @@
         "h": 109
       },
       {
-        "file": "/mugen/frames/cino/chartBreaker_06.png?v=six5",
+        "file": "/mugen/frames/cino/chartBreaker_06.png?v=box1",
         "i": 6,
         "ox": 88,
         "oy": 94,
@@ -1050,7 +1042,7 @@
     ],
     "fxCrystal": [
       {
-        "file": "/mugen/frames/cino/fxCrystal_00.png?v=six5",
+        "file": "/mugen/frames/cino/fxCrystal_00.png?v=box1",
         "i": 0,
         "ox": 115,
         "oy": 188,
@@ -1058,7 +1050,7 @@
         "h": 229
       },
       {
-        "file": "/mugen/frames/cino/fxCrystal_01.png?v=six5",
+        "file": "/mugen/frames/cino/fxCrystal_01.png?v=box1",
         "i": 1,
         "ox": 140,
         "oy": 197,
@@ -1066,7 +1058,7 @@
         "h": 238
       },
       {
-        "file": "/mugen/frames/cino/fxCrystal_02.png?v=six5",
+        "file": "/mugen/frames/cino/fxCrystal_02.png?v=box1",
         "i": 2,
         "ox": 96,
         "oy": 195,
@@ -1074,7 +1066,7 @@
         "h": 235
       },
       {
-        "file": "/mugen/frames/cino/fxCrystal_03.png?v=six5",
+        "file": "/mugen/frames/cino/fxCrystal_03.png?v=box1",
         "i": 3,
         "ox": 145,
         "oy": 197,
@@ -1084,7 +1076,7 @@
     ],
     "bullCharge": [
       {
-        "file": "/mugen/frames/cino/bullCharge_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullCharge_00.png?v=box1",
         "i": 0,
         "ox": 54,
         "oy": 88,
@@ -1092,7 +1084,7 @@
         "h": 115
       },
       {
-        "file": "/mugen/frames/cino/bullCharge_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullCharge_01.png?v=box1",
         "i": 1,
         "ox": 82,
         "oy": 94,
@@ -1100,7 +1092,7 @@
         "h": 121
       },
       {
-        "file": "/mugen/frames/cino/bullCharge_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullCharge_02.png?v=box1",
         "i": 2,
         "ox": 94,
         "oy": 102,
@@ -1108,7 +1100,7 @@
         "h": 129
       },
       {
-        "file": "/mugen/frames/cino/bullCharge_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullCharge_03.png?v=box1",
         "i": 3,
         "ox": 49,
         "oy": 86,
@@ -1116,7 +1108,7 @@
         "h": 113
       },
       {
-        "file": "/mugen/frames/cino/bullCharge_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullCharge_04.png?v=box1",
         "i": 4,
         "ox": 96,
         "oy": 102,
@@ -1126,7 +1118,7 @@
     ],
     "fxBullHead": [
       {
-        "file": "/mugen/frames/cino/fxBullHead_00.png?v=six5",
+        "file": "/mugen/frames/cino/fxBullHead_00.png?v=box1",
         "i": 0,
         "ox": 143,
         "oy": 165,
@@ -1134,7 +1126,7 @@
         "h": 213
       },
       {
-        "file": "/mugen/frames/cino/fxBullHead_01.png?v=six5",
+        "file": "/mugen/frames/cino/fxBullHead_01.png?v=box1",
         "i": 1,
         "ox": 164,
         "oy": 179,
@@ -1142,7 +1134,7 @@
         "h": 226
       },
       {
-        "file": "/mugen/frames/cino/fxBullHead_02.png?v=six5",
+        "file": "/mugen/frames/cino/fxBullHead_02.png?v=box1",
         "i": 2,
         "ox": 86,
         "oy": 150,
@@ -1150,7 +1142,7 @@
         "h": 197
       },
       {
-        "file": "/mugen/frames/cino/fxBullHead_03.png?v=six5",
+        "file": "/mugen/frames/cino/fxBullHead_03.png?v=box1",
         "i": 3,
         "ox": 168,
         "oy": 178,
@@ -1160,7 +1152,7 @@
     ],
     "pillStorm": [
       {
-        "file": "/mugen/frames/cino/pillStorm_00.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_00.png?v=box1",
         "i": 0,
         "ox": 50,
         "oy": 100,
@@ -1168,7 +1160,7 @@
         "h": 127
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_01.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_01.png?v=box1",
         "i": 1,
         "ox": 51,
         "oy": 100,
@@ -1176,7 +1168,7 @@
         "h": 127
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_02.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_02.png?v=box1",
         "i": 2,
         "ox": 52,
         "oy": 100,
@@ -1184,7 +1176,7 @@
         "h": 127
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_03.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_03.png?v=box1",
         "i": 3,
         "ox": 67,
         "oy": 76,
@@ -1192,7 +1184,7 @@
         "h": 103
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_04.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_04.png?v=box1",
         "i": 4,
         "ox": 117,
         "oy": 75,
@@ -1200,7 +1192,7 @@
         "h": 102
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_05.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_05.png?v=box1",
         "i": 5,
         "ox": 93,
         "oy": 94,
@@ -1208,7 +1200,7 @@
         "h": 121
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_06.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_06.png?v=box1",
         "i": 6,
         "ox": 44,
         "oy": 82,
@@ -1216,7 +1208,7 @@
         "h": 109
       },
       {
-        "file": "/mugen/frames/cino/pillStorm_07.png?v=six5",
+        "file": "/mugen/frames/cino/pillStorm_07.png?v=box1",
         "i": 7,
         "ox": 88,
         "oy": 94,
@@ -1226,7 +1218,7 @@
     ],
     "shadowClones": [
       {
-        "file": "/mugen/frames/cino/shadowClones_00.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_00.png?v=box1",
         "i": 0,
         "ox": 51,
         "oy": 106,
@@ -1234,7 +1226,7 @@
         "h": 129
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_01.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_01.png?v=box1",
         "i": 1,
         "ox": 50,
         "oy": 105,
@@ -1242,7 +1234,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_02.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_02.png?v=box1",
         "i": 2,
         "ox": 63,
         "oy": 102,
@@ -1250,7 +1242,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_03.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_03.png?v=box1",
         "i": 3,
         "ox": 76,
         "oy": 103,
@@ -1258,7 +1250,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_04.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_04.png?v=box1",
         "i": 4,
         "ox": 51,
         "oy": 106,
@@ -1266,7 +1258,7 @@
         "h": 129
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_05.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_05.png?v=box1",
         "i": 5,
         "ox": 50,
         "oy": 105,
@@ -1274,7 +1266,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_06.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_06.png?v=box1",
         "i": 6,
         "ox": 63,
         "oy": 102,
@@ -1282,7 +1274,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/shadowClones_07.png?v=six5",
+        "file": "/mugen/frames/cino/shadowClones_07.png?v=box1",
         "i": 7,
         "ox": 76,
         "oy": 103,
@@ -1292,7 +1284,7 @@
     ],
     "taunt": [
       {
-        "file": "/mugen/frames/cino/taunt_00.png?v=six5",
+        "file": "/mugen/frames/cino/taunt_00.png?v=box1",
         "i": 0,
         "ox": 49,
         "oy": 102,
@@ -1300,7 +1292,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/taunt_01.png?v=six5",
+        "file": "/mugen/frames/cino/taunt_01.png?v=box1",
         "i": 1,
         "ox": 61,
         "oy": 94,
@@ -1308,7 +1300,7 @@
         "h": 118
       },
       {
-        "file": "/mugen/frames/cino/taunt_02.png?v=six5",
+        "file": "/mugen/frames/cino/taunt_02.png?v=box1",
         "i": 2,
         "ox": 61,
         "oy": 121,
@@ -1316,7 +1308,7 @@
         "h": 144
       },
       {
-        "file": "/mugen/frames/cino/taunt_03.png?v=six5",
+        "file": "/mugen/frames/cino/taunt_03.png?v=box1",
         "i": 3,
         "ox": 60,
         "oy": 106,
@@ -1326,97 +1318,89 @@
     ],
     "overdrive": [
       {
-        "file": "/mugen/frames/cino/overdrive_00.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_00.png?v=box1",
         "i": 0,
-        "ox": 49,
-        "oy": 102,
-        "w": 101,
-        "h": 125
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_01.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_01.png?v=box1",
         "i": 1,
-        "ox": 61,
-        "oy": 94,
-        "w": 122,
-        "h": 118
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_02.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_02.png?v=box1",
         "i": 2,
-        "ox": 61,
-        "oy": 121,
-        "w": 122,
-        "h": 144
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_03.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_03.png?v=box1",
         "i": 3,
-        "ox": 60,
-        "oy": 106,
-        "w": 128,
-        "h": 129
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_04.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_04.png?v=box1",
         "i": 4,
-        "ox": 66,
-        "oy": 107,
-        "w": 133,
-        "h": 131
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_05.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_05.png?v=box1",
         "i": 5,
-        "ox": 80,
-        "oy": 113,
-        "w": 169,
-        "h": 136
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_06.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_06.png?v=box1",
         "i": 6,
-        "ox": 55,
-        "oy": 111,
-        "w": 110,
-        "h": 135
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_07.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_07.png?v=box1",
         "i": 7,
-        "ox": 83,
-        "oy": 113,
-        "w": 173,
-        "h": 136
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_08.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_08.png?v=box1",
         "i": 8,
-        "ox": 94,
-        "oy": 102,
-        "w": 199,
-        "h": 129
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       },
       {
-        "file": "/mugen/frames/cino/overdrive_09.png?v=six5",
+        "file": "/mugen/frames/cino/overdrive_10.png?v=box1",
         "i": 9,
-        "ox": 49,
-        "oy": 86,
-        "w": 89,
-        "h": 113
-      },
-      {
-        "file": "/mugen/frames/cino/overdrive_10.png?v=six5",
-        "i": 10,
-        "ox": 96,
-        "oy": 102,
-        "w": 196,
-        "h": 129
+        "ox": 144,
+        "oy": 169,
+        "w": 297,
+        "h": 206
       }
     ],
     "fxSuper": [
       {
-        "file": "/mugen/frames/cino/fxSuper_00.png?v=six5",
+        "file": "/mugen/frames/cino/fxSuper_00.png?v=box1",
         "i": 0,
         "ox": 105,
         "oy": 186,
@@ -1424,7 +1408,7 @@
         "h": 226
       },
       {
-        "file": "/mugen/frames/cino/fxSuper_01.png?v=six5",
+        "file": "/mugen/frames/cino/fxSuper_01.png?v=box1",
         "i": 1,
         "ox": 115,
         "oy": 188,
@@ -1432,7 +1416,7 @@
         "h": 229
       },
       {
-        "file": "/mugen/frames/cino/fxSuper_02.png?v=six5",
+        "file": "/mugen/frames/cino/fxSuper_02.png?v=box1",
         "i": 2,
         "ox": 140,
         "oy": 197,
@@ -1440,7 +1424,7 @@
         "h": 238
       },
       {
-        "file": "/mugen/frames/cino/fxSuper_03.png?v=six5",
+        "file": "/mugen/frames/cino/fxSuper_03.png?v=box1",
         "i": 3,
         "ox": 96,
         "oy": 195,
@@ -1448,7 +1432,7 @@
         "h": 235
       },
       {
-        "file": "/mugen/frames/cino/fxSuper_04.png?v=six5",
+        "file": "/mugen/frames/cino/fxSuper_04.png?v=box1",
         "i": 4,
         "ox": 145,
         "oy": 197,
@@ -1458,295 +1442,279 @@
     ],
     "bullForm": [
       {
-        "file": "/mugen/frames/cino/bullForm_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_00.png?v=box1",
         "i": 0,
-        "ox": 58,
-        "oy": 103,
-        "w": 121,
-        "h": 131
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_01.png?v=box1",
         "i": 1,
-        "ox": 59,
-        "oy": 93,
-        "w": 126,
-        "h": 121
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_02.png?v=box1",
         "i": 2,
-        "ox": 110,
-        "oy": 109,
-        "w": 217,
-        "h": 137
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_03.png?v=box1",
         "i": 3,
-        "ox": 117,
-        "oy": 114,
-        "w": 226,
-        "h": 141
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_04.png?v=box1",
         "i": 4,
-        "ox": 71,
-        "oy": 116,
-        "w": 154,
-        "h": 143
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_05.png?v=box1",
         "i": 5,
-        "ox": 75,
-        "oy": 124,
-        "w": 156,
-        "h": 151
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_06.png?v=box1",
         "i": 6,
-        "ox": 77,
-        "oy": 123,
-        "w": 164,
-        "h": 151
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       },
       {
-        "file": "/mugen/frames/cino/bullForm_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullForm_07.png?v=box1",
         "i": 7,
-        "ox": 56,
-        "oy": 128,
-        "w": 118,
-        "h": 155
-      },
-      {
-        "file": "/mugen/frames/cino/bullForm_08.png?v=six5",
-        "i": 8,
-        "ox": 51,
-        "oy": 128,
-        "w": 108,
-        "h": 155
+        "ox": 165,
+        "oy": 176,
+        "w": 322,
+        "h": 214
       }
     ],
     "bullIdle": [
       {
-        "file": "/mugen/frames/cino/bullIdle_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_00.png?v=box1",
         "i": 0,
-        "ox": 66,
-        "oy": 102,
-        "w": 137,
-        "h": 125
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_01.png?v=box1",
         "i": 1,
-        "ox": 63,
-        "oy": 102,
-        "w": 135,
-        "h": 125
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_02.png?v=box1",
         "i": 2,
-        "ox": 62,
-        "oy": 103,
-        "w": 132,
-        "h": 126
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_03.png?v=box1",
         "i": 3,
-        "ox": 69,
-        "oy": 101,
-        "w": 135,
-        "h": 124
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_04.png?v=box1",
         "i": 4,
-        "ox": 70,
-        "oy": 103,
-        "w": 135,
-        "h": 126
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_06.png?v=box1",
         "i": 5,
-        "ox": 45,
-        "oy": 101,
-        "w": 95,
-        "h": 124
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_07.png?v=box1",
         "i": 6,
-        "ox": 54,
-        "oy": 104,
-        "w": 109,
-        "h": 127
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       },
       {
-        "file": "/mugen/frames/cino/bullIdle_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullIdle_08.png?v=box1",
         "i": 7,
-        "ox": 69,
-        "oy": 103,
-        "w": 135,
-        "h": 126
-      },
-      {
-        "file": "/mugen/frames/cino/bullIdle_08.png?v=six5",
-        "i": 8,
-        "ox": 66,
-        "oy": 103,
-        "w": 137,
-        "h": 126
+        "ox": 118,
+        "oy": 152,
+        "w": 238,
+        "h": 185
       }
     ],
     "bullWalk": [
       {
-        "file": "/mugen/frames/cino/bullWalk_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_00.png?v=box1",
         "i": 0,
-        "ox": 62,
-        "oy": 89,
-        "w": 124,
-        "h": 111
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_01.png?v=box1",
         "i": 1,
-        "ox": 49,
-        "oy": 89,
-        "w": 137,
-        "h": 111
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_02.png?v=box1",
         "i": 2,
-        "ox": 51,
-        "oy": 88,
-        "w": 150,
-        "h": 111
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_03.png?v=box1",
         "i": 3,
-        "ox": 77,
-        "oy": 88,
-        "w": 157,
-        "h": 111
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_04.png?v=box1",
         "i": 4,
-        "ox": 78,
-        "oy": 82,
-        "w": 178,
-        "h": 105
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_05.png?v=box1",
         "i": 5,
-        "ox": 49,
-        "oy": 88,
-        "w": 125,
-        "h": 111
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_06.png?v=box1",
         "i": 6,
-        "ox": 46,
-        "oy": 98,
-        "w": 126,
-        "h": 121
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       },
       {
-        "file": "/mugen/frames/cino/bullWalk_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullWalk_07.png?v=box1",
         "i": 7,
-        "ox": 67,
-        "oy": 95,
-        "w": 134,
-        "h": 118
+        "ox": 126,
+        "oy": 146,
+        "w": 274,
+        "h": 179
       }
     ],
     "bullRun": [
       {
-        "file": "/mugen/frames/cino/bullRun_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_00.png?v=box1",
         "i": 0,
-        "ox": 63,
-        "oy": 89,
-        "w": 138,
-        "h": 112
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_01.png?v=box1",
         "i": 1,
-        "ox": 59,
-        "oy": 87,
-        "w": 159,
-        "h": 110
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_02.png?v=box1",
         "i": 2,
-        "ox": 61,
-        "oy": 87,
-        "w": 163,
-        "h": 110
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_03.png?v=box1",
         "i": 3,
-        "ox": 70,
-        "oy": 87,
-        "w": 170,
-        "h": 110
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_04.png?v=box1",
         "i": 4,
-        "ox": 61,
-        "oy": 88,
-        "w": 167,
-        "h": 111
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_05.png?v=box1",
         "i": 5,
-        "ox": 62,
-        "oy": 87,
-        "w": 125,
-        "h": 110
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_06.png?v=box1",
         "i": 6,
-        "ox": 35,
-        "oy": 88,
-        "w": 111,
-        "h": 111
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_07.png?v=box1",
         "i": 7,
-        "ox": 57,
-        "oy": 86,
-        "w": 122,
-        "h": 109
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       },
       {
-        "file": "/mugen/frames/cino/bullRun_08.png?v=six5",
+        "file": "/mugen/frames/cino/bullRun_08.png?v=box1",
         "i": 8,
-        "ox": 49,
-        "oy": 87,
-        "w": 129,
-        "h": 110
+        "ox": 118,
+        "oy": 137,
+        "w": 272,
+        "h": 170
       }
     ],
     "bullJumpStart": [
       {
-        "file": "/mugen/frames/cino/bullJumpStart_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullJumpStart_00.png?v=box1",
         "i": 0,
         "ox": 63,
         "oy": 97,
@@ -1754,7 +1722,7 @@
         "h": 124
       },
       {
-        "file": "/mugen/frames/cino/bullJumpStart_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullJumpStart_01.png?v=box1",
         "i": 1,
         "ox": 47,
         "oy": 99,
@@ -1764,7 +1732,7 @@
     ],
     "bullJump": [
       {
-        "file": "/mugen/frames/cino/bullJump_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullJump_00.png?v=box1",
         "i": 0,
         "ox": 40,
         "oy": 104,
@@ -1772,7 +1740,7 @@
         "h": 131
       },
       {
-        "file": "/mugen/frames/cino/bullJump_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullJump_01.png?v=box1",
         "i": 1,
         "ox": 33,
         "oy": 106,
@@ -1780,7 +1748,7 @@
         "h": 134
       },
       {
-        "file": "/mugen/frames/cino/bullJump_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullJump_02.png?v=box1",
         "i": 2,
         "ox": 65,
         "oy": 98,
@@ -1790,7 +1758,7 @@
     ],
     "bullLand": [
       {
-        "file": "/mugen/frames/cino/bullLand_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullLand_00.png?v=box1",
         "i": 0,
         "ox": 136,
         "oy": 120,
@@ -1798,7 +1766,7 @@
         "h": 147
       },
       {
-        "file": "/mugen/frames/cino/bullLand_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullLand_01.png?v=box1",
         "i": 1,
         "ox": 93,
         "oy": 121,
@@ -1806,7 +1774,7 @@
         "h": 148
       },
       {
-        "file": "/mugen/frames/cino/bullLand_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullLand_02.png?v=box1",
         "i": 2,
         "ox": 46,
         "oy": 87,
@@ -1814,7 +1782,7 @@
         "h": 114
       },
       {
-        "file": "/mugen/frames/cino/bullLand_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullLand_03.png?v=box1",
         "i": 3,
         "ox": 74,
         "oy": 100,
@@ -1824,81 +1792,73 @@
     ],
     "bullAttack": [
       {
-        "file": "/mugen/frames/cino/bullAttack_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_00.png?v=box1",
         "i": 0,
-        "ox": 62,
-        "oy": 105,
-        "w": 125,
-        "h": 133
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_02.png?v=box1",
         "i": 1,
-        "ox": 38,
-        "oy": 100,
-        "w": 95,
-        "h": 127
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_03.png?v=box1",
         "i": 2,
-        "ox": 51,
-        "oy": 106,
-        "w": 118,
-        "h": 134
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_04.png?v=box1",
         "i": 3,
-        "ox": 68,
-        "oy": 109,
-        "w": 150,
-        "h": 136
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_05.png?v=box1",
         "i": 4,
-        "ox": 62,
-        "oy": 107,
-        "w": 137,
-        "h": 135
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_06.png?v=box1",
         "i": 5,
-        "ox": 121,
-        "oy": 112,
-        "w": 233,
-        "h": 139
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_07.png?v=box1",
         "i": 6,
-        "ox": 74,
-        "oy": 103,
-        "w": 151,
-        "h": 130
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       },
       {
-        "file": "/mugen/frames/cino/bullAttack_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullAttack_08.png?v=box1",
         "i": 7,
-        "ox": 93,
-        "oy": 117,
-        "w": 168,
-        "h": 144
-      },
-      {
-        "file": "/mugen/frames/cino/bullAttack_08.png?v=six5",
-        "i": 8,
-        "ox": 99,
-        "oy": 105,
-        "w": 184,
-        "h": 133
+        "ox": 169,
+        "oy": 165,
+        "w": 329,
+        "h": 203
       }
     ],
     "bullSlash": [
       {
-        "file": "/mugen/frames/cino/bullSlash_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_00.png?v=box1",
         "i": 0,
         "ox": 70,
         "oy": 93,
@@ -1906,7 +1866,7 @@
         "h": 122
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_01.png?v=box1",
         "i": 1,
         "ox": 92,
         "oy": 101,
@@ -1914,7 +1874,7 @@
         "h": 130
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_02.png?v=box1",
         "i": 2,
         "ox": 74,
         "oy": 97,
@@ -1922,7 +1882,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_03.png?v=box1",
         "i": 3,
         "ox": 74,
         "oy": 95,
@@ -1930,7 +1890,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_04.png?v=box1",
         "i": 4,
         "ox": 71,
         "oy": 94,
@@ -1938,7 +1898,7 @@
         "h": 124
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_05.png?v=box1",
         "i": 5,
         "ox": 76,
         "oy": 94,
@@ -1946,7 +1906,7 @@
         "h": 124
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_06.png?v=box1",
         "i": 6,
         "ox": 61,
         "oy": 97,
@@ -1954,7 +1914,7 @@
         "h": 127
       },
       {
-        "file": "/mugen/frames/cino/bullSlash_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullSlash_07.png?v=box1",
         "i": 7,
         "ox": 75,
         "oy": 99,
@@ -1964,7 +1924,7 @@
     ],
     "bullSpecial": [
       {
-        "file": "/mugen/frames/cino/bullSpecial_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_00.png?v=box1",
         "i": 0,
         "ox": 69,
         "oy": 106,
@@ -1972,7 +1932,7 @@
         "h": 135
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_01.png?v=box1",
         "i": 1,
         "ox": 107,
         "oy": 84,
@@ -1980,7 +1940,7 @@
         "h": 114
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_02.png?v=box1",
         "i": 2,
         "ox": 127,
         "oy": 97,
@@ -1988,7 +1948,7 @@
         "h": 127
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_03.png?v=box1",
         "i": 3,
         "ox": 82,
         "oy": 118,
@@ -1996,7 +1956,7 @@
         "h": 147
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_04.png?v=box1",
         "i": 4,
         "ox": 73,
         "oy": 87,
@@ -2004,7 +1964,7 @@
         "h": 117
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_05.png?v=box1",
         "i": 5,
         "ox": 71,
         "oy": 86,
@@ -2012,7 +1972,7 @@
         "h": 115
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_06.png?v=box1",
         "i": 6,
         "ox": 68,
         "oy": 122,
@@ -2020,7 +1980,7 @@
         "h": 152
       },
       {
-        "file": "/mugen/frames/cino/bullSpecial_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullSpecial_07.png?v=box1",
         "i": 7,
         "ox": 137,
         "oy": 109,
@@ -2030,7 +1990,7 @@
     ],
     "bullSuper": [
       {
-        "file": "/mugen/frames/cino/bullSuper_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_00.png?v=box1",
         "i": 0,
         "ox": 77,
         "oy": 95,
@@ -2038,7 +1998,7 @@
         "h": 121
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_01.png?v=box1",
         "i": 1,
         "ox": 63,
         "oy": 101,
@@ -2046,7 +2006,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_02.png?v=box1",
         "i": 2,
         "ox": 83,
         "oy": 103,
@@ -2054,7 +2014,7 @@
         "h": 128
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_03.png?v=box1",
         "i": 3,
         "ox": 87,
         "oy": 102,
@@ -2062,7 +2022,7 @@
         "h": 127
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_04.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_04.png?v=box1",
         "i": 4,
         "ox": 69,
         "oy": 100,
@@ -2070,7 +2030,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_05.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_05.png?v=box1",
         "i": 5,
         "ox": 83,
         "oy": 90,
@@ -2078,7 +2038,7 @@
         "h": 115
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_06.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_06.png?v=box1",
         "i": 6,
         "ox": 61,
         "oy": 99,
@@ -2086,7 +2046,7 @@
         "h": 125
       },
       {
-        "file": "/mugen/frames/cino/bullSuper_07.png?v=six5",
+        "file": "/mugen/frames/cino/bullSuper_07.png?v=box1",
         "i": 7,
         "ox": 83,
         "oy": 99,
@@ -2096,7 +2056,7 @@
     ],
     "bullHit": [
       {
-        "file": "/mugen/frames/cino/bullHit_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullHit_00.png?v=box1",
         "i": 0,
         "ox": 48,
         "oy": 79,
@@ -2104,7 +2064,7 @@
         "h": 105
       },
       {
-        "file": "/mugen/frames/cino/bullHit_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullHit_01.png?v=box1",
         "i": 1,
         "ox": 52,
         "oy": 83,
@@ -2112,7 +2072,7 @@
         "h": 108
       },
       {
-        "file": "/mugen/frames/cino/bullHit_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullHit_02.png?v=box1",
         "i": 2,
         "ox": 70,
         "oy": 78,
@@ -2122,7 +2082,7 @@
     ],
     "bullKnockdown": [
       {
-        "file": "/mugen/frames/cino/bullKnockdown_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullKnockdown_00.png?v=box1",
         "i": 0,
         "ox": 81,
         "oy": 82,
@@ -2130,7 +2090,7 @@
         "h": 107
       },
       {
-        "file": "/mugen/frames/cino/bullKnockdown_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullKnockdown_01.png?v=box1",
         "i": 1,
         "ox": 70,
         "oy": 79,
@@ -2138,7 +2098,7 @@
         "h": 105
       },
       {
-        "file": "/mugen/frames/cino/bullKnockdown_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullKnockdown_02.png?v=box1",
         "i": 2,
         "ox": 99,
         "oy": 85,
@@ -2148,7 +2108,7 @@
     ],
     "bullGetUp": [
       {
-        "file": "/mugen/frames/cino/bullGetUp_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullGetUp_00.png?v=box1",
         "i": 0,
         "ox": 58,
         "oy": 89,
@@ -2156,7 +2116,7 @@
         "h": 114
       },
       {
-        "file": "/mugen/frames/cino/bullGetUp_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullGetUp_01.png?v=box1",
         "i": 1,
         "ox": 61,
         "oy": 91,
@@ -2164,7 +2124,7 @@
         "h": 117
       },
       {
-        "file": "/mugen/frames/cino/bullGetUp_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullGetUp_02.png?v=box1",
         "i": 2,
         "ox": 59,
         "oy": 87,
@@ -2172,7 +2132,7 @@
         "h": 112
       },
       {
-        "file": "/mugen/frames/cino/bullGetUp_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullGetUp_03.png?v=box1",
         "i": 3,
         "ox": 61,
         "oy": 87,
@@ -2182,7 +2142,7 @@
     ],
     "bullWin": [
       {
-        "file": "/mugen/frames/cino/bullWin_00.png?v=six5",
+        "file": "/mugen/frames/cino/bullWin_00.png?v=box1",
         "i": 0,
         "ox": 63,
         "oy": 95,
@@ -2190,7 +2150,7 @@
         "h": 121
       },
       {
-        "file": "/mugen/frames/cino/bullWin_01.png?v=six5",
+        "file": "/mugen/frames/cino/bullWin_01.png?v=box1",
         "i": 1,
         "ox": 95,
         "oy": 101,
@@ -2198,7 +2158,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/bullWin_02.png?v=six5",
+        "file": "/mugen/frames/cino/bullWin_02.png?v=box1",
         "i": 2,
         "ox": 64,
         "oy": 101,
@@ -2206,7 +2166,7 @@
         "h": 126
       },
       {
-        "file": "/mugen/frames/cino/bullWin_03.png?v=six5",
+        "file": "/mugen/frames/cino/bullWin_03.png?v=box1",
         "i": 3,
         "ox": 62,
         "oy": 101,
@@ -2216,7 +2176,7 @@
     ],
     "block": [
       {
-        "file": "/mugen/frames/cino/block_00.png?v=six5",
+        "file": "/mugen/frames/cino/block_00.png?v=box1",
         "i": 0,
         "ox": 45,
         "oy": 77,
@@ -2224,7 +2184,7 @@
         "h": 85
       },
       {
-        "file": "/mugen/frames/cino/block_01.png?v=six5",
+        "file": "/mugen/frames/cino/block_01.png?v=box1",
         "i": 1,
         "ox": 31,
         "oy": 88,
@@ -2234,7 +2194,7 @@
     ],
     "hit": [
       {
-        "file": "/mugen/frames/cino/hit_00.png?v=six5",
+        "file": "/mugen/frames/cino/hit_00.png?v=box1",
         "i": 0,
         "ox": 37,
         "oy": 125,
@@ -2242,7 +2202,7 @@
         "h": 134
       },
       {
-        "file": "/mugen/frames/cino/hit_01.png?v=six5",
+        "file": "/mugen/frames/cino/hit_01.png?v=box1",
         "i": 1,
         "ox": 38,
         "oy": 124,
@@ -2252,7 +2212,7 @@
     ],
     "knockdown": [
       {
-        "file": "/mugen/frames/cino/knockdown_00.png?v=six5",
+        "file": "/mugen/frames/cino/knockdown_00.png?v=box1",
         "i": 0,
         "ox": 42,
         "oy": 86,
@@ -2260,7 +2220,7 @@
         "h": 94
       },
       {
-        "file": "/mugen/frames/cino/knockdown_01.png?v=six5",
+        "file": "/mugen/frames/cino/knockdown_01.png?v=box1",
         "i": 1,
         "ox": 40,
         "oy": 77,
@@ -2268,7 +2228,7 @@
         "h": 86
       },
       {
-        "file": "/mugen/frames/cino/knockdown_02.png?v=six5",
+        "file": "/mugen/frames/cino/knockdown_02.png?v=box1",
         "i": 2,
         "ox": 43,
         "oy": 75,
@@ -2278,7 +2238,7 @@
     ],
     "getUp": [
       {
-        "file": "/mugen/frames/cino/getUp_00.png?v=six5",
+        "file": "/mugen/frames/cino/getUp_00.png?v=box1",
         "i": 0,
         "ox": 42,
         "oy": 86,
@@ -2286,7 +2246,7 @@
         "h": 94
       },
       {
-        "file": "/mugen/frames/cino/getUp_01.png?v=six5",
+        "file": "/mugen/frames/cino/getUp_01.png?v=box1",
         "i": 1,
         "ox": 40,
         "oy": 77,
@@ -2294,7 +2254,7 @@
         "h": 86
       },
       {
-        "file": "/mugen/frames/cino/getUp_02.png?v=six5",
+        "file": "/mugen/frames/cino/getUp_02.png?v=box1",
         "i": 2,
         "ox": 43,
         "oy": 75,
@@ -2304,7 +2264,7 @@
     ],
     "win": [
       {
-        "file": "/mugen/frames/cino/win_00.png?v=six5",
+        "file": "/mugen/frames/cino/win_00.png?v=box1",
         "i": 0,
         "ox": 80,
         "oy": 113,
@@ -2312,7 +2272,7 @@
         "h": 136
       },
       {
-        "file": "/mugen/frames/cino/win_01.png?v=six5",
+        "file": "/mugen/frames/cino/win_01.png?v=box1",
         "i": 1,
         "ox": 55,
         "oy": 111,
@@ -2320,7 +2280,7 @@
         "h": 135
       },
       {
-        "file": "/mugen/frames/cino/win_02.png?v=six5",
+        "file": "/mugen/frames/cino/win_02.png?v=box1",
         "i": 2,
         "ox": 83,
         "oy": 113,
