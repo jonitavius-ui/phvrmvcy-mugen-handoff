@@ -39,7 +39,7 @@ const P1_HELP = [
   { keys: "J / pad A", action: "Light Jab" },
   { keys: "K / pad B", action: "Heavy Swing" },
   { keys: "L / pad C", action: "Kick / Cino ↓+C Bull Form" },
-  { keys: "Space / pad D", action: "↑+D Cino Green Bull Super" },
+  { keys: "Space / pad D", action: "↑+D Cino Green Ultimate (sheet6)" },
   { keys: "Shift", action: "Block" },
   { keys: "↓ + C", action: "Cino Bull Form (permanent)" },
   { keys: "↓→ + A", action: "Lean Splash" },

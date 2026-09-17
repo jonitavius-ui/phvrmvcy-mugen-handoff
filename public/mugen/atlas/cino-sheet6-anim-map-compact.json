@@ -1,0 +1,280 @@
+{
+  "pack": "sheet6-super",
+  "move": "GREEN_ULTIMATE",
+  "input": "UP+D",
+  "source_of_truth": "atlas_uniform.json",
+  "CINO_BASE_HEIGHT": 212,
+  "timeline": [
+    {
+      "phase": "charge",
+      "body": "body/charge",
+      "fx": "fx/aura_debris",
+      "fps": 11,
+      "role": "anticipation",
+      "ms": 91
+    },
+    {
+      "phase": "bull_manifest",
+      "body": "body/bull_manifest",
+      "fx": "fx/bull_head",
+      "fps": 10,
+      "role": "anticipation\u2192attack",
+      "ms": 100
+    },
+    {
+      "phase": "sphere",
+      "body": "body/sphere",
+      "fx": "fx/sphere",
+      "fps": 8,
+      "role": "attack",
+      "ms": 125
+    },
+    {
+      "phase": "release",
+      "body": "body/release",
+      "fx": "fx/plasma_bull",
+      "fps": 10,
+      "role": "impact\u2192recovery",
+      "ms": 100
+    },
+    {
+      "phase": "impact",
+      "body": null,
+      "fx": "fx/impact",
+      "fps": 12,
+      "role": "impact",
+      "ms": 83
+    }
+  ],
+  "clips": {
+    "body/charge": {
+      "layer": "body",
+      "kind": "character",
+      "fps": 11,
+      "ms": 91,
+      "hold_last": false,
+      "canvas": {
+        "w": 128,
+        "h": 150
+      },
+      "ox": 64,
+      "oy": 133,
+      "frames": [
+        "frames/body/charge/00.png",
+        "frames/body/charge/01.png",
+        "frames/body/charge/02.png",
+        "frames/body/charge/03.png",
+        "frames/body/charge/04.png",
+        "frames/body/charge/05.png",
+        "frames/body/charge/06.png",
+        "frames/body/charge/07.png",
+        "frames/body/charge/08.png",
+        "frames/body/charge/09.png",
+        "frames/body/charge/10.png",
+        "frames/body/charge/11.png",
+        "frames/body/charge/12.png"
+      ],
+      "empty_body_frames": []
+    },
+    "fx/aura_debris": {
+      "layer": "fx",
+      "kind": "fx",
+      "fps": 11,
+      "ms": 91,
+      "hold_last": false,
+      "canvas": {
+        "w": 159,
+        "h": 214
+      },
+      "ox": 84,
+      "oy": 178,
+      "frames": [
+        "frames/fx/aura_debris/00.png",
+        "frames/fx/aura_debris/01.png",
+        "frames/fx/aura_debris/02.png",
+        "frames/fx/aura_debris/03.png",
+        "frames/fx/aura_debris/04.png",
+        "frames/fx/aura_debris/05.png",
+        "frames/fx/aura_debris/06.png",
+        "frames/fx/aura_debris/07.png",
+        "frames/fx/aura_debris/08.png",
+        "frames/fx/aura_debris/09.png",
+        "frames/fx/aura_debris/10.png",
+        "frames/fx/aura_debris/11.png",
+        "frames/fx/aura_debris/12.png"
+      ],
+      "empty_body_frames": []
+    },
+    "body/bull_manifest": {
+      "layer": "body",
+      "kind": "character",
+      "fps": 10,
+      "ms": 100,
+      "hold_last": true,
+      "canvas": {
+        "w": 114,
+        "h": 168
+      },
+      "ox": 56,
+      "oy": 151,
+      "frames": [
+        "frames/body/bull_manifest/00.png",
+        "frames/body/bull_manifest/01.png",
+        "frames/body/bull_manifest/02.png",
+        "frames/body/bull_manifest/03.png",
+        "frames/body/bull_manifest/04.png",
+        "frames/body/bull_manifest/05.png",
+        "frames/body/bull_manifest/06.png",
+        "frames/body/bull_manifest/07.png",
+        "frames/body/bull_manifest/08.png"
+      ],
+      "empty_body_frames": []
+    },
+    "fx/bull_head": {
+      "layer": "fx",
+      "kind": "fx",
+      "fps": 10,
+      "ms": 100,
+      "hold_last": false,
+      "canvas": {
+        "w": 296,
+        "h": 356
+      },
+      "ox": 144,
+      "oy": 275,
+      "frames": [
+        "frames/fx/bull_head/00.png",
+        "frames/fx/bull_head/01.png",
+        "frames/fx/bull_head/02.png",
+        "frames/fx/bull_head/03.png",
+        "frames/fx/bull_head/04.png",
+        "frames/fx/bull_head/05.png",
+        "frames/fx/bull_head/06.png",
+        "frames/fx/bull_head/07.png",
+        "frames/fx/bull_head/08.png"
+      ],
+      "empty_body_frames": []
+    },
+    "body/sphere": {
+      "layer": "body",
+      "kind": "character",
+      "fps": 8,
+      "ms": 125,
+      "hold_last": true,
+      "canvas": {
+        "w": 95,
+        "h": 124
+      },
+      "ox": 48,
+      "oy": 107,
+      "frames": [
+        "frames/body/sphere/00.png",
+        "frames/body/sphere/01.png",
+        "frames/body/sphere/02.png",
+        "frames/body/sphere/03.png",
+        "frames/body/sphere/04.png",
+        "frames/body/sphere/05.png",
+        "frames/body/sphere/06.png"
+      ],
+      "empty_body_frames": []
+    },
+    "fx/sphere": {
+      "layer": "fx",
+      "kind": "fx",
+      "fps": 8,
+      "ms": 125,
+      "hold_last": true,
+      "canvas": {
+        "w": 502,
+        "h": 337
+      },
+      "ox": 231,
+      "oy": 320,
+      "frames": [
+        "frames/fx/sphere/00.png",
+        "frames/fx/sphere/01.png",
+        "frames/fx/sphere/02.png",
+        "frames/fx/sphere/03.png",
+        "frames/fx/sphere/04.png",
+        "frames/fx/sphere/05.png",
+        "frames/fx/sphere/06.png"
+      ],
+      "empty_body_frames": []
+    },
+    "body/release": {
+      "layer": "body",
+      "kind": "character",
+      "fps": 10,
+      "ms": 100,
+      "hold_last": true,
+      "canvas": {
+        "w": 152,
+        "h": 126
+      },
+      "ox": 78,
+      "oy": 109,
+      "frames": [
+        "frames/body/release/00.png",
+        "frames/body/release/01.png",
+        "frames/body/release/02.png",
+        "frames/body/release/03.png",
+        "frames/body/release/04.png",
+        "frames/body/release/05.png",
+        "frames/body/release/06.png",
+        "frames/body/release/07.png"
+      ],
+      "empty_body_frames": [
+        "05"
+      ],
+      "soft_hold_under_fx": [
+        "01",
+        "03",
+        "05"
+      ]
+    },
+    "fx/plasma_bull": {
+      "layer": "fx",
+      "kind": "fx",
+      "fps": 10,
+      "ms": 100,
+      "hold_last": false,
+      "canvas": {
+        "w": 362,
+        "h": 412
+      },
+      "ox": 200,
+      "oy": 233,
+      "frames": [
+        "frames/fx/plasma_bull/00.png",
+        "frames/fx/plasma_bull/01.png",
+        "frames/fx/plasma_bull/02.png",
+        "frames/fx/plasma_bull/03.png",
+        "frames/fx/plasma_bull/04.png",
+        "frames/fx/plasma_bull/05.png",
+        "frames/fx/plasma_bull/06.png",
+        "frames/fx/plasma_bull/07.png"
+      ],
+      "empty_body_frames": []
+    },
+    "fx/impact": {
+      "layer": "fx",
+      "kind": "fx",
+      "fps": 12,
+      "ms": 83,
+      "hold_last": false,
+      "canvas": {
+        "w": 303,
+        "h": 265
+      },
+      "ox": 141,
+      "oy": 233,
+      "frames": [
+        "frames/fx/impact/00.png",
+        "frames/fx/impact/01.png"
+      ],
+      "empty_body_frames": []
+    }
+  },
+  "lead_accepted": true,
+  "status": "LEAD_ACCEPTED"
+}
