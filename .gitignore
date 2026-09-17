@@ -13,3 +13,4 @@ screenshots/
 *.local
 .nitro/
 .wrangler/
+dist-pages/
