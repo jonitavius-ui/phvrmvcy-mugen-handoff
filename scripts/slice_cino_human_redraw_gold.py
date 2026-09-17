@@ -2,6 +2,7 @@
 """Slice approved Cino Human GOLD contact strips → RGBA frames + atlas anim update.
 NO image generation. Expand-only pad. Fixed feet origin per clip.
 Atlas body target: CINO_ATLAS_BODY_HEIGHT ≈ 106 (zoom 2 → 212 canvas).
+redraw2: checkerboard→true alpha; ONE body scale from idle head (no per-frame ATLAS stretch).
 """
 from __future__ import annotations
 from collections import deque
@@ -17,7 +18,7 @@ PUBLIC = Path("/workspace/mugen-ship/handoff-redraw/public/mugen")
 FRAMES = PUBLIC / "frames/cino"
 REDRAW = FRAMES / "redraw"
 ATLAS_PATH = PUBLIC / "atlas/cino.json"
-CACHE = "redraw1"
+CACHE = "redraw2"
 ATLAS_BODY = 106.0  # feet→crown in atlas px
 PAD = 10
 MIN_AREA = 800
@@ -81,13 +82,99 @@ STRIPS = {
 }
 
 
+def _chroma(f: np.ndarray) -> np.ndarray:
+    return np.maximum(
+        np.maximum(np.abs(f[..., 0] - f[..., 1]), np.abs(f[..., 1] - f[..., 2])),
+        np.abs(f[..., 0] - f[..., 2]),
+    )
+
+
+def checker_mask(rgb: np.ndarray) -> np.ndarray:
+    """Detect baked gray/white transparency-checker pixels (incl. interior gaps)."""
+    f = rgb.astype(np.float32)
+    mean = f.mean(axis=2)
+    chroma = _chroma(f)
+    gray = chroma <= 18
+    # light gray / white checker range (clothing is much darker)
+    light = gray & (mean >= 115) & (mean <= 255)
+    h, w = mean.shape
+    alt = np.zeros((h, w), bool)
+    # alternating neighbor pairs (classic checker)
+    pairs = [
+        (light[:, :-1], light[:, 1:], mean[:, :-1], mean[:, 1:], (slice(None), slice(0, w - 1)), (slice(None), slice(1, w))),
+        (light[:-1, :], light[1:, :], mean[:-1, :], mean[1:, :], (slice(0, h - 1), slice(None)), (slice(1, h), slice(None))),
+        (light[:-1, :-1], light[1:, 1:], mean[:-1, :-1], mean[1:, 1:], (slice(0, h - 1), slice(0, w - 1)), (slice(1, h), slice(1, w))),
+        (light[:-1, 1:], light[1:, :-1], mean[:-1, 1:], mean[1:, :-1], (slice(0, h - 1), slice(1, w)), (slice(1, h), slice(0, w - 1))),
+    ]
+    for m1, m2, mu1, mu2, sl1, sl2 in pairs:
+        hit = m1 & m2 & (np.abs(mu1 - mu2) >= 18)
+        alt[sl1] |= hit
+        alt[sl2] |= hit
+    # near-white solid checker cells
+    near_white = gray & (mean >= 220)
+    return light & (alt | near_white | (mean >= 150))
+
+
+def remove_checkerboard_rgba(rgba: np.ndarray) -> np.ndarray:
+    """Punch checkerboard + near-transparent fringe to true alpha=0."""
+    out = rgba.copy()
+    rgb = out[..., :3]
+    a = out[..., 3]
+    chk = checker_mask(rgb)
+    mean = rgb.astype(np.float32).mean(axis=2)
+    chroma = _chroma(rgb.astype(np.float32))
+    gray = chroma <= 18
+    # edge flood through checker / bright gray / existing alpha holes
+    h, w = a.shape
+    seed = np.zeros((h, w), bool)
+    seed[0, :] = seed[-1, :] = seed[:, 0] = seed[:, -1] = True
+    conduit = chk | (a == 0) | (gray & (mean >= 140)) | (mean >= 230)
+    seen = np.zeros((h, w), bool)
+    q = deque(zip(*np.where(seed & conduit)))
+    # also start from any checker cell (interior gaps between legs)
+    q.extend(zip(*np.where(chk)))
+    kill = np.zeros((h, w), bool)
+    while q:
+        y, x = q.popleft()
+        if seen[y, x]:
+            continue
+        seen[y, x] = True
+        if not conduit[y, x] and not chk[y, x]:
+            continue
+        if chk[y, x] or (gray[y, x] and mean[y, x] >= 140 and a[y, x] > 0) or (
+            mean[y, x] >= 230 and chroma[y, x] <= 20 and a[y, x] > 0
+        ):
+            kill[y, x] = True
+        for ny, nx in ((y - 1, x), (y + 1, x), (y, x - 1), (y, x + 1)):
+            if 0 <= ny < h and 0 <= nx < w and not seen[ny, nx]:
+                if conduit[ny, nx] or chk[ny, nx]:
+                    q.append((ny, nx))
+    kill |= chk
+    out[..., 3] = np.where(kill, 0, a)
+    # near-transparent fringe adjacent to empty
+    a2 = out[..., 3]
+    trans = a2 == 0
+    # 4-neighborhood dilate
+    dil = trans.copy()
+    dil[1:, :] |= trans[:-1, :]
+    dil[:-1, :] |= trans[1:, :]
+    dil[:, 1:] |= trans[:, :-1]
+    dil[:, :-1] |= trans[:, 1:]
+    fringe = dil & (a2 > 0) & ((a2 < 100) | (gray & (mean >= 100) & (a2 < 220)))
+    out[..., 3] = np.where(fringe, 0, out[..., 3])
+    out[..., 3] = np.where(out[..., 3] >= 40, 255, 0).astype(np.uint8)
+    return out
+
+
 def flood_light_bg(rgb: np.ndarray) -> np.ndarray:
-    """Return RGBA with light edge-connected background keyed to alpha=0."""
+    """Return RGBA with light edge-connected background + checkerboard keyed to alpha=0."""
     h, w = rgb.shape[:2]
     f = rgb.astype(np.float32)
     mean = f.mean(axis=2)
-    # seeds: bright border pixels
-    bg_cand = mean >= BRIGHT_THR
+    chroma = _chroma(f)
+    chk = checker_mask(rgb)
+    # seeds: bright border pixels OR checkerboard
+    bg_cand = (mean >= BRIGHT_THR) | chk
     seen = np.zeros((h, w), bool)
     q = deque()
     for x in range(w):
@@ -98,17 +185,23 @@ def flood_light_bg(rgb: np.ndarray) -> np.ndarray:
         for x in (0, w - 1):
             if bg_cand[y, x]:
                 q.append((y, x))
+    # also seed interior checker so between-leg gaps key even if enclosed
+    q.extend(zip(*np.where(chk)))
     ext = np.zeros((h, w), bool)
     while q:
         y, x = q.popleft()
         if y < 0 or y >= h or x < 0 or x >= w or seen[y, x]:
             continue
         seen[y, x] = True
+        if chk[y, x]:
+            ext[y, x] = True
+            q.extend(((y - 1, x), (y + 1, x), (y, x - 1), (y, x + 1)))
+            continue
         # allow flood into near-seed bright / checker light cells
-        if mean[y, x] < BRIGHT_THR - 25:
+        if mean[y, x] < BRIGHT_THR - 35 and not (chroma[y, x] <= 18 and mean[y, x] >= 130):
             continue
         # reject dark character pixels
-        if mean[y, x] < 160 and (f[y, x].max() - f[y, x].min()) > 30:
+        if mean[y, x] < 150 and (f[y, x].max() - f[y, x].min()) > 30:
             continue
         if mean[y, x] < BRIGHT_THR and not (
             abs(float(f[y, x, 0]) - float(f[y, x, 1])) < 18
@@ -119,13 +212,9 @@ def flood_light_bg(rgb: np.ndarray) -> np.ndarray:
                 continue
         ext[y, x] = True
         q.extend(((y - 1, x), (y + 1, x), (y, x - 1), (y, x + 1)))
-    a = np.where(ext, 0, 255).astype(np.uint8)
-    # also punch obvious checker residual: very bright near-white with low variance inside gaps
-    near_white = (mean > 235) & (np.ptp(f, axis=2) < 12)
-    a = np.where(near_white & ~((~ext) & (mean < 180)), np.minimum(a, 0), a)
-    # simpler: any remaining pure near-white isolated → transparent if small? skip
+    a = np.where(ext | chk, 0, 255).astype(np.uint8)
     rgba = np.dstack([rgb, a])
-    return rgba
+    return remove_checkerboard_rgba(rgba)
 
 
 def components(mask: np.ndarray, min_area: int = MIN_AREA):
@@ -271,7 +360,33 @@ def scale_rgba(arr: np.ndarray, s: float) -> np.ndarray:
     nh = max(1, int(round(arr.shape[0] * s)))
     out = np.array(im.resize((nw, nh), Image.Resampling.LANCZOS))
     out[..., 3] = np.where(out[..., 3] >= 40, 255, 0).astype(np.uint8)
-    return out
+    return remove_checkerboard_rgba(out)
+
+
+def head_width(arr: np.ndarray) -> int:
+    """Opaque width of upper ~18% of silhouette — body-scale proxy (not hair tip)."""
+    a = arr[..., 3] > 40
+    ys, xs = np.where(a)
+    if len(ys) == 0:
+        return 0
+    y0, y1 = int(ys.min()), int(ys.max())
+    band = a[y0 : y0 + max(3, int((y1 - y0) * 0.18))]
+    cols = np.where(band.any(axis=0))[0]
+    return int(cols.max() - cols.min() + 1) if len(cols) else 0
+
+
+def normalize_head_scale(arr: np.ndarray, target_head: float) -> np.ndarray:
+    """Rescale so head width matches idle lock. Never stretch a clip to ATLAS_BODY height."""
+    hw = head_width(arr)
+    if hw < 6 or target_head < 6:
+        return arr
+    s = float(target_head) / float(hw)
+    # only correct meaningful drift (>8%)
+    if abs(s - 1.0) < 0.08:
+        return arr
+    # clamp extreme corrections
+    s = float(np.clip(s, 0.45, 1.55))
+    return scale_rgba(arr, s)
 
 
 def pack_clip(frames_m: list, name: str):
@@ -333,7 +448,16 @@ def main():
             idle_bodies.append(m["body"])
     ref_body = float(np.median(idle_bodies))
     scale = ATLAS_BODY / ref_body
-    print(f"IDLE median body={ref_body} scale={scale:.4f} → atlas {ATLAS_BODY}")
+    # idle head lock after global scale (median of idle frames)
+    idle_heads = []
+    for sp in idle_sprites:
+        m = body_metrics(sp["arr"])
+        if not m:
+            continue
+        sc = scale_rgba(m["arr"], scale)
+        idle_heads.append(head_width(sc))
+    idle_head = float(np.median([h for h in idle_heads if h >= 6]))
+    print(f"IDLE median body={ref_body} scale={scale:.4f} → atlas {ATLAS_BODY}; idle_head={idle_head}")
 
     for strip_name, meta in STRIPS.items():
         sprites, _ = extract_sprites(PREVIEWS / strip_name, meta["expect"])
@@ -346,6 +470,9 @@ def main():
                 metrics.append(None)
                 continue
             scaled = scale_rgba(m["arr"], scale)
+            # ONE body scale lock: match idle head width (fixes jump/combat giant frames)
+            if strip_name != "IDLE_GOLD.png":
+                scaled = normalize_head_scale(scaled, idle_head)
             sm = body_metrics(scaled)
             metrics.append(sm)
         raw_by_strip[strip_name] = metrics
@@ -436,6 +563,8 @@ def main():
         "gaps": gaps,
         "scale": scale,
         "ref_body_idle_median": ref_body,
+        "idle_head_lock": idle_head,
+        "fixes": ["checkerboard_true_alpha", "one_body_scale_head_lock"],
     }
     (BODY_OUT / "SHIP_META.json").write_text(json.dumps(meta_out, indent=2))
     (REDRAW / "SHIP_META.json").write_text(json.dumps(meta_out, indent=2))

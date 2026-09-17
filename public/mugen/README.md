@@ -5,7 +5,7 @@ Playable build (Cino + original SB Cookin).
 **Play here:** https://jonitavius-ui.github.io/mugen/
 
 ## Version
-- **cache:** `redraw1`
+- **cache:** `redraw2`
 - **Cino Human:** approved GOLD contact-strip redraw (idle/walk/run/crouch/jump/normals/hurt/specials body)
 - **Kept:** Down+C Bull Form art; Up+D Green Ultimate body+FX (`s6ult1`)
 - **Untouched:** stages, lobby, char select shell, SB Cookin, controls
